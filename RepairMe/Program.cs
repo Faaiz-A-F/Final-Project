@@ -16,11 +16,7 @@ namespace RepairMe
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-<<<<<<< HEAD
-            Application.Run(new TestPage());
-=======
-            Application.Run(new Sing_Up());
->>>>>>> 1cdf91b3055f18656b9d3922508ef404f841c6d4
+            Application.Run(new Form1());
         }
     }
 }
