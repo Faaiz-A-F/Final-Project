@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace RepairMe
 {
-    public partial class Sing_Up : Form
+    public partial class Sign_Up : Form
     {
-        public Sing_Up()
+        public Sign_Up()
         {
             InitializeComponent();
         }
