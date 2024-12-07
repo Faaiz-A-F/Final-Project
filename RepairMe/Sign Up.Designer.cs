@@ -57,7 +57,6 @@
             this.guna2HtmlLabel1.Size = new System.Drawing.Size(135, 27);
             this.guna2HtmlLabel1.TabIndex = 0;
             this.guna2HtmlLabel1.Text = "Buat akun baru\r";
-            this.guna2HtmlLabel1.Click += new System.EventHandler(this.guna2HtmlLabel1_Click);
             // 
             // guna2HtmlLabel2
             // 
@@ -183,7 +182,6 @@
             this.guna2HtmlLabel7.Size = new System.Drawing.Size(208, 15);
             this.guna2HtmlLabel7.TabIndex = 9;
             this.guna2HtmlLabel7.Text = "Apakah anda juga ingin membuka bengkel?";
-            this.guna2HtmlLabel7.Click += new System.EventHandler(this.guna2HtmlLabel7_Click);
             // 
             // guna2RadioButton1
             // 
@@ -256,7 +254,6 @@
             this.guna2TextBox4.ShadowDecoration.Parent = this.guna2TextBox4;
             this.guna2TextBox4.Size = new System.Drawing.Size(225, 33);
             this.guna2TextBox4.TabIndex = 13;
-            this.guna2TextBox4.TextChanged += new System.EventHandler(this.guna2TextBox4_TextChanged);
             // 
             // guna2HtmlLabel9
             // 
@@ -266,7 +263,6 @@
             this.guna2HtmlLabel9.Size = new System.Drawing.Size(58, 18);
             this.guna2HtmlLabel9.TabIndex = 14;
             this.guna2HtmlLabel9.Text = "Category";
-            this.guna2HtmlLabel9.Click += new System.EventHandler(this.guna2HtmlLabel9_Click);
             // 
             // guna2ComboBox1
             // 
