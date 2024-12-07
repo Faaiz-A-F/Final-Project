@@ -72,6 +72,7 @@
       <HintPath>..\packages\System.Configuration.ConfigurationManager.8.0.0\lib\net462\System.Configuration.ConfigurationManager.dll</HintPath>
     </Reference>
     <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
     <Reference Include="System.Diagnostics.DiagnosticSource, Version=8.0.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Diagnostics.DiagnosticSource.8.0.1\lib\net462\System.Diagnostics.DiagnosticSource.dll</HintPath>
     </Reference>
@@ -106,6 +107,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="TestPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestPage.Designer.cs">
+      <DependentUpon>TestPage.cs</DependentUpon>
+    </Compile>
     <Compile Include="Model\Context\DbContext.cs" />
     <Compile Include="Model\Entity\Users.cs" />
     <Compile Include="Model\Repository\UsersRepository.cs" />
@@ -117,6 +124,9 @@
     <Compile Include="Sign Up.Designer.cs">
       <DependentUpon>Sign Up.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="TestPage.resx">
+      <DependentUpon>TestPage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
