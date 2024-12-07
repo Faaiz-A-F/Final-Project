@@ -16,15 +16,5 @@ namespace RepairMe
         {
             InitializeComponent();
         }
-
-        private void guna2HtmlLabel1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2Panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
     }
 }
