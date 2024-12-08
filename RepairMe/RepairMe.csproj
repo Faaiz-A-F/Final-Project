@@ -107,6 +107,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controller\UsersController.cs" />
     <Compile Include="SignIn.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -172,7 +173,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Controller\" />
     <Folder Include="View\" />
   </ItemGroup>
   <ItemGroup>
