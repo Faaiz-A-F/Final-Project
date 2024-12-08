@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace RepairMe
 {
-    public partial class Sign_Up : Form
+    public partial class SignUp : Form
     {
-        public Sign_Up()
+        public SignUp()
         {
             InitializeComponent();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

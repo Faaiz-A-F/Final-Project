@@ -16,7 +16,7 @@ namespace RepairMe
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Sign_Up());
+            Application.Run(new SignUp_Success());
         }
     }
 }
