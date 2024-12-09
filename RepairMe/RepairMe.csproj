@@ -157,6 +157,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -178,6 +179,12 @@
   <ItemGroup>
     <Content Include="Database\repairme.sql" />
     <Content Include="Guna UI\Guna.UI2.dll" />
+    <None Include="Resources\05.jpg" />
+    <None Include="Resources\04.jpg" />
+    <None Include="Resources\03.jpg" />
+    <None Include="Resources\download.jpg" />
+    <None Include="Resources\download %281%291.jpg" />
+    <None Include="Resources\download %281%29.jpg" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
