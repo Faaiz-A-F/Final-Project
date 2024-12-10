@@ -177,6 +177,7 @@
   <ItemGroup>
     <Content Include="Database\repairme.sql" />
     <Content Include="Guna UI\Guna.UI2.dll" />
+    <Content Include="Resources\logo.png" />
     <None Include="Resources\05.jpg" />
     <None Include="Resources\04.jpg" />
     <None Include="Resources\03.jpg" />
