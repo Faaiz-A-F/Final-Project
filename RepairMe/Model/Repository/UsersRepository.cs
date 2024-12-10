@@ -34,7 +34,6 @@ namespace RepairMe.Model.Repository
                     cmd.Parameters.AddWithValue("@username", user.Username);
                     cmd.Parameters.AddWithValue("@password", user.Password);
                     cmd.Parameters.AddWithValue("@age", user.Age);
-                    cmd.Parameters.AddWithValue("@name", user.Name);
                     cmd.Parameters.AddWithValue("@email", user.Email);
                     cmd.Parameters.AddWithValue("@phone", user.Phone);
                     cmd.Parameters.AddWithValue("@address", user.Address);
@@ -76,7 +75,6 @@ namespace RepairMe.Model.Repository
                                 Id = reader.GetInt32("id"),
                                 Username = reader.GetString("username"),
                                 Password = reader.GetString("password"),
-                                Name = reader.GetString("name"),
                                 Email = reader.GetString("email"),
                                 Phone = reader.GetString("phone"),
                                 Address = reader.GetString("address"),
