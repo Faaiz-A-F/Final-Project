@@ -15,8 +15,10 @@ namespace RepairMe
         static void Main()
         {
             Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
+            Application.SetCompatibleTextRenderingDefault(false);          
+            Application.Run(new TestPage());
             Application.Run(new SignIn());
+            Application.Run(new SignUp());
         }
     }
 }
