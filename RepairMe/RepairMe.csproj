@@ -108,28 +108,28 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controller\UsersController.cs" />
-    <Compile Include="SignIn.cs">
+    <Compile Include="View\SignIn.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SignIn.Designer.cs">
+    <Compile Include="View\SignIn.Designer.cs">
       <DependentUpon>SignIn.cs</DependentUpon>
     </Compile>
-    <Compile Include="SignUp.cs">
+    <Compile Include="View\SignUp.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SignUp.Designer.cs">
+    <Compile Include="View\SignUp.Designer.cs">
       <DependentUpon>SignUp.cs</DependentUpon>
     </Compile>
-    <Compile Include="SignUp_Success.cs">
+    <Compile Include="View\SignUp_Success.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SignUp_Success.Designer.cs">
+    <Compile Include="View\SignUp_Success.Designer.cs">
       <DependentUpon>SignUp_Success.cs</DependentUpon>
     </Compile>
-    <Compile Include="TestPage.cs">
+    <Compile Include="View\TestPage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="TestPage.Designer.cs">
+    <Compile Include="View\TestPage.Designer.cs">
       <DependentUpon>TestPage.cs</DependentUpon>
     </Compile>
     <Compile Include="Model\Context\DbContext.cs" />
@@ -137,16 +137,16 @@
     <Compile Include="Model\Repository\UsersRepository.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="SignIn.resx">
+    <EmbeddedResource Include="View\SignIn.resx">
       <DependentUpon>SignIn.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SignUp.resx">
+    <EmbeddedResource Include="View\SignUp.resx">
       <DependentUpon>SignUp.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SignUp_Success.resx">
+    <EmbeddedResource Include="View\SignUp_Success.resx">
       <DependentUpon>SignUp_Success.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="TestPage.resx">
+    <EmbeddedResource Include="View\TestPage.resx">
       <DependentUpon>TestPage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -173,9 +173,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="View\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="Database\repairme.sql" />
     <Content Include="Guna UI\Guna.UI2.dll" />
