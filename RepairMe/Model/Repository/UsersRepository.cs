@@ -6,7 +6,6 @@ using System.Text;
 using System.Threading.Tasks;
 
 using RepairMe.Model.Entity;
-using RepairMe.Model.Context;
 using MySql.Data.MySqlClient;
 
 namespace RepairMe.Model.Repository
@@ -15,7 +14,7 @@ namespace RepairMe.Model.Repository
     {
         private readonly DbContext _dbContext;
 
-        public UsersRepository()
+        public UsersRepository(DbContext context)
         {
             _dbContext = new DbContext();
         }
@@ -27,7 +26,7 @@ namespace RepairMe.Model.Repository
                 _dbContext.OpenConnection();
 
                 var query = "INSERT INTO users (name, password, age, email, phone, address, role) " +
-                            "VALUES (@username, @password, @name, @age, @email, @phone, @address, user)";
+                            "VALUES (@username, @password, @name, @age, @email, @phone, @address, @role)";
 
                 using (var cmd = new MySqlCommand(query, _dbContext.Connection))
                 {
@@ -37,6 +36,7 @@ namespace RepairMe.Model.Repository
                     cmd.Parameters.AddWithValue("@email", user.Email);
                     cmd.Parameters.AddWithValue("@phone", user.Phone);
                     cmd.Parameters.AddWithValue("@address", user.Address);
+                    cmd.Parameters.AddWithValue("@role", user.Role);
 
                     cmd.ExecuteNonQuery();
                 }

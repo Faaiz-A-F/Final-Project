@@ -20,7 +20,6 @@ namespace RepairMe
         public SignIn()
         {
             InitializeComponent();
-            _usersController = new UsersController();
         }
 
         private void btnSignIn_Click(object sender, EventArgs e)
@@ -50,7 +49,7 @@ namespace RepairMe
                 if (user != null)
                 {
                     // Sign-in successful
-                    MessageBox.Show($"Welcome, {user.Name}!", "Sign-In Successful", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show($"Welcome, {user.Username}!", "Sign-In Successful", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                     // TODO: Open main application window or perform any other post-login actions
                 }
