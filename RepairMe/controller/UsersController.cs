@@ -15,25 +15,45 @@ namespace RepairMe.Controller
     {
         private readonly UsersRepository _usersRepository;
 
+        // Default constructor
         public UsersController()
         {
-            _usersRepository = new UsersRepository();
+            var dbContext = new DbContext(); // Create a DbContext instance
+            _usersRepository = new UsersRepository(dbContext); // Pass it to UsersRepository
         }
 
-        public void AddUser(string username, string password, int age, string name, string email, string phone, string address, string role)
+        // Constructor for dependency injection
+        public UsersController(UsersRepository usersRepository)
+        {
+            _usersRepository = usersRepository;
+        }
+
+        public void AddUser(string username, string password, int age, string email, string phone, string address, string role)
         {
             try
             {
                 // Validate inputs
-                if (string.IsNullOrWhiteSpace(name))
+                if (string.IsNullOrWhiteSpace(username))
                 {
-                    MessageBox.Show("Name cannot be empty!", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("Username cannot be empty.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
 
                 if (string.IsNullOrWhiteSpace(password))
                 {
-                    MessageBox.Show("Password cannot be empty!", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("Password cannot be empty.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                if (age <= 0)
+                {
+                    MessageBox.Show("Age must be a positive number.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                if (string.IsNullOrWhiteSpace(email))
+                {
+                    MessageBox.Show("Email cannot be empty.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
 
