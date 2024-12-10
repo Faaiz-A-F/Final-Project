@@ -43,7 +43,6 @@ namespace RepairMe.Controller
                     Username = username,
                     Password = password,
                     Age = age,
-                    Name = name,
                     Email = email,
                     Phone = phone,
                     Address = address,

@@ -29,25 +29,21 @@
         private void InitializeComponent()
         {
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.cbcategoryup = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.tbtokoup = new Guna.UI2.WinForms.Guna2TextBox();
+            this.tbemailup = new Guna.UI2.WinForms.Guna2TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.btnsignup = new Guna.UI2.WinForms.Guna2Button();
-            this.label8 = new System.Windows.Forms.Label();
-            this.rbtidakup = new Guna.UI2.WinForms.Guna2CustomRadioButton();
-            this.label7 = new System.Windows.Forms.Label();
-            this.rbiyaup = new Guna.UI2.WinForms.Guna2CustomRadioButton();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.tbpassup = new Guna.UI2.WinForms.Guna2TextBox();
+            this.tbageup = new Guna.UI2.WinForms.Guna2TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.tbemailup = new Guna.UI2.WinForms.Guna2TextBox();
+            this.tbepassup = new Guna.UI2.WinForms.Guna2TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.tbuserup = new Guna.UI2.WinForms.Guna2TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.btnback = new Guna.UI2.WinForms.Guna2Button();
+            this.tbphoneup = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.tbaddressup = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.guna2Panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -58,20 +54,16 @@
             this.guna2Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(226)))), ((int)(((byte)(225)))));
             this.guna2Panel1.BorderRadius = 20;
             this.guna2Panel1.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
-            this.guna2Panel1.Controls.Add(this.cbcategoryup);
-            this.guna2Panel1.Controls.Add(this.label10);
-            this.guna2Panel1.Controls.Add(this.tbtokoup);
+            this.guna2Panel1.Controls.Add(this.tbaddressup);
+            this.guna2Panel1.Controls.Add(this.label6);
+            this.guna2Panel1.Controls.Add(this.tbphoneup);
+            this.guna2Panel1.Controls.Add(this.label5);
+            this.guna2Panel1.Controls.Add(this.tbemailup);
             this.guna2Panel1.Controls.Add(this.label9);
             this.guna2Panel1.Controls.Add(this.btnsignup);
-            this.guna2Panel1.Controls.Add(this.label8);
-            this.guna2Panel1.Controls.Add(this.rbtidakup);
-            this.guna2Panel1.Controls.Add(this.label7);
-            this.guna2Panel1.Controls.Add(this.rbiyaup);
-            this.guna2Panel1.Controls.Add(this.label6);
-            this.guna2Panel1.Controls.Add(this.label5);
-            this.guna2Panel1.Controls.Add(this.tbpassup);
+            this.guna2Panel1.Controls.Add(this.tbageup);
             this.guna2Panel1.Controls.Add(this.label4);
-            this.guna2Panel1.Controls.Add(this.tbemailup);
+            this.guna2Panel1.Controls.Add(this.tbepassup);
             this.guna2Panel1.Controls.Add(this.label3);
             this.guna2Panel1.Controls.Add(this.tbuserup);
             this.guna2Panel1.Controls.Add(this.label2);
@@ -81,200 +73,6 @@
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
             this.guna2Panel1.Size = new System.Drawing.Size(452, 643);
             this.guna2Panel1.TabIndex = 0;
-            // 
-            // cbcategoryup
-            // 
-            this.cbcategoryup.Animated = true;
-            this.cbcategoryup.BackColor = System.Drawing.Color.Transparent;
-            this.cbcategoryup.BorderRadius = 10;
-            this.cbcategoryup.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cbcategoryup.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbcategoryup.FocusedColor = System.Drawing.Color.Empty;
-            this.cbcategoryup.FocusedState.Parent = this.cbcategoryup;
-            this.cbcategoryup.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cbcategoryup.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.cbcategoryup.FormattingEnabled = true;
-            this.cbcategoryup.HoverState.Parent = this.cbcategoryup;
-            this.cbcategoryup.ItemHeight = 30;
-            this.cbcategoryup.ItemsAppearance.Parent = this.cbcategoryup;
-            this.cbcategoryup.Location = new System.Drawing.Point(33, 652);
-            this.cbcategoryup.Name = "cbcategoryup";
-            this.cbcategoryup.ShadowDecoration.Parent = this.cbcategoryup;
-            this.cbcategoryup.Size = new System.Drawing.Size(344, 36);
-            this.cbcategoryup.TabIndex = 17;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(36, 624);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(84, 25);
-            this.label10.TabIndex = 16;
-            this.label10.Text = "Category";
-            // 
-            // tbtokoup
-            // 
-            this.tbtokoup.BorderRadius = 10;
-            this.tbtokoup.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.tbtokoup.DefaultText = "";
-            this.tbtokoup.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.tbtokoup.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.tbtokoup.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.tbtokoup.DisabledState.Parent = this.tbtokoup;
-            this.tbtokoup.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.tbtokoup.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.tbtokoup.FocusedState.Parent = this.tbtokoup;
-            this.tbtokoup.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.tbtokoup.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.tbtokoup.HoverState.Parent = this.tbtokoup;
-            this.tbtokoup.Location = new System.Drawing.Point(33, 573);
-            this.tbtokoup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.tbtokoup.Name = "tbtokoup";
-            this.tbtokoup.PasswordChar = '\0';
-            this.tbtokoup.PlaceholderText = "";
-            this.tbtokoup.SelectedText = "";
-            this.tbtokoup.ShadowDecoration.Parent = this.tbtokoup;
-            this.tbtokoup.Size = new System.Drawing.Size(344, 35);
-            this.tbtokoup.TabIndex = 15;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(36, 544);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(102, 25);
-            this.label9.TabIndex = 14;
-            this.label9.Text = "Nama Toko";
-            // 
-            // btnsignup
-            // 
-            this.btnsignup.Animated = true;
-            this.btnsignup.BorderRadius = 10;
-            this.btnsignup.CheckedState.Parent = this.btnsignup;
-            this.btnsignup.CustomImages.Parent = this.btnsignup;
-            this.btnsignup.FillColor = System.Drawing.SystemColors.HotTrack;
-            this.btnsignup.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnsignup.ForeColor = System.Drawing.Color.White;
-            this.btnsignup.HoverState.Parent = this.btnsignup;
-            this.btnsignup.Location = new System.Drawing.Point(33, 719);
-            this.btnsignup.Name = "btnsignup";
-            this.btnsignup.ShadowDecoration.Parent = this.btnsignup;
-            this.btnsignup.Size = new System.Drawing.Size(344, 45);
-            this.btnsignup.TabIndex = 13;
-            this.btnsignup.Text = "Sign Up Now";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(218, 501);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(54, 25);
-            this.label8.TabIndex = 12;
-            this.label8.Text = "Tidak";
-            // 
-            // rbtidakup
-            // 
-            this.rbtidakup.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.rbtidakup.CheckedState.BorderThickness = 0;
-            this.rbtidakup.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.rbtidakup.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.rbtidakup.CheckedState.Parent = this.rbtidakup;
-            this.rbtidakup.Location = new System.Drawing.Point(195, 505);
-            this.rbtidakup.Name = "rbtidakup";
-            this.rbtidakup.ShadowDecoration.Parent = this.rbtidakup;
-            this.rbtidakup.Size = new System.Drawing.Size(20, 20);
-            this.rbtidakup.TabIndex = 11;
-            this.rbtidakup.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.rbtidakup.UncheckedState.BorderThickness = 2;
-            this.rbtidakup.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.rbtidakup.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
-            this.rbtidakup.UncheckedState.Parent = this.rbtidakup;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(64, 502);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(35, 25);
-            this.label7.TabIndex = 10;
-            this.label7.Text = "Iya";
-            // 
-            // rbiyaup
-            // 
-            this.rbiyaup.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.rbiyaup.CheckedState.BorderThickness = 0;
-            this.rbiyaup.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.rbiyaup.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.rbiyaup.CheckedState.Parent = this.rbiyaup;
-            this.rbiyaup.Location = new System.Drawing.Point(41, 506);
-            this.rbiyaup.Name = "rbiyaup";
-            this.rbiyaup.ShadowDecoration.Parent = this.rbiyaup;
-            this.rbiyaup.Size = new System.Drawing.Size(20, 20);
-            this.rbiyaup.TabIndex = 9;
-            this.rbiyaup.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.rbiyaup.UncheckedState.BorderThickness = 2;
-            this.rbiyaup.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.rbiyaup.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
-            this.rbiyaup.UncheckedState.Parent = this.rbiyaup;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(37, 468);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(345, 23);
-            this.label6.TabIndex = 8;
-            this.label6.Text = "Apakah anda juga ingin membuka bengkel?";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(36, 443);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(56, 25);
-            this.label5.TabIndex = 7;
-            this.label5.Text = "Store";
-            // 
-            // tbpassup
-            // 
-            this.tbpassup.BorderRadius = 10;
-            this.tbpassup.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.tbpassup.DefaultText = "";
-            this.tbpassup.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.tbpassup.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.tbpassup.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.tbpassup.DisabledState.Parent = this.tbpassup;
-            this.tbpassup.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.tbpassup.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.tbpassup.FocusedState.Parent = this.tbpassup;
-            this.tbpassup.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.tbpassup.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.tbpassup.HoverState.Parent = this.tbpassup;
-            this.tbpassup.Location = new System.Drawing.Point(33, 362);
-            this.tbpassup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.tbpassup.Name = "tbpassup";
-            this.tbpassup.PasswordChar = '\0';
-            this.tbpassup.PlaceholderText = "";
-            this.tbpassup.SelectedText = "";
-            this.tbpassup.ShadowDecoration.Parent = this.tbpassup;
-            this.tbpassup.Size = new System.Drawing.Size(344, 35);
-            this.tbpassup.TabIndex = 6;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(36, 333);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(87, 25);
-            this.label4.TabIndex = 5;
-            this.label4.Text = "Password";
             // 
             // tbemailup
             // 
@@ -291,7 +89,7 @@
             this.tbemailup.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.tbemailup.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbemailup.HoverState.Parent = this.tbemailup;
-            this.tbemailup.Location = new System.Drawing.Point(33, 276);
+            this.tbemailup.Location = new System.Drawing.Point(33, 451);
             this.tbemailup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tbemailup.Name = "tbemailup";
             this.tbemailup.PasswordChar = '\0';
@@ -299,7 +97,94 @@
             this.tbemailup.SelectedText = "";
             this.tbemailup.ShadowDecoration.Parent = this.tbemailup;
             this.tbemailup.Size = new System.Drawing.Size(344, 35);
-            this.tbemailup.TabIndex = 4;
+            this.tbemailup.TabIndex = 15;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(36, 422);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(124, 25);
+            this.label9.TabIndex = 14;
+            this.label9.Text = "Email Address";
+            // 
+            // btnsignup
+            // 
+            this.btnsignup.Animated = true;
+            this.btnsignup.BorderRadius = 10;
+            this.btnsignup.CheckedState.Parent = this.btnsignup;
+            this.btnsignup.CustomImages.Parent = this.btnsignup;
+            this.btnsignup.FillColor = System.Drawing.SystemColors.HotTrack;
+            this.btnsignup.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnsignup.ForeColor = System.Drawing.Color.White;
+            this.btnsignup.HoverState.Parent = this.btnsignup;
+            this.btnsignup.Location = new System.Drawing.Point(33, 691);
+            this.btnsignup.Name = "btnsignup";
+            this.btnsignup.ShadowDecoration.Parent = this.btnsignup;
+            this.btnsignup.Size = new System.Drawing.Size(344, 45);
+            this.btnsignup.TabIndex = 13;
+            this.btnsignup.Text = "Sign Up Now";
+            // 
+            // tbageup
+            // 
+            this.tbageup.BorderRadius = 10;
+            this.tbageup.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tbageup.DefaultText = "";
+            this.tbageup.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.tbageup.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.tbageup.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbageup.DisabledState.Parent = this.tbageup;
+            this.tbageup.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbageup.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tbageup.FocusedState.Parent = this.tbageup;
+            this.tbageup.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.tbageup.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tbageup.HoverState.Parent = this.tbageup;
+            this.tbageup.Location = new System.Drawing.Point(33, 362);
+            this.tbageup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbageup.Name = "tbageup";
+            this.tbageup.PasswordChar = '\0';
+            this.tbageup.PlaceholderText = "";
+            this.tbageup.SelectedText = "";
+            this.tbageup.ShadowDecoration.Parent = this.tbageup;
+            this.tbageup.Size = new System.Drawing.Size(344, 35);
+            this.tbageup.TabIndex = 6;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(36, 333);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(44, 25);
+            this.label4.TabIndex = 5;
+            this.label4.Text = "Age";
+            // 
+            // tbepassup
+            // 
+            this.tbepassup.BorderRadius = 10;
+            this.tbepassup.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tbepassup.DefaultText = "";
+            this.tbepassup.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.tbepassup.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.tbepassup.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbepassup.DisabledState.Parent = this.tbepassup;
+            this.tbepassup.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbepassup.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tbepassup.FocusedState.Parent = this.tbepassup;
+            this.tbepassup.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.tbepassup.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tbepassup.HoverState.Parent = this.tbepassup;
+            this.tbepassup.Location = new System.Drawing.Point(33, 276);
+            this.tbepassup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbepassup.Name = "tbepassup";
+            this.tbepassup.PasswordChar = '\0';
+            this.tbepassup.PlaceholderText = "";
+            this.tbepassup.SelectedText = "";
+            this.tbepassup.ShadowDecoration.Parent = this.tbepassup;
+            this.tbepassup.Size = new System.Drawing.Size(344, 35);
+            this.tbepassup.TabIndex = 4;
             // 
             // label3
             // 
@@ -307,9 +192,9 @@
             this.label3.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(36, 247);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(124, 25);
+            this.label3.Size = new System.Drawing.Size(87, 25);
             this.label3.TabIndex = 3;
-            this.label3.Text = "Email Address";
+            this.label3.Text = "Password";
             // 
             // tbuserup
             // 
@@ -375,6 +260,76 @@
             this.btnback.TabIndex = 18;
             this.btnback.Text = "< Back to Sign In";
             // 
+            // tbphoneup
+            // 
+            this.tbphoneup.BorderRadius = 10;
+            this.tbphoneup.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tbphoneup.DefaultText = "";
+            this.tbphoneup.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.tbphoneup.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.tbphoneup.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbphoneup.DisabledState.Parent = this.tbphoneup;
+            this.tbphoneup.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbphoneup.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tbphoneup.FocusedState.Parent = this.tbphoneup;
+            this.tbphoneup.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.tbphoneup.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tbphoneup.HoverState.Parent = this.tbphoneup;
+            this.tbphoneup.Location = new System.Drawing.Point(33, 537);
+            this.tbphoneup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbphoneup.Name = "tbphoneup";
+            this.tbphoneup.PasswordChar = '\0';
+            this.tbphoneup.PlaceholderText = "";
+            this.tbphoneup.SelectedText = "";
+            this.tbphoneup.ShadowDecoration.Parent = this.tbphoneup;
+            this.tbphoneup.Size = new System.Drawing.Size(344, 35);
+            this.tbphoneup.TabIndex = 17;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(36, 508);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(62, 25);
+            this.label5.TabIndex = 16;
+            this.label5.Text = "Phone";
+            // 
+            // tbaddressup
+            // 
+            this.tbaddressup.BorderRadius = 10;
+            this.tbaddressup.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tbaddressup.DefaultText = "";
+            this.tbaddressup.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.tbaddressup.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.tbaddressup.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbaddressup.DisabledState.Parent = this.tbaddressup;
+            this.tbaddressup.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbaddressup.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tbaddressup.FocusedState.Parent = this.tbaddressup;
+            this.tbaddressup.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.tbaddressup.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tbaddressup.HoverState.Parent = this.tbaddressup;
+            this.tbaddressup.Location = new System.Drawing.Point(33, 625);
+            this.tbaddressup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbaddressup.Name = "tbaddressup";
+            this.tbaddressup.PasswordChar = '\0';
+            this.tbaddressup.PlaceholderText = "";
+            this.tbaddressup.SelectedText = "";
+            this.tbaddressup.ShadowDecoration.Parent = this.tbaddressup;
+            this.tbaddressup.Size = new System.Drawing.Size(344, 35);
+            this.tbaddressup.TabIndex = 19;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(36, 596);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(77, 25);
+            this.label6.TabIndex = 18;
+            this.label6.Text = "Address";
+            // 
             // SignUp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -398,22 +353,18 @@
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
-        private Guna.UI2.WinForms.Guna2TextBox tbpassup;
+        private Guna.UI2.WinForms.Guna2TextBox tbageup;
         private System.Windows.Forms.Label label4;
-        private Guna.UI2.WinForms.Guna2TextBox tbemailup;
+        private Guna.UI2.WinForms.Guna2TextBox tbepassup;
         private System.Windows.Forms.Label label3;
         private Guna.UI2.WinForms.Guna2TextBox tbuserup;
-        private Guna.UI2.WinForms.Guna2ComboBox cbcategoryup;
-        private System.Windows.Forms.Label label10;
-        private Guna.UI2.WinForms.Guna2TextBox tbtokoup;
+        private Guna.UI2.WinForms.Guna2TextBox tbemailup;
         private System.Windows.Forms.Label label9;
         private Guna.UI2.WinForms.Guna2Button btnsignup;
-        private System.Windows.Forms.Label label8;
-        private Guna.UI2.WinForms.Guna2CustomRadioButton rbtidakup;
-        private System.Windows.Forms.Label label7;
-        private Guna.UI2.WinForms.Guna2CustomRadioButton rbiyaup;
         private Guna.UI2.WinForms.Guna2Button btnback;
+        private Guna.UI2.WinForms.Guna2TextBox tbphoneup;
+        private System.Windows.Forms.Label label5;
+        private Guna.UI2.WinForms.Guna2TextBox tbaddressup;
+        private System.Windows.Forms.Label label6;
     }
 }
