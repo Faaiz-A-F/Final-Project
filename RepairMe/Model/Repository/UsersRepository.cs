@@ -27,7 +27,7 @@ namespace RepairMe.Model.Repository
                 _dbContext.OpenConnection();
 
                 var query = "INSERT INTO users (name, password, age, email, phone, address, role) " +
-                            "VALUES (@username, @password, @name, @age, @email, @phone, @address, @role)";
+                            "VALUES (@username, @password, @name, @age, @email, @phone, @address, user)";
 
                 using (var cmd = new MySqlCommand(query, _dbContext.Connection))
                 {
@@ -37,7 +37,38 @@ namespace RepairMe.Model.Repository
                     cmd.Parameters.AddWithValue("@email", user.Email);
                     cmd.Parameters.AddWithValue("@phone", user.Phone);
                     cmd.Parameters.AddWithValue("@address", user.Address);
-                    cmd.Parameters.AddWithValue("@role", user.Role);
+
+                    cmd.ExecuteNonQuery();
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error adding user: {ex.Message}");
+                throw;
+            }
+            finally
+            {
+                _dbContext.CloseConnection();
+            }
+        }
+
+        public void AddAdmin(Users user)
+        {
+            try
+            {
+                _dbContext.OpenConnection();
+
+                var query = "INSERT INTO users (name, password, age, email, phone, address, role) " +
+                            "VALUES (@username, @password, @name, @age, @email, @phone, @address, admin)";
+
+                using (var cmd = new MySqlCommand(query, _dbContext.Connection))
+                {
+                    cmd.Parameters.AddWithValue("@username", user.Username);
+                    cmd.Parameters.AddWithValue("@password", user.Password);
+                    cmd.Parameters.AddWithValue("@age", user.Age);
+                    cmd.Parameters.AddWithValue("@email", user.Email);
+                    cmd.Parameters.AddWithValue("@phone", user.Phone);
+                    cmd.Parameters.AddWithValue("@address", user.Address);
 
                     cmd.ExecuteNonQuery();
                 }
