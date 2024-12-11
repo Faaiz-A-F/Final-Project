@@ -32,10 +32,7 @@ namespace RepairMe
                 catch (Exception ex)
                 {
                     // Display error message if connection fails
-                    MessageBox.Show($"Failed to connect to the database.\n\nError: {ex.Message}",
-                                    "Connection Error",
-                                    MessageBoxButtons.OK,
-                                    MessageBoxIcon.Error);
+                    MessageBox.Show($"Failed to connect to the database.\n\nError: {ex.Message}", "Connection Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
         }
