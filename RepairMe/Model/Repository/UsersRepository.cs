@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 using RepairMe.Model.Entity;
 using MySql.Data.MySqlClient;
+using System.Windows.Forms;
 
 namespace RepairMe.Model.Repository
 {
@@ -43,7 +44,8 @@ namespace RepairMe.Model.Repository
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Error adding user: {ex.Message}");
+                // Display error message if connection fails
+                MessageBox.Show($"Failed to connect to the database.\n\nError: {ex.Message}", "Connection Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 throw;
             }
             finally
@@ -75,7 +77,8 @@ namespace RepairMe.Model.Repository
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Error adding user: {ex.Message}");
+                // Display error message if connection fails
+                MessageBox.Show($"Failed to connect to the database.\n\nError: {ex.Message}", "Connection Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 throw;
             }
             finally
@@ -117,7 +120,8 @@ namespace RepairMe.Model.Repository
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Error getting user: {ex.Message}");
+                // Display error message if connection fails
+                MessageBox.Show($"Failed to connect to the database.\n\nError: {ex.Message}", "Connection Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 throw;
             }
             finally
