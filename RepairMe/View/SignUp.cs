@@ -23,7 +23,7 @@ namespace RepairMe
             InitializeComponent();
         }
 
-        private void btnSignUp_Click(object sender, EventArgs e)
+        private void btnSignUp_Click_1(object sender, EventArgs e)
         {
             using (var dbContext = new DbContext())
             {
@@ -37,10 +37,9 @@ namespace RepairMe
                     var password = tbPassUp.Text.Trim();
                     var age = int.Parse(tbAgeUp.Text.Trim());
                     var email = tbEmailUp.Text.Trim();
-                    var phone = tbPhoneUp.Text.Trim();
+                    var phone = int.Parse(tbPhoneUp.Text.Trim());
                     var address = tbAddressUp.Text.Trim();
                     var role = "user";
-
                     usersController.AddUser(username, password, age, email, phone, address, role);
 
                     // Display success message

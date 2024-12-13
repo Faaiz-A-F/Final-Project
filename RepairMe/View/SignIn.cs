@@ -23,7 +23,7 @@ namespace RepairMe
             InitializeComponent();
         }
 
-        private void btnSignIn_Click(object sender, EventArgs e)
+        private void btnSignIn_Click_1(object sender, EventArgs e)
         {
             using (var dbContext = new DbContext())
             {
@@ -71,7 +71,6 @@ namespace RepairMe
                     MessageBox.Show($"An error occurred: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
-            
         }
     }
 }

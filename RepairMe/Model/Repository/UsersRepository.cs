@@ -26,20 +26,19 @@ namespace RepairMe.Model.Repository
             {
                 _dbContext.OpenConnection();
 
-                var query = "INSERT INTO users (name, password, age, email, phone, address, role) " +
-                            "VALUES (@username, @password, @name, @age, @email, @phone, @address, @role)";
+                var query = "INSERT INTO users (name, password, age, email, phone, address, role, created_at) " +
+                    "VALUES (@name, @password, @age, @email, @phone, @address, @role, @created_at)";
 
                 using (var cmd = new MySqlCommand(query, _dbContext.Connection))
                 {
-                    cmd.Parameters.AddWithValue("@username", user.Username);
+                    cmd.Parameters.AddWithValue("@name", user.Username);    // Ensure 'Username' matches your database schema
                     cmd.Parameters.AddWithValue("@password", user.Password);
                     cmd.Parameters.AddWithValue("@age", user.Age);
                     cmd.Parameters.AddWithValue("@email", user.Email);
                     cmd.Parameters.AddWithValue("@phone", user.Phone);
                     cmd.Parameters.AddWithValue("@address", user.Address);
                     cmd.Parameters.AddWithValue("@role", user.Role);
-
-                    cmd.ExecuteNonQuery();
+                    cmd.Parameters.AddWithValue("@created_at", user.CreatedAt.ToString("yyyy-MM-dd HH:mm:ss"));
                 }
             }
             catch (Exception ex)
@@ -106,11 +105,11 @@ namespace RepairMe.Model.Repository
                         {
                             return new Users
                             {
-                                Id = reader.GetInt32("id"),
-                                Username = reader.GetString("username"),
+                                Id = reader.GetInt32("user_id"),
+                                Username = reader.GetString("name"),
                                 Password = reader.GetString("password"),
                                 Email = reader.GetString("email"),
-                                Phone = reader.GetString("phone"),
+                                Phone = reader.GetInt32("phone"),
                                 Address = reader.GetString("address"),
                                 Role = reader.GetString("role")
                             };

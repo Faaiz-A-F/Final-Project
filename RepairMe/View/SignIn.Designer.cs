@@ -55,11 +55,11 @@
             this.guna2Panel1.Controls.Add(this.label2);
             this.guna2Panel1.Controls.Add(this.label1);
             this.guna2Panel1.Controls.Add(this.guna2Panel2);
-            this.guna2Panel1.Location = new System.Drawing.Point(130, 12);
-            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2Panel1.Location = new System.Drawing.Point(173, 15);
+            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
-            this.guna2Panel1.Size = new System.Drawing.Size(716, 525);
+            this.guna2Panel1.Size = new System.Drawing.Size(955, 646);
             this.guna2Panel1.TabIndex = 1;
             // 
             // signupbengkel
@@ -67,10 +67,9 @@
             this.signupbengkel.AutoSize = true;
             this.signupbengkel.Font = new System.Drawing.Font("Poppins", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.signupbengkel.LinkVisited = true;
-            this.signupbengkel.Location = new System.Drawing.Point(584, 492);
-            this.signupbengkel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.signupbengkel.Location = new System.Drawing.Point(779, 606);
             this.signupbengkel.Name = "signupbengkel";
-            this.signupbengkel.Size = new System.Drawing.Size(70, 19);
+            this.signupbengkel.Size = new System.Drawing.Size(80, 23);
             this.signupbengkel.TabIndex = 8;
             this.signupbengkel.TabStop = true;
             this.signupbengkel.Text = "BUAT DISINI";
@@ -81,10 +80,9 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Poppins", 7.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(440, 492);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Location = new System.Drawing.Point(587, 606);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(148, 19);
+            this.label4.Size = new System.Drawing.Size(173, 23);
             this.label4.TabIndex = 9;
             this.label4.Text = "Buat akun untuk bengkel?";
             // 
@@ -98,11 +96,11 @@
             this.btnsignup.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnsignup.ForeColor = System.Drawing.Color.White;
             this.btnsignup.HoverState.Parent = this.btnsignup;
-            this.btnsignup.Location = new System.Drawing.Point(444, 396);
-            this.btnsignup.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnsignup.Location = new System.Drawing.Point(592, 487);
+            this.btnsignup.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnsignup.Name = "btnsignup";
             this.btnsignup.ShadowDecoration.Parent = this.btnsignup;
-            this.btnsignup.Size = new System.Drawing.Size(183, 37);
+            this.btnsignup.Size = new System.Drawing.Size(244, 46);
             this.btnsignup.TabIndex = 6;
             this.btnsignup.Text = "Sign Up";
             // 
@@ -116,13 +114,14 @@
             this.btnSignIn.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnSignIn.ForeColor = System.Drawing.Color.White;
             this.btnSignIn.HoverState.Parent = this.btnSignIn;
-            this.btnSignIn.Location = new System.Drawing.Point(444, 354);
-            this.btnSignIn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSignIn.Location = new System.Drawing.Point(592, 436);
+            this.btnSignIn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSignIn.Name = "btnSignIn";
             this.btnSignIn.ShadowDecoration.Parent = this.btnSignIn;
-            this.btnSignIn.Size = new System.Drawing.Size(183, 37);
+            this.btnSignIn.Size = new System.Drawing.Size(244, 46);
             this.btnSignIn.TabIndex = 5;
             this.btnSignIn.Text = "Sign In to My Account";
+            this.btnSignIn.Click += new System.EventHandler(this.btnSignIn_Click_1);
             // 
             // tbpassin
             // 
@@ -140,24 +139,23 @@
             this.tbpassin.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.tbpassin.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbpassin.HoverState.Parent = this.tbpassin;
-            this.tbpassin.Location = new System.Drawing.Point(392, 264);
-            this.tbpassin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbpassin.Location = new System.Drawing.Point(523, 325);
+            this.tbpassin.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.tbpassin.Name = "tbpassin";
             this.tbpassin.PasswordChar = '\0';
             this.tbpassin.PlaceholderText = "";
             this.tbpassin.SelectedText = "";
             this.tbpassin.ShadowDecoration.Parent = this.tbpassin;
-            this.tbpassin.Size = new System.Drawing.Size(301, 29);
+            this.tbpassin.Size = new System.Drawing.Size(401, 36);
             this.tbpassin.TabIndex = 4;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(400, 240);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(533, 295);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(70, 20);
+            this.label3.Size = new System.Drawing.Size(87, 25);
             this.label3.TabIndex = 3;
             this.label3.Text = "Password";
             // 
@@ -177,15 +175,15 @@
             this.tbuserin.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.tbuserin.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbuserin.HoverState.Parent = this.tbuserin;
-            this.tbuserin.Location = new System.Drawing.Point(392, 193);
-            this.tbuserin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbuserin.Location = new System.Drawing.Point(523, 238);
+            this.tbuserin.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.tbuserin.Name = "tbuserin";
             this.tbuserin.PasswordChar = '\0';
             this.tbuserin.PlaceholderForeColor = System.Drawing.Color.White;
             this.tbuserin.PlaceholderText = "";
             this.tbuserin.SelectedText = "";
             this.tbuserin.ShadowDecoration.Parent = this.tbuserin;
-            this.tbuserin.Size = new System.Drawing.Size(301, 29);
+            this.tbuserin.Size = new System.Drawing.Size(401, 36);
             this.tbuserin.TabIndex = 2;
             // 
             // label2
@@ -193,10 +191,9 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(400, 169);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(533, 208);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(75, 20);
+            this.label2.Size = new System.Drawing.Size(91, 25);
             this.label2.TabIndex = 1;
             this.label2.Text = "Username";
             // 
@@ -204,10 +201,9 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(371, 50);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(495, 62);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(342, 74);
+            this.label1.Size = new System.Drawing.Size(410, 90);
             this.label1.TabIndex = 0;
             this.label1.Text = "Temukan bengkel terbaik\r\ndengan mudah";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -218,22 +214,22 @@
             this.guna2Panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.guna2Panel2.Location = new System.Drawing.Point(0, 0);
-            this.guna2Panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2Panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.ShadowDecoration.Parent = this.guna2Panel2;
-            this.guna2Panel2.Size = new System.Drawing.Size(367, 525);
+            this.guna2Panel2.Size = new System.Drawing.Size(489, 646);
             this.guna2Panel2.TabIndex = 7;
             // 
             // SignIn
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(226)))), ((int)(((byte)(225)))));
             this.BackgroundImage = global::RepairMe.Properties.Resources._05;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(946, 547);
+            this.ClientSize = new System.Drawing.Size(1261, 673);
             this.Controls.Add(this.guna2Panel1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "SignIn";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Repair Me";
