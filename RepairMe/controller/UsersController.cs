@@ -16,10 +16,9 @@ namespace RepairMe.Controller
         private readonly UsersRepository _usersRepository;
 
         // Default constructor
-        public UsersController()
+        public UsersController(DbContext context)
         {
-            var dbContext = new DbContext(); // Create a DbContext instance
-            _usersRepository = new UsersRepository(dbContext); // Pass it to UsersRepository
+            _usersRepository = new UsersRepository(context);
         }
 
         // Constructor for dependency injection
@@ -63,7 +62,6 @@ namespace RepairMe.Controller
                     Username = username,
                     Password = password,
                     Age = age,
-                    Name = name,
                     Email = email,
                     Phone = phone,
                     Address = address,

@@ -108,6 +108,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controller\UsersController.cs" />
+    <Compile Include="Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\MakeBengkel.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -143,6 +149,9 @@
     <Compile Include="Model\Repository\UsersRepository.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\MakeBengkel.resx">
       <DependentUpon>MakeBengkel.cs</DependentUpon>
     </EmbeddedResource>
@@ -187,6 +196,7 @@
     <Content Include="Database\repairme.sql" />
     <Content Include="Guna UI\Guna.UI2.dll" />
     <Content Include="Resources\logo.png" />
+    <None Include="Resources\Section Content.jpg" />
     <None Include="Resources\05.jpg" />
     <None Include="Resources\04.jpg" />
     <None Include="Resources\03.jpg" />

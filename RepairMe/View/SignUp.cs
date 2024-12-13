@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 using RepairMe.Controller;
+using RepairMe.Model.Context;
 using RepairMe.Model.Entity;
 
 namespace RepairMe
@@ -24,26 +25,41 @@ namespace RepairMe
 
         private void btnSignUp_Click(object sender, EventArgs e)
         {
-          // Collect input data
-          var username = tbUserUp.Text.Trim();
-          var password = tbPassUp.Text.Trim();
-          var age = int.Parse(tbAgeUp.Text.Trim());
-          var email = tbEmailUp.Text.Trim();
-          var phone = tbPhoneUp.Text.Trim();
-          var address = tbAddressUp.Text.Trim();
-          var role = "user";
+            using (var dbContext = new DbContext())
+            {
+                try
+                {
+                    // Pass DbContext to UsersController
+                    var usersController = new UsersController(dbContext);
 
-          // Add user through controller
-          var usersController = new UsersController();
-          usersController.AddUser(username, password, age, email, phone, address, role);
+                    // Collect input data
+                    var username = tbUserUp.Text.Trim();
+                    var password = tbPassUp.Text.Trim();
+                    var age = int.Parse(tbAgeUp.Text.Trim());
+                    var email = tbEmailUp.Text.Trim();
+                    var phone = tbPhoneUp.Text.Trim();
+                    var address = tbAddressUp.Text.Trim();
+                    var role = "user";
 
-          // Clear the form fields after successful registration
-          tbUserUp.Clear();
-          tbPassUp.Clear();
-          tbAgeUp.Clear();
-          tbEmailUp.Clear();
-          tbPhoneUp.Clear();
-          tbAddressUp.Clear();
+                    usersController.AddUser(username, password, age, email, phone, address, role);
+
+                    // Display success message
+                    MessageBox.Show("User registered successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    // Clear the form fields after successful registration
+                    tbUserUp.Clear();
+                    tbPassUp.Clear();
+                    tbAgeUp.Clear();
+                    tbEmailUp.Clear();
+                    tbPhoneUp.Clear();
+                    tbAddressUp.Clear();
+                }
+                catch (Exception ex)
+                {
+                    // Display error message if connection fails
+                    MessageBox.Show($"Failed to connect to the database.\n\nError: {ex.Message}", "Connection Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
         }
     }
 }
