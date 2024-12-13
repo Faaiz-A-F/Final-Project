@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace RepairMe
+namespace RepairMe.View
 {
     public partial class Dashboard : Form
     {
@@ -17,9 +17,9 @@ namespace RepairMe
             InitializeComponent();
         }
 
-        private void guna2Button3_Click(object sender, EventArgs e)
+        private void guna2CircleButton1_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
     }
 }

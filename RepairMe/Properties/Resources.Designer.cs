@@ -123,9 +123,29 @@ namespace RepairMe.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Frog {
+            get {
+                object obj = ResourceManager.GetObject("Frog", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap logo {
             get {
                 object obj = ResourceManager.GetObject("logo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Porsche_911_992_GT3_RS {
+            get {
+                object obj = ResourceManager.GetObject("Porsche 911 992 GT3 RS", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

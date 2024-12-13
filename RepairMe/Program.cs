@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RepairMe.View;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -15,7 +16,8 @@ namespace RepairMe
         static void Main()
         {
             Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);          
+            Application.SetCompatibleTextRenderingDefault(false);
+            Application.Run(new Dashboard());
             Application.Run(new TestPage());
             Application.Run(new SignIn());
             Application.Run(new SignUp());
