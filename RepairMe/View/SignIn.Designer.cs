@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.signupbengkel = new System.Windows.Forms.LinkLabel();
             this.label4 = new System.Windows.Forms.Label();
@@ -39,6 +40,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.btnExit = new Guna.UI2.WinForms.Guna2CircleButton();
             this.guna2Panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -55,19 +58,20 @@
             this.guna2Panel1.Controls.Add(this.label2);
             this.guna2Panel1.Controls.Add(this.label1);
             this.guna2Panel1.Controls.Add(this.guna2Panel2);
-            this.guna2Panel1.Location = new System.Drawing.Point(173, 15);
+            this.guna2Panel1.Location = new System.Drawing.Point(163, 25);
             this.guna2Panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
-            this.guna2Panel1.Size = new System.Drawing.Size(955, 646);
+            this.guna2Panel1.Size = new System.Drawing.Size(955, 671);
             this.guna2Panel1.TabIndex = 1;
             // 
             // signupbengkel
             // 
+            this.signupbengkel.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(238)))), ((int)(((byte)(221)))));
             this.signupbengkel.AutoSize = true;
             this.signupbengkel.Font = new System.Drawing.Font("Poppins", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.signupbengkel.LinkVisited = true;
-            this.signupbengkel.Location = new System.Drawing.Point(779, 606);
+            this.signupbengkel.Location = new System.Drawing.Point(755, 606);
             this.signupbengkel.Name = "signupbengkel";
             this.signupbengkel.Size = new System.Drawing.Size(80, 23);
             this.signupbengkel.TabIndex = 8;
@@ -93,7 +97,7 @@
             this.btnsignup.CheckedState.Parent = this.btnsignup;
             this.btnsignup.CustomImages.Parent = this.btnsignup;
             this.btnsignup.FillColor = System.Drawing.SystemColors.InactiveCaption;
-            this.btnsignup.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnsignup.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnsignup.ForeColor = System.Drawing.Color.White;
             this.btnsignup.HoverState.Parent = this.btnsignup;
             this.btnsignup.Location = new System.Drawing.Point(592, 487);
@@ -111,7 +115,7 @@
             this.btnSignIn.CheckedState.Parent = this.btnSignIn;
             this.btnSignIn.CustomImages.Parent = this.btnSignIn;
             this.btnSignIn.FillColor = System.Drawing.SystemColors.HotTrack;
-            this.btnSignIn.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnSignIn.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSignIn.ForeColor = System.Drawing.Color.White;
             this.btnSignIn.HoverState.Parent = this.btnSignIn;
             this.btnSignIn.Location = new System.Drawing.Point(592, 436);
@@ -121,7 +125,6 @@
             this.btnSignIn.Size = new System.Drawing.Size(244, 46);
             this.btnSignIn.TabIndex = 5;
             this.btnSignIn.Text = "Sign In to My Account";
-            this.btnSignIn.Click += new System.EventHandler(this.btnSignIn_Click_1);
             // 
             // tbpassin
             // 
@@ -136,11 +139,12 @@
             this.tbpassin.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.tbpassin.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbpassin.FocusedState.Parent = this.tbpassin;
+            this.tbpassin.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbpassin.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.tbpassin.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbpassin.HoverState.Parent = this.tbpassin;
             this.tbpassin.Location = new System.Drawing.Point(523, 325);
-            this.tbpassin.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.tbpassin.Margin = new System.Windows.Forms.Padding(5);
             this.tbpassin.Name = "tbpassin";
             this.tbpassin.PasswordChar = '\0';
             this.tbpassin.PlaceholderText = "";
@@ -152,10 +156,10 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(533, 295);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(87, 25);
+            this.label3.Size = new System.Drawing.Size(95, 30);
             this.label3.TabIndex = 3;
             this.label3.Text = "Password";
             // 
@@ -172,11 +176,12 @@
             this.tbuserin.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.tbuserin.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbuserin.FocusedState.Parent = this.tbuserin;
+            this.tbuserin.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbuserin.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.tbuserin.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbuserin.HoverState.Parent = this.tbuserin;
             this.tbuserin.Location = new System.Drawing.Point(523, 238);
-            this.tbuserin.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.tbuserin.Margin = new System.Windows.Forms.Padding(5);
             this.tbuserin.Name = "tbuserin";
             this.tbuserin.PasswordChar = '\0';
             this.tbuserin.PlaceholderForeColor = System.Drawing.Color.White;
@@ -190,20 +195,20 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(533, 208);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(91, 25);
+            this.label2.Size = new System.Drawing.Size(101, 30);
             this.label2.TabIndex = 1;
             this.label2.Text = "Username";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Poppins", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(495, 62);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(410, 90);
+            this.label1.Size = new System.Drawing.Size(417, 106);
             this.label1.TabIndex = 0;
             this.label1.Text = "Temukan bengkel terbaik\r\ndengan mudah";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -217,19 +222,46 @@
             this.guna2Panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.ShadowDecoration.Parent = this.guna2Panel2;
-            this.guna2Panel2.Size = new System.Drawing.Size(489, 646);
+            this.guna2Panel2.Size = new System.Drawing.Size(489, 671);
             this.guna2Panel2.TabIndex = 7;
+            // 
+            // guna2Elipse1
+            // 
+            this.guna2Elipse1.TargetControl = this;
+            // 
+            // btnExit
+            // 
+            this.btnExit.BackColor = System.Drawing.Color.Transparent;
+            this.btnExit.CheckedState.Parent = this.btnExit;
+            this.btnExit.CustomImages.Parent = this.btnExit;
+            this.btnExit.FillColor = System.Drawing.Color.Red;
+            this.btnExit.Font = new System.Drawing.Font("Poppins Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExit.ForeColor = System.Drawing.Color.White;
+            this.btnExit.HoverState.Parent = this.btnExit;
+            this.btnExit.Location = new System.Drawing.Point(1239, 2);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.btnExit.ShadowDecoration.Parent = this.btnExit;
+            this.btnExit.Size = new System.Drawing.Size(37, 36);
+            this.btnExit.TabIndex = 20;
+            this.btnExit.Text = "X";
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // SignIn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(226)))), ((int)(((byte)(225)))));
             this.BackgroundImage = global::RepairMe.Properties.Resources._05;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1261, 673);
+            this.ClientSize = new System.Drawing.Size(1280, 720);
+            this.Controls.Add(this.btnExit);
             this.Controls.Add(this.guna2Panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "SignIn";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Repair Me";
@@ -251,5 +283,7 @@
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
         private System.Windows.Forms.LinkLabel signupbengkel;
         private System.Windows.Forms.Label label4;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
+        private Guna.UI2.WinForms.Guna2CircleButton btnExit;
     }
 }

@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace RepairMe.View
 {
-    public partial class MakeBengkel : Form
+    public partial class Dashboard : Form
     {
-        public MakeBengkel()
+        public Dashboard()
         {
             InitializeComponent();
         }
 
-        private void btnExit_Click(object sender, EventArgs e)
+        private void guna2CircleButton1_Click(object sender, EventArgs e)
         {
             this.Close();
         }
