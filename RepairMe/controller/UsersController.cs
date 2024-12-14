@@ -27,7 +27,7 @@ namespace RepairMe.Controller
             _usersRepository = usersRepository;
         }
 
-        public void AddUser(string username, string password, int age, string email, string phone, string address, string role)
+        public void AddUser(string username, string password, int age, string email, int phone, string address, string role)
         {
             try
             {
@@ -65,7 +65,8 @@ namespace RepairMe.Controller
                     Email = email,
                     Phone = phone,
                     Address = address,
-                    Role = role
+                    Role = role,
+                    CreatedAt = DateTime.Now
                 };
 
                 // Add user to the repository
