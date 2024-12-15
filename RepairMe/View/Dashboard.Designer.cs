@@ -31,46 +31,44 @@
             this.components = new System.ComponentModel.Container();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnexit = new Guna.UI2.WinForms.Guna2CircleButton();
             this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2CirclePictureBox2 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2GroupBox2 = new Guna.UI2.WinForms.Guna2GroupBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.guna2GroupBox1 = new Guna.UI2.WinForms.Guna2GroupBox();
             this.guna2Panel8 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2RatingStar6 = new Guna.UI2.WinForms.Guna2RatingStar();
             this.label8 = new System.Windows.Forms.Label();
-            this.guna2ImageButton6 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2Panel7 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2RatingStar5 = new Guna.UI2.WinForms.Guna2RatingStar();
             this.label7 = new System.Windows.Forms.Label();
-            this.guna2ImageButton5 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2Panel6 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2RatingStar4 = new Guna.UI2.WinForms.Guna2RatingStar();
             this.label6 = new System.Windows.Forms.Label();
-            this.guna2ImageButton4 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2Panel5 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2RatingStar3 = new Guna.UI2.WinForms.Guna2RatingStar();
             this.label5 = new System.Windows.Forms.Label();
-            this.guna2ImageButton3 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2RatingStar2 = new Guna.UI2.WinForms.Guna2RatingStar();
             this.label4 = new System.Windows.Forms.Label();
-            this.guna2ImageButton2 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2RatingStar1 = new Guna.UI2.WinForms.Guna2RatingStar();
             this.label3 = new System.Windows.Forms.Label();
+            this.guna2ImageButton6 = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.guna2ImageButton5 = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.guna2ImageButton4 = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.guna2ImageButton3 = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.guna2ImageButton2 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2ImageButton1 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.btnexit = new Guna.UI2.WinForms.Guna2CircleButton();
-            this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.guna2CirclePictureBox2 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.guna2Panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
             this.guna2Panel2.SuspendLayout();
             this.guna2GroupBox2.SuspendLayout();
             this.guna2GroupBox1.SuspendLayout();
@@ -81,6 +79,8 @@
             this.guna2Panel4.SuspendLayout();
             this.guna2Panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2Elipse1
@@ -105,6 +105,42 @@
             this.guna2Panel1.Size = new System.Drawing.Size(1280, 76);
             this.guna2Panel1.TabIndex = 0;
             // 
+            // guna2Button4
+            // 
+            this.guna2Button4.Animated = true;
+            this.guna2Button4.BorderRadius = 15;
+            this.guna2Button4.CheckedState.Parent = this.guna2Button4;
+            this.guna2Button4.CustomImages.Parent = this.guna2Button4;
+            this.guna2Button4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(141)))), ((int)(((byte)(218)))));
+            this.guna2Button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button4.ForeColor = System.Drawing.Color.White;
+            this.guna2Button4.HoverState.Parent = this.guna2Button4;
+            this.guna2Button4.Location = new System.Drawing.Point(1009, 19);
+            this.guna2Button4.Name = "guna2Button4";
+            this.guna2Button4.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(238)))), ((int)(((byte)(221)))));
+            this.guna2Button4.ShadowDecoration.Parent = this.guna2Button4;
+            this.guna2Button4.Size = new System.Drawing.Size(106, 35);
+            this.guna2Button4.TabIndex = 22;
+            this.guna2Button4.Text = "Fun Fact";
+            // 
+            // btnexit
+            // 
+            this.btnexit.BackColor = System.Drawing.Color.Transparent;
+            this.btnexit.CheckedState.Parent = this.btnexit;
+            this.btnexit.CustomImages.Parent = this.btnexit;
+            this.btnexit.FillColor = System.Drawing.Color.Transparent;
+            this.btnexit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnexit.ForeColor = System.Drawing.Color.Red;
+            this.btnexit.HoverState.Parent = this.btnexit;
+            this.btnexit.Location = new System.Drawing.Point(1250, -4);
+            this.btnexit.Name = "btnexit";
+            this.btnexit.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.btnexit.ShadowDecoration.Parent = this.btnexit;
+            this.btnexit.Size = new System.Drawing.Size(33, 35);
+            this.btnexit.TabIndex = 21;
+            this.btnexit.Text = "X";
+            this.btnexit.Click += new System.EventHandler(this.guna2CircleButton1_Click);
+            // 
             // guna2Button3
             // 
             this.guna2Button3.Animated = true;
@@ -112,7 +148,7 @@
             this.guna2Button3.CheckedState.Parent = this.guna2Button3;
             this.guna2Button3.CustomImages.Parent = this.guna2Button3;
             this.guna2Button3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(141)))), ((int)(((byte)(218)))));
-            this.guna2Button3.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button3.ForeColor = System.Drawing.Color.White;
             this.guna2Button3.HoverState.Parent = this.guna2Button3;
             this.guna2Button3.Location = new System.Drawing.Point(859, 20);
@@ -123,18 +159,6 @@
             this.guna2Button3.TabIndex = 5;
             this.guna2Button3.Text = "Pemesanan";
             // 
-            // guna2CirclePictureBox2
-            // 
-            this.guna2CirclePictureBox2.Image = global::RepairMe.Properties.Resources.Frog;
-            this.guna2CirclePictureBox2.Location = new System.Drawing.Point(1167, 6);
-            this.guna2CirclePictureBox2.Name = "guna2CirclePictureBox2";
-            this.guna2CirclePictureBox2.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CirclePictureBox2.ShadowDecoration.Parent = this.guna2CirclePictureBox2;
-            this.guna2CirclePictureBox2.Size = new System.Drawing.Size(66, 67);
-            this.guna2CirclePictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2CirclePictureBox2.TabIndex = 4;
-            this.guna2CirclePictureBox2.TabStop = false;
-            // 
             // guna2Button2
             // 
             this.guna2Button2.Animated = true;
@@ -142,7 +166,7 @@
             this.guna2Button2.CheckedState.Parent = this.guna2Button2;
             this.guna2Button2.CustomImages.Parent = this.guna2Button2;
             this.guna2Button2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(141)))), ((int)(((byte)(218)))));
-            this.guna2Button2.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button2.ForeColor = System.Drawing.Color.White;
             this.guna2Button2.HoverState.Parent = this.guna2Button2;
             this.guna2Button2.Location = new System.Drawing.Point(702, 20);
@@ -157,12 +181,12 @@
             // 
             this.linkLabel1.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(201)))), ((int)(((byte)(226)))));
             this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Font = new System.Drawing.Font("Poppins Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(238)))), ((int)(((byte)(221)))));
             this.linkLabel1.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(238)))), ((int)(((byte)(221)))));
             this.linkLabel1.Location = new System.Drawing.Point(93, 19);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(117, 36);
+            this.linkLabel1.Size = new System.Drawing.Size(110, 25);
             this.linkLabel1.TabIndex = 0;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Repair Me";
@@ -175,7 +199,7 @@
             this.guna2Button1.CheckedState.Parent = this.guna2Button1;
             this.guna2Button1.CustomImages.Parent = this.guna2Button1;
             this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(141)))), ((int)(((byte)(218)))));
-            this.guna2Button1.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button1.ForeColor = System.Drawing.Color.White;
             this.guna2Button1.HoverState.Parent = this.guna2Button1;
             this.guna2Button1.Location = new System.Drawing.Point(588, 19);
@@ -185,16 +209,6 @@
             this.guna2Button1.Size = new System.Drawing.Size(102, 35);
             this.guna2Button1.TabIndex = 2;
             this.guna2Button1.Text = "Home";
-            // 
-            // guna2CirclePictureBox1
-            // 
-            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(11, 10);
-            this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
-            this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CirclePictureBox1.ShadowDecoration.Parent = this.guna2CirclePictureBox1;
-            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(78, 59);
-            this.guna2CirclePictureBox1.TabIndex = 0;
-            this.guna2CirclePictureBox1.TabStop = false;
             // 
             // guna2Panel2
             // 
@@ -218,7 +232,7 @@
             this.guna2GroupBox2.Controls.Add(this.label1);
             this.guna2GroupBox2.CustomBorderColor = System.Drawing.Color.Transparent;
             this.guna2GroupBox2.FillColor = System.Drawing.Color.Transparent;
-            this.guna2GroupBox2.Font = new System.Drawing.Font("Poppins SemiBold", 10.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2GroupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2GroupBox2.ForeColor = System.Drawing.Color.Black;
             this.guna2GroupBox2.Location = new System.Drawing.Point(22, 591);
             this.guna2GroupBox2.Name = "guna2GroupBox2";
@@ -226,6 +240,16 @@
             this.guna2GroupBox2.Size = new System.Drawing.Size(1218, 471);
             this.guna2GroupBox2.TabIndex = 9;
             this.guna2GroupBox2.Text = "Bengkel Terdekat";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(536, 229);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(101, 38);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Maps";
             // 
             // guna2GroupBox1
             // 
@@ -238,7 +262,7 @@
             this.guna2GroupBox1.Controls.Add(this.guna2Panel3);
             this.guna2GroupBox1.CustomBorderColor = System.Drawing.Color.Transparent;
             this.guna2GroupBox1.FillColor = System.Drawing.Color.Transparent;
-            this.guna2GroupBox1.Font = new System.Drawing.Font("Poppins SemiBold", 10.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2GroupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2GroupBox1.ForeColor = System.Drawing.Color.Black;
             this.guna2GroupBox1.Location = new System.Drawing.Point(22, 333);
             this.guna2GroupBox1.Name = "guna2GroupBox1";
@@ -270,25 +294,13 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Poppins", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Black;
             this.label8.Location = new System.Drawing.Point(14, 119);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(111, 23);
+            this.label8.Size = new System.Drawing.Size(105, 16);
             this.label8.TabIndex = 5;
             this.label8.Text = "kodok speeding";
-            // 
-            // guna2ImageButton6
-            // 
-            this.guna2ImageButton6.CheckedState.Parent = this.guna2ImageButton6;
-            this.guna2ImageButton6.HoverState.Parent = this.guna2ImageButton6;
-            this.guna2ImageButton6.Image = global::RepairMe.Properties.Resources.Frog;
-            this.guna2ImageButton6.ImageSize = new System.Drawing.Size(150, 150);
-            this.guna2ImageButton6.Location = new System.Drawing.Point(18, 14);
-            this.guna2ImageButton6.Name = "guna2ImageButton6";
-            this.guna2ImageButton6.PressedState.Parent = this.guna2ImageButton6;
-            this.guna2ImageButton6.Size = new System.Drawing.Size(137, 102);
-            this.guna2ImageButton6.TabIndex = 0;
             // 
             // guna2Panel7
             // 
@@ -313,25 +325,13 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Poppins", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Black;
             this.label7.Location = new System.Drawing.Point(14, 119);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(111, 23);
+            this.label7.Size = new System.Drawing.Size(105, 16);
             this.label7.TabIndex = 5;
             this.label7.Text = "kodok speeding";
-            // 
-            // guna2ImageButton5
-            // 
-            this.guna2ImageButton5.CheckedState.Parent = this.guna2ImageButton5;
-            this.guna2ImageButton5.HoverState.Parent = this.guna2ImageButton5;
-            this.guna2ImageButton5.Image = global::RepairMe.Properties.Resources.Frog;
-            this.guna2ImageButton5.ImageSize = new System.Drawing.Size(150, 150);
-            this.guna2ImageButton5.Location = new System.Drawing.Point(18, 14);
-            this.guna2ImageButton5.Name = "guna2ImageButton5";
-            this.guna2ImageButton5.PressedState.Parent = this.guna2ImageButton5;
-            this.guna2ImageButton5.Size = new System.Drawing.Size(137, 102);
-            this.guna2ImageButton5.TabIndex = 0;
             // 
             // guna2Panel6
             // 
@@ -356,25 +356,13 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Poppins", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Black;
             this.label6.Location = new System.Drawing.Point(14, 119);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(111, 23);
+            this.label6.Size = new System.Drawing.Size(105, 16);
             this.label6.TabIndex = 5;
             this.label6.Text = "kodok speeding";
-            // 
-            // guna2ImageButton4
-            // 
-            this.guna2ImageButton4.CheckedState.Parent = this.guna2ImageButton4;
-            this.guna2ImageButton4.HoverState.Parent = this.guna2ImageButton4;
-            this.guna2ImageButton4.Image = global::RepairMe.Properties.Resources.Frog;
-            this.guna2ImageButton4.ImageSize = new System.Drawing.Size(150, 150);
-            this.guna2ImageButton4.Location = new System.Drawing.Point(18, 14);
-            this.guna2ImageButton4.Name = "guna2ImageButton4";
-            this.guna2ImageButton4.PressedState.Parent = this.guna2ImageButton4;
-            this.guna2ImageButton4.Size = new System.Drawing.Size(137, 102);
-            this.guna2ImageButton4.TabIndex = 0;
             // 
             // guna2Panel5
             // 
@@ -399,25 +387,13 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Poppins", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Black;
             this.label5.Location = new System.Drawing.Point(14, 119);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(111, 23);
+            this.label5.Size = new System.Drawing.Size(105, 16);
             this.label5.TabIndex = 5;
             this.label5.Text = "kodok speeding";
-            // 
-            // guna2ImageButton3
-            // 
-            this.guna2ImageButton3.CheckedState.Parent = this.guna2ImageButton3;
-            this.guna2ImageButton3.HoverState.Parent = this.guna2ImageButton3;
-            this.guna2ImageButton3.Image = global::RepairMe.Properties.Resources.Frog;
-            this.guna2ImageButton3.ImageSize = new System.Drawing.Size(150, 150);
-            this.guna2ImageButton3.Location = new System.Drawing.Point(18, 14);
-            this.guna2ImageButton3.Name = "guna2ImageButton3";
-            this.guna2ImageButton3.PressedState.Parent = this.guna2ImageButton3;
-            this.guna2ImageButton3.Size = new System.Drawing.Size(137, 102);
-            this.guna2ImageButton3.TabIndex = 0;
             // 
             // guna2Panel4
             // 
@@ -442,25 +418,13 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Poppins", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Black;
             this.label4.Location = new System.Drawing.Point(14, 119);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(111, 23);
+            this.label4.Size = new System.Drawing.Size(105, 16);
             this.label4.TabIndex = 5;
             this.label4.Text = "kodok speeding";
-            // 
-            // guna2ImageButton2
-            // 
-            this.guna2ImageButton2.CheckedState.Parent = this.guna2ImageButton2;
-            this.guna2ImageButton2.HoverState.Parent = this.guna2ImageButton2;
-            this.guna2ImageButton2.Image = global::RepairMe.Properties.Resources.Frog;
-            this.guna2ImageButton2.ImageSize = new System.Drawing.Size(150, 150);
-            this.guna2ImageButton2.Location = new System.Drawing.Point(18, 14);
-            this.guna2ImageButton2.Name = "guna2ImageButton2";
-            this.guna2ImageButton2.PressedState.Parent = this.guna2ImageButton2;
-            this.guna2ImageButton2.Size = new System.Drawing.Size(137, 102);
-            this.guna2ImageButton2.TabIndex = 0;
             // 
             // guna2Panel3
             // 
@@ -485,13 +449,73 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Poppins", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
             this.label3.Location = new System.Drawing.Point(14, 119);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(111, 23);
+            this.label3.Size = new System.Drawing.Size(105, 16);
             this.label3.TabIndex = 5;
             this.label3.Text = "kodok speeding";
+            // 
+            // guna2ImageButton6
+            // 
+            this.guna2ImageButton6.CheckedState.Parent = this.guna2ImageButton6;
+            this.guna2ImageButton6.HoverState.Parent = this.guna2ImageButton6;
+            this.guna2ImageButton6.Image = global::RepairMe.Properties.Resources.Frog;
+            this.guna2ImageButton6.ImageSize = new System.Drawing.Size(150, 150);
+            this.guna2ImageButton6.Location = new System.Drawing.Point(18, 14);
+            this.guna2ImageButton6.Name = "guna2ImageButton6";
+            this.guna2ImageButton6.PressedState.Parent = this.guna2ImageButton6;
+            this.guna2ImageButton6.Size = new System.Drawing.Size(137, 102);
+            this.guna2ImageButton6.TabIndex = 0;
+            // 
+            // guna2ImageButton5
+            // 
+            this.guna2ImageButton5.CheckedState.Parent = this.guna2ImageButton5;
+            this.guna2ImageButton5.HoverState.Parent = this.guna2ImageButton5;
+            this.guna2ImageButton5.Image = global::RepairMe.Properties.Resources.Frog;
+            this.guna2ImageButton5.ImageSize = new System.Drawing.Size(150, 150);
+            this.guna2ImageButton5.Location = new System.Drawing.Point(18, 14);
+            this.guna2ImageButton5.Name = "guna2ImageButton5";
+            this.guna2ImageButton5.PressedState.Parent = this.guna2ImageButton5;
+            this.guna2ImageButton5.Size = new System.Drawing.Size(137, 102);
+            this.guna2ImageButton5.TabIndex = 0;
+            // 
+            // guna2ImageButton4
+            // 
+            this.guna2ImageButton4.CheckedState.Parent = this.guna2ImageButton4;
+            this.guna2ImageButton4.HoverState.Parent = this.guna2ImageButton4;
+            this.guna2ImageButton4.Image = global::RepairMe.Properties.Resources.Frog;
+            this.guna2ImageButton4.ImageSize = new System.Drawing.Size(150, 150);
+            this.guna2ImageButton4.Location = new System.Drawing.Point(18, 14);
+            this.guna2ImageButton4.Name = "guna2ImageButton4";
+            this.guna2ImageButton4.PressedState.Parent = this.guna2ImageButton4;
+            this.guna2ImageButton4.Size = new System.Drawing.Size(137, 102);
+            this.guna2ImageButton4.TabIndex = 0;
+            // 
+            // guna2ImageButton3
+            // 
+            this.guna2ImageButton3.CheckedState.Parent = this.guna2ImageButton3;
+            this.guna2ImageButton3.HoverState.Parent = this.guna2ImageButton3;
+            this.guna2ImageButton3.Image = global::RepairMe.Properties.Resources.Frog;
+            this.guna2ImageButton3.ImageSize = new System.Drawing.Size(150, 150);
+            this.guna2ImageButton3.Location = new System.Drawing.Point(18, 14);
+            this.guna2ImageButton3.Name = "guna2ImageButton3";
+            this.guna2ImageButton3.PressedState.Parent = this.guna2ImageButton3;
+            this.guna2ImageButton3.Size = new System.Drawing.Size(137, 102);
+            this.guna2ImageButton3.TabIndex = 0;
+            // 
+            // guna2ImageButton2
+            // 
+            this.guna2ImageButton2.CheckedState.Parent = this.guna2ImageButton2;
+            this.guna2ImageButton2.HoverState.Parent = this.guna2ImageButton2;
+            this.guna2ImageButton2.Image = global::RepairMe.Properties.Resources.Frog;
+            this.guna2ImageButton2.ImageSize = new System.Drawing.Size(150, 150);
+            this.guna2ImageButton2.Location = new System.Drawing.Point(18, 14);
+            this.guna2ImageButton2.Name = "guna2ImageButton2";
+            this.guna2ImageButton2.PressedState.Parent = this.guna2ImageButton2;
+            this.guna2ImageButton2.Size = new System.Drawing.Size(137, 102);
+            this.guna2ImageButton2.TabIndex = 0;
             // 
             // guna2ImageButton1
             // 
@@ -517,52 +541,29 @@
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.guna2PictureBox1.TabIndex = 2;
             this.guna2PictureBox1.TabStop = false;
+            this.guna2PictureBox1.Click += new System.EventHandler(this.guna2PictureBox1_Click);
             // 
-            // btnexit
+            // guna2CirclePictureBox2
             // 
-            this.btnexit.BackColor = System.Drawing.Color.Transparent;
-            this.btnexit.CheckedState.Parent = this.btnexit;
-            this.btnexit.CustomImages.Parent = this.btnexit;
-            this.btnexit.FillColor = System.Drawing.Color.Transparent;
-            this.btnexit.Font = new System.Drawing.Font("Poppins Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnexit.ForeColor = System.Drawing.Color.Red;
-            this.btnexit.HoverState.Parent = this.btnexit;
-            this.btnexit.Location = new System.Drawing.Point(1250, -4);
-            this.btnexit.Name = "btnexit";
-            this.btnexit.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.btnexit.ShadowDecoration.Parent = this.btnexit;
-            this.btnexit.Size = new System.Drawing.Size(33, 35);
-            this.btnexit.TabIndex = 21;
-            this.btnexit.Text = "X";
-            this.btnexit.Click += new System.EventHandler(this.guna2CircleButton1_Click);
+            this.guna2CirclePictureBox2.Image = global::RepairMe.Properties.Resources.Frog;
+            this.guna2CirclePictureBox2.Location = new System.Drawing.Point(1167, 6);
+            this.guna2CirclePictureBox2.Name = "guna2CirclePictureBox2";
+            this.guna2CirclePictureBox2.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.guna2CirclePictureBox2.ShadowDecoration.Parent = this.guna2CirclePictureBox2;
+            this.guna2CirclePictureBox2.Size = new System.Drawing.Size(66, 67);
+            this.guna2CirclePictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2CirclePictureBox2.TabIndex = 4;
+            this.guna2CirclePictureBox2.TabStop = false;
             // 
-            // guna2Button4
+            // guna2CirclePictureBox1
             // 
-            this.guna2Button4.Animated = true;
-            this.guna2Button4.BorderRadius = 15;
-            this.guna2Button4.CheckedState.Parent = this.guna2Button4;
-            this.guna2Button4.CustomImages.Parent = this.guna2Button4;
-            this.guna2Button4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(141)))), ((int)(((byte)(218)))));
-            this.guna2Button4.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button4.ForeColor = System.Drawing.Color.White;
-            this.guna2Button4.HoverState.Parent = this.guna2Button4;
-            this.guna2Button4.Location = new System.Drawing.Point(1009, 19);
-            this.guna2Button4.Name = "guna2Button4";
-            this.guna2Button4.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(238)))), ((int)(((byte)(221)))));
-            this.guna2Button4.ShadowDecoration.Parent = this.guna2Button4;
-            this.guna2Button4.Size = new System.Drawing.Size(106, 35);
-            this.guna2Button4.TabIndex = 22;
-            this.guna2Button4.Text = "Fun Fact";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Poppins", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(536, 229);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(121, 60);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Maps";
+            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(11, 10);
+            this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
+            this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.guna2CirclePictureBox1.ShadowDecoration.Parent = this.guna2CirclePictureBox1;
+            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(78, 59);
+            this.guna2CirclePictureBox1.TabIndex = 0;
+            this.guna2CirclePictureBox1.TabStop = false;
             // 
             // Dashboard
             // 
@@ -577,8 +578,6 @@
             this.Text = "Dashboard";
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
             this.guna2Panel2.ResumeLayout(false);
             this.guna2GroupBox2.ResumeLayout(false);
             this.guna2GroupBox2.PerformLayout();
@@ -596,6 +595,8 @@
             this.guna2Panel3.ResumeLayout(false);
             this.guna2Panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
