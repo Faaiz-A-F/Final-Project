@@ -71,7 +71,7 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(351, 17);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(578, 679);
+            this.panel1.Size = new System.Drawing.Size(612, 679);
             this.panel1.TabIndex = 0;
             // 
             // tbAddressUp
@@ -372,6 +372,7 @@
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MakeBengkel";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Repair Me";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

@@ -12,12 +12,14 @@ namespace RepairMe.View
 {
     public partial class WorkshopListDetail : Form
     {
+
         public WorkshopListDetail()
         {
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+
+            private void label1_Click(object sender, EventArgs e)
         {
 
         }
@@ -30,6 +32,16 @@ namespace RepairMe.View
         private void guna2TextBox1_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void Thumbnail_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnexit_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

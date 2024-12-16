@@ -10,26 +10,16 @@ using System.Windows.Forms;
 
 namespace RepairMe.View
 {
-    public partial class Dashboard : Form
+    public partial class WorkshopList : Form
     {
-        public Dashboard()
+        public WorkshopList()
         {
             InitializeComponent();
         }
 
-        private void guna2CircleButton1_Click(object sender, EventArgs e)
+        private void btnexit_Click(object sender, EventArgs e)
         {
             this.Close();
-        }
-
-        private void guna2PictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2Panel1_Paint(object sender, PaintEventArgs e)
-        {
-
         }
     }
 }
