@@ -26,8 +26,8 @@ namespace RepairMe.Model.Repository
             {
                 _dbContext.OpenConnection();
 
-                var query = "INSERT INTO users (name, password, age, email, phone, address, role, created_at) " +
-                    "VALUES (@name, @password, @age, @email, @phone, @address, @role, @created_at)";
+                var query = "INSERT INTO users (name, password, age, email, phone, address, role) " +
+                    "VALUES (@name, @password, @age, @email, @phone, @address, @role)";
 
                 using (var cmd = new MySqlCommand(query, _dbContext.Connection))
                 {
@@ -38,7 +38,8 @@ namespace RepairMe.Model.Repository
                     cmd.Parameters.AddWithValue("@phone", user.Phone);
                     cmd.Parameters.AddWithValue("@address", user.Address);
                     cmd.Parameters.AddWithValue("@role", user.Role);
-                    cmd.Parameters.AddWithValue("@created_at", user.CreatedAt.ToString("yyyy-MM-dd HH:mm:ss"));
+
+                    cmd.ExecuteNonQuery();
                 }
             }
             catch (Exception ex)
@@ -109,7 +110,7 @@ namespace RepairMe.Model.Repository
                                 Username = reader.GetString("name"),
                                 Password = reader.GetString("password"),
                                 Email = reader.GetString("email"),
-                                Phone = reader.GetInt32("phone"),
+                                Phone = reader.GetString("phone"),
                                 Address = reader.GetString("address"),
                                 Role = reader.GetString("role")
                             };

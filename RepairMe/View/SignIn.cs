@@ -24,7 +24,35 @@ namespace RepairMe
             InitializeComponent();
         }
 
-        private void btnSignIn_Click_1(object sender, EventArgs e)
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnsignup_Click(object sender, EventArgs e)
+        {
+            // Membuat instance form SignUp
+            SignUp signUp = new SignUp();
+
+            // Menyembunyikan form saat ini
+            this.Hide();
+
+            // Menampilkan form SignUp
+            signUp.Show();
+
+            // Menambahkan event untuk menangani ketika form SignUp ditutup
+            signUp.FormClosed += (s, args) => this.Show();
+        }
+
+        private void signupbengkel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            MakeBengkel makeBengkel = new MakeBengkel();
+            this.Hide();
+            makeBengkel.Show();
+            makeBengkel.FormClosed += (s, args) => this.Show();
+        }
+
+        private void btnSignIn_Click(object sender, EventArgs e)
         {
             using (var dbContext = new DbContext())
             {
@@ -58,7 +86,15 @@ namespace RepairMe
                         // Sign-in successful
                         MessageBox.Show($"Welcome, {user.Username}!", "Sign-In Successful", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                        // TODO: Open main application window or perform any other post-login actions
+                        // Open dashboard
+                        Dashboard dashboard = new Dashboard();
+                        dashboard.Show();
+
+                        // Close sign-in form
+                        this.Hide();
+
+                        // Add event handler to show sign-in form when dashboard is closed
+                        dashboard.FormClosed += (s, args) => this.Show();
                     }
                     else
                     {
@@ -72,34 +108,6 @@ namespace RepairMe
                     MessageBox.Show($"An error occurred: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
-        }
-
-        private void btnExit_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        private void btnsignup_Click(object sender, EventArgs e)
-        {
-            // Membuat instance form SignUp
-            SignUp signUp = new SignUp();
-
-            // Menyembunyikan form saat ini
-            this.Hide();
-
-            // Menampilkan form SignUp
-            signUp.Show();
-
-            // Menambahkan event untuk menangani ketika form SignUp ditutup
-            signUp.FormClosed += (s, args) => this.Show();
-        }
-
-        private void signupbengkel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            MakeBengkel makeBengkel = new MakeBengkel();
-            this.Hide();
-            makeBengkel.Show();
-            makeBengkel.FormClosed += (s, args) => this.Show();
         }
     }
 }
