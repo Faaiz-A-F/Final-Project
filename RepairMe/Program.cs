@@ -18,7 +18,7 @@ namespace RepairMe
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new MakeBengkel());
-            Application.Run(new WorkshopList());
+            Application.Run(new WorkshopListDetail());
         }
     }
 }

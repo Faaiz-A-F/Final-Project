@@ -1,6 +1,6 @@
 ﻿namespace RepairMe.View
 {
-    partial class WorkshopList
+    partial class DashboardPemesanan
     {
         /// <summary>
         /// Required designer variable.
@@ -29,31 +29,33 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.label9 = new System.Windows.Forms.Label();
             this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
             this.btnexit = new Guna.UI2.WinForms.Guna2CircleButton();
             this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2CirclePictureBox2 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2GroupBox2 = new Guna.UI2.WinForms.Guna2GroupBox();
-            this.tbCariBengkel = new Guna.UI2.WinForms.Guna2TextBox();
-            this.btnCariBengkel = new Guna.UI2.WinForms.Guna2Button();
-            this.dtgBengkel = new Guna.UI2.WinForms.Guna2DataGridView();
             this.btnPilih = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2CirclePictureBox2 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
-            this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.dtgJasaPilih = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.guna2GroupBox1 = new Guna.UI2.WinForms.Guna2GroupBox();
+            this.guna2Button5 = new Guna.UI2.WinForms.Guna2Button();
+            this.lvwCo = new System.Windows.Forms.ListView();
             this.guna2Panel1.SuspendLayout();
-            this.guna2Panel2.SuspendLayout();
-            this.guna2GroupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgBengkel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
+            this.guna2Panel2.SuspendLayout();
+            this.guna2GroupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgJasaPilih)).BeginInit();
+            this.guna2GroupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2Elipse1
@@ -143,6 +145,18 @@
             this.guna2Button3.TabIndex = 5;
             this.guna2Button3.Text = "Pemesanan";
             // 
+            // guna2CirclePictureBox2
+            // 
+            this.guna2CirclePictureBox2.Image = global::RepairMe.Properties.Resources.Frog;
+            this.guna2CirclePictureBox2.Location = new System.Drawing.Point(1167, 6);
+            this.guna2CirclePictureBox2.Name = "guna2CirclePictureBox2";
+            this.guna2CirclePictureBox2.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.guna2CirclePictureBox2.ShadowDecoration.Parent = this.guna2CirclePictureBox2;
+            this.guna2CirclePictureBox2.Size = new System.Drawing.Size(66, 67);
+            this.guna2CirclePictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2CirclePictureBox2.TabIndex = 4;
+            this.guna2CirclePictureBox2.TabStop = false;
+            // 
             // guna2Button2
             // 
             this.guna2Button2.Animated = true;
@@ -179,13 +193,21 @@
             this.guna2Button1.TabIndex = 2;
             this.guna2Button1.Text = "Home";
             // 
+            // guna2CirclePictureBox1
+            // 
+            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(11, 10);
+            this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
+            this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.guna2CirclePictureBox1.ShadowDecoration.Parent = this.guna2CirclePictureBox1;
+            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(78, 59);
+            this.guna2CirclePictureBox1.TabIndex = 0;
+            this.guna2CirclePictureBox1.TabStop = false;
+            // 
             // guna2Panel2
             // 
             this.guna2Panel2.AutoScroll = true;
-            this.guna2Panel2.AutoScrollMargin = new System.Drawing.Size(0, 20);
             this.guna2Panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(238)))), ((int)(((byte)(221)))));
-            this.guna2Panel2.Controls.Add(this.btnCariBengkel);
-            this.guna2Panel2.Controls.Add(this.tbCariBengkel);
+            this.guna2Panel2.Controls.Add(this.guna2GroupBox1);
             this.guna2Panel2.Controls.Add(this.guna2GroupBox2);
             this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2Panel2.Location = new System.Drawing.Point(0, 76);
@@ -197,121 +219,18 @@
             // guna2GroupBox2
             // 
             this.guna2GroupBox2.BorderColor = System.Drawing.Color.Transparent;
+            this.guna2GroupBox2.Controls.Add(this.dtgJasaPilih);
             this.guna2GroupBox2.Controls.Add(this.btnPilih);
-            this.guna2GroupBox2.Controls.Add(this.dtgBengkel);
             this.guna2GroupBox2.CustomBorderColor = System.Drawing.Color.Transparent;
             this.guna2GroupBox2.FillColor = System.Drawing.Color.Transparent;
-            this.guna2GroupBox2.Font = new System.Drawing.Font("Poppins", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2GroupBox2.Font = new System.Drawing.Font("Poppins SemiBold", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2GroupBox2.ForeColor = System.Drawing.Color.Black;
-            this.guna2GroupBox2.Location = new System.Drawing.Point(15, 100);
+            this.guna2GroupBox2.Location = new System.Drawing.Point(12, 19);
             this.guna2GroupBox2.Name = "guna2GroupBox2";
             this.guna2GroupBox2.ShadowDecoration.Parent = this.guna2GroupBox2;
-            this.guna2GroupBox2.Size = new System.Drawing.Size(1230, 518);
-            this.guna2GroupBox2.TabIndex = 9;
-            this.guna2GroupBox2.Text = "Bengkel Yang Di Cari";
-            // 
-            // tbCariBengkel
-            // 
-            this.tbCariBengkel.AcceptsReturn = true;
-            this.tbCariBengkel.BorderRadius = 15;
-            this.tbCariBengkel.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.tbCariBengkel.DefaultText = "";
-            this.tbCariBengkel.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.tbCariBengkel.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.tbCariBengkel.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.tbCariBengkel.DisabledState.Parent = this.tbCariBengkel;
-            this.tbCariBengkel.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.tbCariBengkel.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.tbCariBengkel.FocusedState.Parent = this.tbCariBengkel;
-            this.tbCariBengkel.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbCariBengkel.ForeColor = System.Drawing.Color.Black;
-            this.tbCariBengkel.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.tbCariBengkel.HoverState.Parent = this.tbCariBengkel;
-            this.tbCariBengkel.Location = new System.Drawing.Point(23, 23);
-            this.tbCariBengkel.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
-            this.tbCariBengkel.Name = "tbCariBengkel";
-            this.tbCariBengkel.PasswordChar = '\0';
-            this.tbCariBengkel.PlaceholderForeColor = System.Drawing.Color.Black;
-            this.tbCariBengkel.PlaceholderText = "Tulis bengkel yang ingin anda cari...";
-            this.tbCariBengkel.SelectedText = "";
-            this.tbCariBengkel.ShadowDecoration.Parent = this.tbCariBengkel;
-            this.tbCariBengkel.Size = new System.Drawing.Size(1072, 54);
-            this.tbCariBengkel.TabIndex = 10;
-            // 
-            // btnCariBengkel
-            // 
-            this.btnCariBengkel.Animated = true;
-            this.btnCariBengkel.BorderRadius = 15;
-            this.btnCariBengkel.CheckedState.Parent = this.btnCariBengkel;
-            this.btnCariBengkel.CustomImages.Parent = this.btnCariBengkel;
-            this.btnCariBengkel.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCariBengkel.ForeColor = System.Drawing.Color.White;
-            this.btnCariBengkel.HoverState.Parent = this.btnCariBengkel;
-            this.btnCariBengkel.Location = new System.Drawing.Point(1105, 28);
-            this.btnCariBengkel.Name = "btnCariBengkel";
-            this.btnCariBengkel.ShadowDecoration.Parent = this.btnCariBengkel;
-            this.btnCariBengkel.Size = new System.Drawing.Size(149, 45);
-            this.btnCariBengkel.TabIndex = 11;
-            this.btnCariBengkel.Text = "Cari Bengkel";
-            // 
-            // dtgBengkel
-            // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.dtgBengkel.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dtgBengkel.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dtgBengkel.BackgroundColor = System.Drawing.Color.White;
-            this.dtgBengkel.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dtgBengkel.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.dtgBengkel.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Poppins", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgBengkel.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dtgBengkel.ColumnHeadersHeight = 4;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Poppins", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtgBengkel.DefaultCellStyle = dataGridViewCellStyle3;
-            this.dtgBengkel.EnableHeadersVisualStyles = false;
-            this.dtgBengkel.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dtgBengkel.Location = new System.Drawing.Point(18, 47);
-            this.dtgBengkel.Name = "dtgBengkel";
-            this.dtgBengkel.RowHeadersVisible = false;
-            this.dtgBengkel.RowHeadersWidth = 51;
-            this.dtgBengkel.RowTemplate.Height = 24;
-            this.dtgBengkel.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dtgBengkel.Size = new System.Drawing.Size(1200, 420);
-            this.dtgBengkel.TabIndex = 0;
-            this.dtgBengkel.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
-            this.dtgBengkel.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-            this.dtgBengkel.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.dtgBengkel.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.dtgBengkel.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.dtgBengkel.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.dtgBengkel.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.dtgBengkel.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dtgBengkel.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.dtgBengkel.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.dtgBengkel.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Poppins", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtgBengkel.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.dtgBengkel.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.dtgBengkel.ThemeStyle.HeaderStyle.Height = 4;
-            this.dtgBengkel.ThemeStyle.ReadOnly = false;
-            this.dtgBengkel.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.dtgBengkel.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.dtgBengkel.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Poppins", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtgBengkel.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.Black;
-            this.dtgBengkel.ThemeStyle.RowsStyle.Height = 24;
-            this.dtgBengkel.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dtgBengkel.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.guna2GroupBox2.Size = new System.Drawing.Size(1234, 537);
+            this.guna2GroupBox2.TabIndex = 34;
+            this.guna2GroupBox2.Text = "Pilih Jasa Yang Ingin Digunakan";
             // 
             // btnPilih
             // 
@@ -322,36 +241,114 @@
             this.btnPilih.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPilih.ForeColor = System.Drawing.Color.White;
             this.btnPilih.HoverState.Parent = this.btnPilih;
-            this.btnPilih.Location = new System.Drawing.Point(1069, 473);
+            this.btnPilih.Location = new System.Drawing.Point(1072, 477);
             this.btnPilih.Name = "btnPilih";
             this.btnPilih.ShadowDecoration.Parent = this.btnPilih;
             this.btnPilih.Size = new System.Drawing.Size(149, 45);
-            this.btnPilih.TabIndex = 12;
-            this.btnPilih.Text = "Pilih Bengkel";
+            this.btnPilih.TabIndex = 13;
+            this.btnPilih.Text = "Pilih";
             // 
-            // guna2CirclePictureBox2
+            // dtgJasaPilih
             // 
-            this.guna2CirclePictureBox2.Image = global::RepairMe.Properties.Resources.Frog;
-            this.guna2CirclePictureBox2.Location = new System.Drawing.Point(1167, 6);
-            this.guna2CirclePictureBox2.Name = "guna2CirclePictureBox2";
-            this.guna2CirclePictureBox2.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CirclePictureBox2.ShadowDecoration.Parent = this.guna2CirclePictureBox2;
-            this.guna2CirclePictureBox2.Size = new System.Drawing.Size(66, 67);
-            this.guna2CirclePictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2CirclePictureBox2.TabIndex = 4;
-            this.guna2CirclePictureBox2.TabStop = false;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            this.dtgJasaPilih.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            this.dtgJasaPilih.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dtgJasaPilih.BackgroundColor = System.Drawing.Color.White;
+            this.dtgJasaPilih.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dtgJasaPilih.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dtgJasaPilih.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Poppins SemiBold", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgJasaPilih.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            this.dtgJasaPilih.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Poppins SemiBold", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtgJasaPilih.DefaultCellStyle = dataGridViewCellStyle6;
+            this.dtgJasaPilih.EnableHeadersVisualStyles = false;
+            this.dtgJasaPilih.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dtgJasaPilih.Location = new System.Drawing.Point(12, 42);
+            this.dtgJasaPilih.Name = "dtgJasaPilih";
+            this.dtgJasaPilih.RowHeadersVisible = false;
+            this.dtgJasaPilih.RowHeadersWidth = 51;
+            this.dtgJasaPilih.RowTemplate.Height = 24;
+            this.dtgJasaPilih.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dtgJasaPilih.Size = new System.Drawing.Size(1209, 425);
+            this.dtgJasaPilih.TabIndex = 14;
+            this.dtgJasaPilih.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
+            this.dtgJasaPilih.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.dtgJasaPilih.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.dtgJasaPilih.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.dtgJasaPilih.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.dtgJasaPilih.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.dtgJasaPilih.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.dtgJasaPilih.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dtgJasaPilih.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.dtgJasaPilih.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dtgJasaPilih.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Poppins SemiBold", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtgJasaPilih.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.dtgJasaPilih.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgJasaPilih.ThemeStyle.HeaderStyle.Height = 4;
+            this.dtgJasaPilih.ThemeStyle.ReadOnly = false;
+            this.dtgJasaPilih.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.dtgJasaPilih.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dtgJasaPilih.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Poppins SemiBold", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtgJasaPilih.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.Black;
+            this.dtgJasaPilih.ThemeStyle.RowsStyle.Height = 24;
+            this.dtgJasaPilih.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dtgJasaPilih.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
-            // guna2CirclePictureBox1
+            // guna2GroupBox1
             // 
-            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(11, 10);
-            this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
-            this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CirclePictureBox1.ShadowDecoration.Parent = this.guna2CirclePictureBox1;
-            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(78, 59);
-            this.guna2CirclePictureBox1.TabIndex = 0;
-            this.guna2CirclePictureBox1.TabStop = false;
+            this.guna2GroupBox1.BorderColor = System.Drawing.Color.Transparent;
+            this.guna2GroupBox1.Controls.Add(this.lvwCo);
+            this.guna2GroupBox1.Controls.Add(this.guna2Button5);
+            this.guna2GroupBox1.CustomBorderColor = System.Drawing.Color.Transparent;
+            this.guna2GroupBox1.FillColor = System.Drawing.Color.Transparent;
+            this.guna2GroupBox1.Font = new System.Drawing.Font("Poppins SemiBold", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2GroupBox1.ForeColor = System.Drawing.Color.Black;
+            this.guna2GroupBox1.Location = new System.Drawing.Point(12, 562);
+            this.guna2GroupBox1.Name = "guna2GroupBox1";
+            this.guna2GroupBox1.ShadowDecoration.Parent = this.guna2GroupBox1;
+            this.guna2GroupBox1.Size = new System.Drawing.Size(1234, 537);
+            this.guna2GroupBox1.TabIndex = 35;
+            this.guna2GroupBox1.Text = "Jasa Yang Sudah Dipilih";
             // 
-            // WorkshopList
+            // guna2Button5
+            // 
+            this.guna2Button5.Animated = true;
+            this.guna2Button5.BorderRadius = 15;
+            this.guna2Button5.CheckedState.Parent = this.guna2Button5;
+            this.guna2Button5.CustomImages.Parent = this.guna2Button5;
+            this.guna2Button5.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button5.ForeColor = System.Drawing.Color.White;
+            this.guna2Button5.HoverState.Parent = this.guna2Button5;
+            this.guna2Button5.Location = new System.Drawing.Point(1072, 477);
+            this.guna2Button5.Name = "guna2Button5";
+            this.guna2Button5.ShadowDecoration.Parent = this.guna2Button5;
+            this.guna2Button5.Size = new System.Drawing.Size(149, 45);
+            this.guna2Button5.TabIndex = 13;
+            this.guna2Button5.Text = "Pilih";
+            // 
+            // lvwCo
+            // 
+            this.lvwCo.HideSelection = false;
+            this.lvwCo.Location = new System.Drawing.Point(12, 42);
+            this.lvwCo.Name = "lvwCo";
+            this.lvwCo.Size = new System.Drawing.Size(1209, 429);
+            this.lvwCo.TabIndex = 14;
+            this.lvwCo.UseCompatibleStateImageBehavior = false;
+            // 
+            // DashboardPemesanan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -359,16 +356,17 @@
             this.Controls.Add(this.guna2Panel2);
             this.Controls.Add(this.guna2Panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "WorkshopList";
+            this.Name = "DashboardPemesanan";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "WorkshopList";
+            this.Text = "DashboardPemesanan";
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
-            this.guna2Panel2.ResumeLayout(false);
-            this.guna2GroupBox2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dtgBengkel)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
+            this.guna2Panel2.ResumeLayout(false);
+            this.guna2GroupBox2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dtgJasaPilih)).EndInit();
+            this.guna2GroupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -387,9 +385,10 @@
         private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox1;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
         private Guna.UI2.WinForms.Guna2GroupBox guna2GroupBox2;
-        private Guna.UI2.WinForms.Guna2TextBox tbCariBengkel;
-        private Guna.UI2.WinForms.Guna2Button btnCariBengkel;
-        private Guna.UI2.WinForms.Guna2DataGridView dtgBengkel;
         private Guna.UI2.WinForms.Guna2Button btnPilih;
+        private Guna.UI2.WinForms.Guna2GroupBox guna2GroupBox1;
+        private System.Windows.Forms.ListView lvwCo;
+        private Guna.UI2.WinForms.Guna2Button guna2Button5;
+        private Guna.UI2.WinForms.Guna2DataGridView dtgJasaPilih;
     }
 }

@@ -115,6 +115,12 @@
     <Compile Include="View\Dashboard.Designer.cs">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\DashboardPemesanan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\DashboardPemesanan.Designer.cs">
+      <DependentUpon>DashboardPemesanan.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\MakeBengkel.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -164,6 +170,9 @@
     </Compile>
     <EmbeddedResource Include="View\Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\DashboardPemesanan.resx">
+      <DependentUpon>DashboardPemesanan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\MakeBengkel.resx">
       <DependentUpon>MakeBengkel.cs</DependentUpon>
