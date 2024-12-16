@@ -23,7 +23,24 @@ namespace RepairMe
             InitializeComponent();
         }
 
-        private void btnSignUp_Click_1(object sender, EventArgs e)
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnback_Click(object sender, EventArgs e)
+        {
+            // Membuat instance form SignIn
+            SignIn signIn = new SignIn();
+
+            // Menampilkan form SignIn
+            signIn.Show();
+
+            // Menutup form saat ini
+            this.Close();
+        }
+
+        private void btnSignUp_Click(object sender, EventArgs e)
         {
             using (var dbContext = new DbContext())
             {
@@ -37,7 +54,7 @@ namespace RepairMe
                     var password = tbPassUp.Text.Trim();
                     var age = int.Parse(tbAgeUp.Text.Trim());
                     var email = tbEmailUp.Text.Trim();
-                    var phone = int.Parse(tbPhoneUp.Text.Trim());
+                    var phone = tbPhoneUp.Text.Trim();
                     var address = tbAddressUp.Text.Trim();
                     var role = "user";
                     usersController.AddUser(username, password, age, email, phone, address, role);
@@ -59,23 +76,6 @@ namespace RepairMe
                     MessageBox.Show($"Failed to connect to the database.\n\nError: {ex.Message}", "Connection Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
-        }
-
-        private void btnExit_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        private void btnback_Click(object sender, EventArgs e)
-        {
-            // Membuat instance form SignIn
-            SignIn signIn = new SignIn();
-
-            // Menampilkan form SignIn
-            signIn.Show();
-
-            // Menutup form saat ini
-            this.Close();
         }
     }
 }
