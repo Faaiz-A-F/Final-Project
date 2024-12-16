@@ -340,6 +340,7 @@
             this.btnback.Size = new System.Drawing.Size(163, 39);
             this.btnback.TabIndex = 31;
             this.btnback.Text = "< Back to Sign In";
+            this.btnback.Click += new System.EventHandler(this.btnback_Click);
             // 
             // btnExit
             // 

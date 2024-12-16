@@ -78,6 +78,7 @@
             this.signupbengkel.TabStop = true;
             this.signupbengkel.Text = "BUAT DISINI";
             this.signupbengkel.VisitedLinkColor = System.Drawing.SystemColors.HotTrack;
+            this.signupbengkel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.signupbengkel_LinkClicked);
             // 
             // label4
             // 
@@ -107,6 +108,7 @@
             this.btnsignup.Size = new System.Drawing.Size(244, 46);
             this.btnsignup.TabIndex = 6;
             this.btnsignup.Text = "Sign Up";
+            this.btnsignup.Click += new System.EventHandler(this.btnsignup_Click);
             // 
             // btnSignIn
             // 

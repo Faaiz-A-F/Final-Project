@@ -11,6 +11,7 @@ using System.Windows.Forms;
 using RepairMe.Controller;
 using RepairMe.Model.Entity;
 using RepairMe.Model.Context;
+using RepairMe.View;
 
 namespace RepairMe
 {
@@ -76,6 +77,29 @@ namespace RepairMe
         private void btnExit_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnsignup_Click(object sender, EventArgs e)
+        {
+            // Membuat instance form SignUp
+            SignUp signUp = new SignUp();
+
+            // Menyembunyikan form saat ini
+            this.Hide();
+
+            // Menampilkan form SignUp
+            signUp.Show();
+
+            // Menambahkan event untuk menangani ketika form SignUp ditutup
+            signUp.FormClosed += (s, args) => this.Show();
+        }
+
+        private void signupbengkel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            MakeBengkel makeBengkel = new MakeBengkel();
+            this.Hide();
+            makeBengkel.Show();
+            makeBengkel.FormClosed += (s, args) => this.Show();
         }
     }
 }

@@ -318,7 +318,7 @@
             this.label1.Font = new System.Drawing.Font("Poppins", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(24, 27);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(296, 120);
+            this.label1.Size = new System.Drawing.Size(285, 116);
             this.label1.TabIndex = 0;
             this.label1.Text = "Buat akun baru\r\ndengan mudah";
             // 
@@ -340,6 +340,7 @@
             this.btnback.Size = new System.Drawing.Size(163, 39);
             this.btnback.TabIndex = 18;
             this.btnback.Text = "< Back to Sign In";
+            this.btnback.Click += new System.EventHandler(this.btnback_Click);
             // 
             // guna2Elipse1
             // 
