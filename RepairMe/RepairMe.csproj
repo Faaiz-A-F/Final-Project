@@ -139,6 +139,12 @@
     <Compile Include="View\MakeBengkel.Designer.cs">
       <DependentUpon>MakeBengkel.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\PenambahanJasa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\PenambahanJasa.Designer.cs">
+      <DependentUpon>PenambahanJasa.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\SignIn.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -188,6 +194,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\MakeBengkel.resx">
       <DependentUpon>MakeBengkel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\PenambahanJasa.resx">
+      <DependentUpon>PenambahanJasa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\SignIn.resx">
       <DependentUpon>SignIn.cs</DependentUpon>
