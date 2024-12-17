@@ -109,6 +109,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controller\UsersController.cs" />
+    <Compile Include="View\AboutUs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\AboutUs.Designer.cs">
+      <DependentUpon>AboutUs.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\Dashboard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -168,6 +174,9 @@
     <Compile Include="View\WorkshopListDetail.Designer.cs">
       <DependentUpon>WorkshopListDetail.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="View\AboutUs.resx">
+      <DependentUpon>AboutUs.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </EmbeddedResource>
