@@ -215,7 +215,7 @@
             this.tbNama.ForeColor = System.Drawing.Color.Black;
             this.tbNama.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbNama.HoverState.Parent = this.tbNama;
-            this.tbNama.Location = new System.Drawing.Point(14, 43);
+            this.tbNama.Location = new System.Drawing.Point(14, 51);
             this.tbNama.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.tbNama.Name = "tbNama";
             this.tbNama.PasswordChar = '\0';
@@ -262,7 +262,7 @@
             this.tbHarga.ForeColor = System.Drawing.Color.Black;
             this.tbHarga.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbHarga.HoverState.Parent = this.tbHarga;
-            this.tbHarga.Location = new System.Drawing.Point(720, 43);
+            this.tbHarga.Location = new System.Drawing.Point(720, 51);
             this.tbHarga.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.tbHarga.Name = "tbHarga";
             this.tbHarga.PasswordChar = '\0';
@@ -300,7 +300,7 @@
             this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
             this.guna2DataGridView1.EnableHeadersVisualStyles = false;
             this.guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.Location = new System.Drawing.Point(17, 95);
+            this.guna2DataGridView1.Location = new System.Drawing.Point(17, 103);
             this.guna2DataGridView1.Name = "guna2DataGridView1";
             this.guna2DataGridView1.RowHeadersVisible = false;
             this.guna2DataGridView1.RowHeadersWidth = 51;
@@ -340,7 +340,7 @@
             this.btnHapus.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHapus.ForeColor = System.Drawing.Color.White;
             this.btnHapus.HoverState.Parent = this.btnHapus;
-            this.btnHapus.Location = new System.Drawing.Point(1103, 570);
+            this.btnHapus.Location = new System.Drawing.Point(1103, 578);
             this.btnHapus.Name = "btnHapus";
             this.btnHapus.ShadowDecoration.Parent = this.btnHapus;
             this.btnHapus.Size = new System.Drawing.Size(130, 34);
