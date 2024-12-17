@@ -60,14 +60,13 @@ namespace RepairMe.Model.Repository
             {
                 _dbContext.OpenConnection();
 
-                var query = "INSERT INTO users (name, password, age, email, phone, address, role) " +
-                            "VALUES (@name, @password, @age, @email, @phone, @address, @role)";
+                var query = "INSERT INTO admin (name, password, email, phone, address, role) " +
+                            "VALUES (@name, @password, @email, @phone, @address, @role)";
 
                 using (var cmd = new MySqlCommand(query, _dbContext.Connection))
                 {
                     cmd.Parameters.AddWithValue("@name", user.Username);
                     cmd.Parameters.AddWithValue("@password", user.Password);
-                    cmd.Parameters.AddWithValue("@age", user.Age);
                     cmd.Parameters.AddWithValue("@email", user.Email);
                     cmd.Parameters.AddWithValue("@phone", user.Phone);
                     cmd.Parameters.AddWithValue("@address", user.Address);
@@ -88,13 +87,18 @@ namespace RepairMe.Model.Repository
             }
         }
 
-        public Users GetUser(string username, string password)
+        public Users GetUserOrAdmin(string username, string password)
         {
             try
             {
                 _dbContext.OpenConnection();
 
-                var query = "SELECT * FROM users WHERE name = @username AND password = @password";
+                // Cek di tabel admin dulu
+                var query = "SELECT 'admin' AS role, admin_id AS id, name, password, email, phone, address " +
+                            "FROM admin WHERE name = @username AND password = @password " +
+                            "UNION " +
+                            "SELECT 'user' AS role, user_id AS id, name, password, email, phone, address " +
+                            "FROM users WHERE name = @username AND password = @password";
 
                 using (var cmd = new MySqlCommand(query, _dbContext.Connection))
                 {
@@ -107,13 +111,13 @@ namespace RepairMe.Model.Repository
                         {
                             return new Users
                             {
-                                Id = reader.GetInt32("user_id"),
+                                Id = reader.GetInt32("id"),
                                 Username = reader.GetString("name"),
                                 Password = reader.GetString("password"),
                                 Email = reader.GetString("email"),
                                 Phone = reader.GetString("phone"),
                                 Address = reader.GetString("address"),
-                                Role = reader.GetString("role")
+                                Role = reader.GetString("role")  // Role akan menunjukkan 'admin' atau 'user'
                             };
                         }
                     }
@@ -121,7 +125,6 @@ namespace RepairMe.Model.Repository
             }
             catch (Exception ex)
             {
-                // Display error message if connection fails
                 MessageBox.Show($"Failed to connect to the database.\n\nError: {ex.Message}", "Connection Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 throw;
             }

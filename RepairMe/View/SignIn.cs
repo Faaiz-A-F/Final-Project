@@ -79,7 +79,7 @@ namespace RepairMe
                 try
                 {
                     // Call UsersController to validate user
-                    Users user = _usersController.GetUser(username, password);
+                    Users user = _usersController.GetUserOrAdmin(username, password);
 
                     if (user != null)
                     {
