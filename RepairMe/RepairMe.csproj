@@ -111,6 +111,8 @@
     <Compile Include="Controller\JasaController.cs" />
     <Compile Include="Controller\UsersController.cs" />
     <Compile Include="Model\Entity\Jasa.cs" />
+    <Compile Include="Model\Entity\Motor.cs" />
+    <Compile Include="Model\Entity\Transaction.cs" />
     <Compile Include="Model\Repository\JasaRepository.cs" />
     <Compile Include="View\DashboardAdmin.cs">
       <SubType>Form</SubType>
