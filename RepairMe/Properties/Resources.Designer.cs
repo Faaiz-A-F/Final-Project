@@ -203,6 +203,16 @@ namespace RepairMe.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap profile_default {
+            get {
+                object obj = ResourceManager.GetObject("profile-default", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Section_Content {
             get {
                 object obj = ResourceManager.GetObject("Section Content", resourceCulture);
