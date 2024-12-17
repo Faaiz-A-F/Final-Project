@@ -109,6 +109,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controller\UsersController.cs" />
+    <Compile Include="View\DashboardAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\DashboardAdmin.Designer.cs">
+      <DependentUpon>DashboardAdmin.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\Dashboard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -139,12 +145,6 @@
     <Compile Include="View\SignUp.Designer.cs">
       <DependentUpon>SignUp.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\SignUp_Success.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="View\SignUp_Success.Designer.cs">
-      <DependentUpon>SignUp_Success.cs</DependentUpon>
-    </Compile>
     <Compile Include="View\TestPage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -171,6 +171,9 @@
     <EmbeddedResource Include="View\Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\DashboardAdmin.resx">
+      <DependentUpon>DashboardAdmin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\DashboardPemesanan.resx">
       <DependentUpon>DashboardPemesanan.cs</DependentUpon>
     </EmbeddedResource>
@@ -182,9 +185,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\SignUp.resx">
       <DependentUpon>SignUp.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="View\SignUp_Success.resx">
-      <DependentUpon>SignUp_Success.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\TestPage.resx">
       <DependentUpon>TestPage.cs</DependentUpon>

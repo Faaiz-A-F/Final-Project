@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace RepairMe
 {
-    public partial class SignUp_Success : Form
+    public partial class DashboardAdmin : Form
     {
-        public SignUp_Success()
+        public DashboardAdmin()
         {
             InitializeComponent();
-        }
-
-        private void btnExit_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
     }
 }

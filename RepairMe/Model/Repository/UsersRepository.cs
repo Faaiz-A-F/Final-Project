@@ -61,16 +61,17 @@ namespace RepairMe.Model.Repository
                 _dbContext.OpenConnection();
 
                 var query = "INSERT INTO users (name, password, age, email, phone, address, role) " +
-                            "VALUES (@username, @password, @name, @age, @email, @phone, @address, admin)";
+                            "VALUES (@name, @password, @age, @email, @phone, @address, @role)";
 
                 using (var cmd = new MySqlCommand(query, _dbContext.Connection))
                 {
-                    cmd.Parameters.AddWithValue("@username", user.Username);
+                    cmd.Parameters.AddWithValue("@name", user.Username);
                     cmd.Parameters.AddWithValue("@password", user.Password);
                     cmd.Parameters.AddWithValue("@age", user.Age);
                     cmd.Parameters.AddWithValue("@email", user.Email);
                     cmd.Parameters.AddWithValue("@phone", user.Phone);
                     cmd.Parameters.AddWithValue("@address", user.Address);
+                    cmd.Parameters.AddWithValue("@role", user.Role);
 
                     cmd.ExecuteNonQuery();
                 }
