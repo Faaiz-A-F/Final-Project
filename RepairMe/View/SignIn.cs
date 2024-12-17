@@ -91,6 +91,10 @@ namespace RepairMe
                         {
                             // Open admin dashboard
                             DashboardAdmin dashboardAdmin = new DashboardAdmin();
+
+                            // Set current admin ID
+                            Users.CurrentAdminId = user.Id;
+
                             dashboardAdmin.Show();
                             this.Hide();
                         }

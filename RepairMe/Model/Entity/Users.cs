@@ -16,5 +16,8 @@ namespace RepairMe.Model.Entity
         public string Phone { get; set; }
         public string Address { get; set; }
         public string Role { get; set; }
+
+        // Static property to store current user's ID
+        public static int CurrentAdminId { get; set; }
     }
 }

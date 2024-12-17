@@ -27,7 +27,7 @@ namespace RepairMe.Controller
             _jasaRepository = jasaRepository;
         }
 
-        public void AddJasa(string name, float price, string description)
+        public void AddJasa(string name, float price, string description, int id)
         {
             try
             {
@@ -55,7 +55,8 @@ namespace RepairMe.Controller
                 {
                     Name = name,
                     Price = price,
-                    Description = description
+                    Description = description,
+                    AdminId = id
                 };
 
                 // Add jasa to database

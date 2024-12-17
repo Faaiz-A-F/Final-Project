@@ -34,6 +34,7 @@ namespace RepairMe.Model.Repository
                     cmd.Parameters.AddWithValue("@name", jasa.Name);    // Ensure 'Name' matches your database schema
                     cmd.Parameters.AddWithValue("@price", jasa.Price);
                     cmd.Parameters.AddWithValue("@description", jasa.Description);
+                    cmd.Parameters.AddWithValue("@admin_id", jasa.AdminId);
 
                     cmd.ExecuteNonQuery();
                 }
