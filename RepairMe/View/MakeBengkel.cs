@@ -43,12 +43,11 @@ namespace RepairMe.View
                     // Collect input data
                     var username = tbUserBengkel.Text.Trim();
                     var password = tbPassUp.Text.Trim();
-                    var age = int.Parse(tbAgeUp.Text.Trim());
                     var email = tbEmailUp.Text.Trim();
                     var phone = tbPhoneUp.Text.Trim();
                     var address = tbAddressUp.Text.Trim();
                     var role = "admin";
-                    usersController.AddAdmin(username, password, age, email, phone, address, role);
+                    usersController.AddAdmin(username, password, email, phone, address, role);
                 }
                 catch (Exception ex)
                 {
@@ -62,7 +61,6 @@ namespace RepairMe.View
                 // Clear the form fields after successful registration
                 tbUserBengkel.Clear();
                 tbPassUp.Clear();
-                tbAgeUp.Clear();
                 tbEmailUp.Clear();
                 tbPhoneUp.Clear();
                 tbAddressUp.Clear();
