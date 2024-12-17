@@ -80,7 +80,7 @@ namespace RepairMe.Controller
             }
         }
 
-        public void AddAdmin(string username, string password, int age, string email, string phone, string address, string role)
+        public void AddAdmin(string username, string password, string email, string phone, string address, string role)
         {
             try
             {
@@ -97,12 +97,6 @@ namespace RepairMe.Controller
                     return;
                 }
 
-                if (age <= 0)
-                {
-                    MessageBox.Show("Age must be a positive number.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    return;
-                }
-
                 if (string.IsNullOrWhiteSpace(email))
                 {
                     MessageBox.Show("Email cannot be empty.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -114,7 +108,6 @@ namespace RepairMe.Controller
                 {
                     Username = username,
                     Password = password,
-                    Age = age,
                     Email = email,
                     Phone = phone,
                     Address = address,
@@ -133,11 +126,11 @@ namespace RepairMe.Controller
             }
         }
 
-        public Users GetUser(string username, string password)
+        public Users GetUserOrAdmin(string username, string password)
         {
             try
             {
-                return _usersRepository.GetUser(username, password);
+                return _usersRepository.GetUserOrAdmin(username, password);
             }
             catch (Exception ex)
             {
