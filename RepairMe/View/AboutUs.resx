@@ -121,6 +121,43 @@
     <value>17, 17</value>
   </metadata>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>29</value>
+    <value>25</value>
+  </metadata>
+  <data name="label12.Text" xml:space="preserve">
+    <value>- Instan tanpa antrian
+Bengkel online tu ibaratkan masak mie instan, tidak butuh waktu lama menunggunya.
+- mekanik juga butuh kepastian
+“Mas udah aku shareloc.” shareloc jarang banget yang pas sama lokasi jadi mas-mas mekaniknya bingung lokasi yang pas kamu dimana:).
+- satu pilihan, bisa rebahan
+Tinggal pilih bengkel online yang bisa datang kerumahmu semua akan beres dengan sambil rebahan
+</value>
+  </data>
+  <data name="label10.Text" xml:space="preserve">
+    <value>Misi
+	1.	Menulis kode sebersih kamar kos alpan setelah ditinggal bapak kos. rapi, jelas, dan bebas error yang bikin nilai D mampir.
+	2.	Menggunakan SQL Server sebagai database yang kokoh, seperti harapan kami mempertahankan IPK tetap tinggi ekhm ipk 6.00 boleh lah ya.
+	3.	Menguji aplikasi lebih ketat dari dosen ujian—karena satu bug kecil bisa berujung tragedi nilai D.</value>
+  </data>
+  <data name="label8.Text" xml:space="preserve">
+    <value>Visi
+Menciptakan proyek yang sempurna, berfungsi dengan baik, dan tentunya membawa kami ke nilai A yang gemilang, serta menghindari nilai D seperti menghindari mantan di acara reuni
+Karena kami percaya nilai D itu bukan kemauan kami tapi kemauan dosen hehehe maap maap.
+</value>
+  </data>
+  <data name="label6.Text" xml:space="preserve">
+    <value>23.11.5791 FAAIZ AKHDAN FATKHI (sebagai kepala backend)
+23.11.5771 AKHMAL GALIH WITJAKSONO
+(Sebagai sosok pembuat funfact didalam project)
+23.11.5802 ITTAQI SUTAN TAFUZI
+(Sebagai anak frontend cabang 2)
+23.11.5804 ALFAN HANIF DWI PUTRA
+(Sebagai anak frontend cabang akhir)
+23.11.5759 DAVIN JONATHAN SITINDAON
+(Sebagai design logo profesional)
+23.11.5782 FATIH IQBAL BAKHTIAR
+(Sebagai ahli frontend  )</value>
+  </data>
+  <metadata name="backgroundWorker1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>161, 17</value>
   </metadata>
 </root>
