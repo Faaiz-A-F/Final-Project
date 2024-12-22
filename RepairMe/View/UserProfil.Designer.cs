@@ -41,6 +41,9 @@
             this.btnSave = new Guna.UI2.WinForms.Guna2Button();
             this.guna2ShadowPanel1 = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.guna2GroupBox1 = new Guna.UI2.WinForms.Guna2GroupBox();
+            this.btnTambahData = new Guna.UI2.WinForms.Guna2Button();
+            this.btnHapusData = new Guna.UI2.WinForms.Guna2Button();
+            this.listView1 = new System.Windows.Forms.ListView();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2GroupBox2 = new Guna.UI2.WinForms.Guna2GroupBox();
             this.tbAddress = new Guna.UI2.WinForms.Guna2TextBox();
@@ -57,9 +60,6 @@
             this.guna2CirclePictureBox2 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.pbProfile = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
-            this.listView1 = new System.Windows.Forms.ListView();
-            this.btnHapusData = new Guna.UI2.WinForms.Guna2Button();
-            this.btnTambahData = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
             this.guna2ShadowPanel1.SuspendLayout();
@@ -255,6 +255,47 @@
             this.guna2GroupBox1.Size = new System.Drawing.Size(840, 396);
             this.guna2GroupBox1.TabIndex = 37;
             this.guna2GroupBox1.Text = "Daftar Motor Anda";
+            // 
+            // btnTambahData
+            // 
+            this.btnTambahData.Animated = true;
+            this.btnTambahData.BorderRadius = 10;
+            this.btnTambahData.CheckedState.Parent = this.btnTambahData;
+            this.btnTambahData.CustomImages.Parent = this.btnTambahData;
+            this.btnTambahData.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTambahData.ForeColor = System.Drawing.Color.White;
+            this.btnTambahData.HoverState.Parent = this.btnTambahData;
+            this.btnTambahData.Location = new System.Drawing.Point(575, 309);
+            this.btnTambahData.Name = "btnTambahData";
+            this.btnTambahData.ShadowDecoration.Parent = this.btnTambahData;
+            this.btnTambahData.Size = new System.Drawing.Size(120, 40);
+            this.btnTambahData.TabIndex = 31;
+            this.btnTambahData.Text = "Tambah";
+            // 
+            // btnHapusData
+            // 
+            this.btnHapusData.Animated = true;
+            this.btnHapusData.BorderRadius = 10;
+            this.btnHapusData.CheckedState.Parent = this.btnHapusData;
+            this.btnHapusData.CustomImages.Parent = this.btnHapusData;
+            this.btnHapusData.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHapusData.ForeColor = System.Drawing.Color.White;
+            this.btnHapusData.HoverState.Parent = this.btnHapusData;
+            this.btnHapusData.Location = new System.Drawing.Point(701, 309);
+            this.btnHapusData.Name = "btnHapusData";
+            this.btnHapusData.ShadowDecoration.Parent = this.btnHapusData;
+            this.btnHapusData.Size = new System.Drawing.Size(120, 40);
+            this.btnHapusData.TabIndex = 30;
+            this.btnHapusData.Text = "Hapus";
+            // 
+            // listView1
+            // 
+            this.listView1.HideSelection = false;
+            this.listView1.Location = new System.Drawing.Point(18, 37);
+            this.listView1.Name = "listView1";
+            this.listView1.Size = new System.Drawing.Size(803, 266);
+            this.listView1.TabIndex = 14;
+            this.listView1.UseCompatibleStateImageBehavior = false;
             // 
             // guna2Button1
             // 
@@ -519,54 +560,15 @@
             // 
             // guna2CirclePictureBox1
             // 
+            this.guna2CirclePictureBox1.Image = global::RepairMe.Properties.Resources._15;
             this.guna2CirclePictureBox1.Location = new System.Drawing.Point(11, 10);
             this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
             this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.guna2CirclePictureBox1.ShadowDecoration.Parent = this.guna2CirclePictureBox1;
             this.guna2CirclePictureBox1.Size = new System.Drawing.Size(78, 59);
+            this.guna2CirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.guna2CirclePictureBox1.TabIndex = 0;
             this.guna2CirclePictureBox1.TabStop = false;
-            // 
-            // listView1
-            // 
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(18, 37);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(803, 266);
-            this.listView1.TabIndex = 14;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            // 
-            // btnHapusData
-            // 
-            this.btnHapusData.Animated = true;
-            this.btnHapusData.BorderRadius = 10;
-            this.btnHapusData.CheckedState.Parent = this.btnHapusData;
-            this.btnHapusData.CustomImages.Parent = this.btnHapusData;
-            this.btnHapusData.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHapusData.ForeColor = System.Drawing.Color.White;
-            this.btnHapusData.HoverState.Parent = this.btnHapusData;
-            this.btnHapusData.Location = new System.Drawing.Point(701, 309);
-            this.btnHapusData.Name = "btnHapusData";
-            this.btnHapusData.ShadowDecoration.Parent = this.btnHapusData;
-            this.btnHapusData.Size = new System.Drawing.Size(120, 40);
-            this.btnHapusData.TabIndex = 30;
-            this.btnHapusData.Text = "Hapus";
-            // 
-            // btnTambahData
-            // 
-            this.btnTambahData.Animated = true;
-            this.btnTambahData.BorderRadius = 10;
-            this.btnTambahData.CheckedState.Parent = this.btnTambahData;
-            this.btnTambahData.CustomImages.Parent = this.btnTambahData;
-            this.btnTambahData.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTambahData.ForeColor = System.Drawing.Color.White;
-            this.btnTambahData.HoverState.Parent = this.btnTambahData;
-            this.btnTambahData.Location = new System.Drawing.Point(575, 309);
-            this.btnTambahData.Name = "btnTambahData";
-            this.btnTambahData.ShadowDecoration.Parent = this.btnTambahData;
-            this.btnTambahData.Size = new System.Drawing.Size(120, 40);
-            this.btnTambahData.TabIndex = 31;
-            this.btnTambahData.Text = "Tambah";
             // 
             // UserProfil
             // 
