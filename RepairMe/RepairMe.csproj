@@ -114,6 +114,8 @@
     <Compile Include="Model\Entity\Motor.cs" />
     <Compile Include="Model\Entity\Transaction.cs" />
     <Compile Include="Model\Repository\JasaRepository.cs" />
+    <Compile Include="Model\Repository\MotorRepository.cs" />
+    <Compile Include="Model\Repository\TransactionRepository.cs" />
     <Compile Include="View\DashboardAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
