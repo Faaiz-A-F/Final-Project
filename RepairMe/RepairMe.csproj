@@ -264,6 +264,7 @@
   <ItemGroup>
     <Content Include="Database\repairme.sql" />
     <Content Include="Guna UI\Guna.UI2.dll" />
+    <Content Include="Resources\logobiasa-transparan.png" />
     <Content Include="Resources\logobiasa.png" />
     <None Include="Resources\profile-default.png" />
     <None Include="Resources\PAMERAN..jpg" />
