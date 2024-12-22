@@ -74,7 +74,7 @@
             this.guna2Panel1.Controls.Add(this.guna2CirclePictureBox1);
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
-            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
             this.guna2Panel1.Size = new System.Drawing.Size(960, 62);
@@ -84,7 +84,7 @@
             // 
             this.pbProfile.Image = global::RepairMe.Properties.Resources.profile_default;
             this.pbProfile.Location = new System.Drawing.Point(875, 4);
-            this.pbProfile.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pbProfile.Margin = new System.Windows.Forms.Padding(2);
             this.pbProfile.Name = "pbProfile";
             this.pbProfile.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.pbProfile.ShadowDecoration.Parent = this.pbProfile;
@@ -116,7 +116,7 @@
             this.btnAboutUs.ForeColor = System.Drawing.Color.White;
             this.btnAboutUs.HoverState.Parent = this.btnAboutUs;
             this.btnAboutUs.Location = new System.Drawing.Point(782, 17);
-            this.btnAboutUs.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAboutUs.Margin = new System.Windows.Forms.Padding(2);
             this.btnAboutUs.Name = "btnAboutUs";
             this.btnAboutUs.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(238)))), ((int)(((byte)(221)))));
             this.btnAboutUs.ShadowDecoration.Parent = this.btnAboutUs;
@@ -134,13 +134,14 @@
             this.btnexit.ForeColor = System.Drawing.Color.Red;
             this.btnexit.HoverState.Parent = this.btnexit;
             this.btnexit.Location = new System.Drawing.Point(938, -3);
-            this.btnexit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnexit.Margin = new System.Windows.Forms.Padding(2);
             this.btnexit.Name = "btnexit";
             this.btnexit.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.btnexit.ShadowDecoration.Parent = this.btnexit;
             this.btnexit.Size = new System.Drawing.Size(25, 28);
             this.btnexit.TabIndex = 21;
             this.btnexit.Text = "X";
+            this.btnexit.Click += new System.EventHandler(this.btnexit_Click);
             // 
             // btnJasa
             // 
@@ -152,8 +153,8 @@
             this.btnJasa.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnJasa.ForeColor = System.Drawing.Color.White;
             this.btnJasa.HoverState.Parent = this.btnJasa;
-            this.btnJasa.Location = new System.Drawing.Point(629, 16);
-            this.btnJasa.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnJasa.Location = new System.Drawing.Point(626, 17);
+            this.btnJasa.Margin = new System.Windows.Forms.Padding(2);
             this.btnJasa.Name = "btnJasa";
             this.btnJasa.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(238)))), ((int)(((byte)(221)))));
             this.btnJasa.ShadowDecoration.Parent = this.btnJasa;
@@ -172,7 +173,7 @@
             this.btnPesanan.ForeColor = System.Drawing.Color.White;
             this.btnPesanan.HoverState.Parent = this.btnPesanan;
             this.btnPesanan.Location = new System.Drawing.Point(527, 17);
-            this.btnPesanan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnPesanan.Margin = new System.Windows.Forms.Padding(2);
             this.btnPesanan.Name = "btnPesanan";
             this.btnPesanan.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(238)))), ((int)(((byte)(221)))));
             this.btnPesanan.ShadowDecoration.Parent = this.btnPesanan;
@@ -183,7 +184,7 @@
             // guna2CirclePictureBox1
             // 
             this.guna2CirclePictureBox1.Location = new System.Drawing.Point(8, 8);
-            this.guna2CirclePictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2CirclePictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
             this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.guna2CirclePictureBox1.ShadowDecoration.Parent = this.guna2CirclePictureBox1;
@@ -207,7 +208,7 @@
             this.guna2Panel2.Controls.Add(this.tbNama);
             this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2Panel2.Location = new System.Drawing.Point(0, 62);
-            this.guna2Panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2Panel2.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.ShadowDecoration.Parent = this.guna2Panel2;
             this.guna2Panel2.Size = new System.Drawing.Size(960, 523);
@@ -223,7 +224,7 @@
             this.btnTambah.ForeColor = System.Drawing.Color.White;
             this.btnTambah.HoverState.Parent = this.btnTambah;
             this.btnTambah.Location = new System.Drawing.Point(818, 213);
-            this.btnTambah.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnTambah.Margin = new System.Windows.Forms.Padding(2);
             this.btnTambah.Name = "btnTambah";
             this.btnTambah.ShadowDecoration.Parent = this.btnTambah;
             this.btnTambah.Size = new System.Drawing.Size(107, 32);
@@ -235,7 +236,7 @@
             // 
             this.rbDeskripsi.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbDeskripsi.Location = new System.Drawing.Point(13, 108);
-            this.rbDeskripsi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rbDeskripsi.Margin = new System.Windows.Forms.Padding(2);
             this.rbDeskripsi.Name = "rbDeskripsi";
             this.rbDeskripsi.Size = new System.Drawing.Size(794, 138);
             this.rbDeskripsi.TabIndex = 16;
@@ -262,12 +263,13 @@
             this.btnHapus.ForeColor = System.Drawing.Color.White;
             this.btnHapus.HoverState.Parent = this.btnHapus;
             this.btnHapus.Location = new System.Drawing.Point(827, 651);
-            this.btnHapus.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnHapus.Margin = new System.Windows.Forms.Padding(2);
             this.btnHapus.Name = "btnHapus";
             this.btnHapus.ShadowDecoration.Parent = this.btnHapus;
             this.btnHapus.Size = new System.Drawing.Size(98, 28);
             this.btnHapus.TabIndex = 14;
             this.btnHapus.Text = "Hapus Data";
+            this.btnHapus.Click += new System.EventHandler(this.btnHapus_Click);
             // 
             // guna2DataGridView1
             // 
@@ -298,7 +300,7 @@
             this.guna2DataGridView1.EnableHeadersVisualStyles = false;
             this.guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.guna2DataGridView1.Location = new System.Drawing.Point(13, 265);
-            this.guna2DataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2DataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2DataGridView1.Name = "guna2DataGridView1";
             this.guna2DataGridView1.RowHeadersVisible = false;
             this.guna2DataGridView1.RowHeadersWidth = 51;
@@ -413,7 +415,7 @@
             this.Controls.Add(this.guna2Panel2);
             this.Controls.Add(this.guna2Panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "PenambahanJasa";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PenambahanJasa";

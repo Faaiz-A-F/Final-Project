@@ -22,33 +22,73 @@ namespace RepairMe.Model.Repository
 
         public void AddJasa(Jasa jasa)
         {
-            try
+            _dbContext.OpenConnection();
+
+            var query = "INSERT INTO jasa_bengkel (name, price, description, admin_id) " +
+                "VALUES (@name, @price, @description), @adminId";
+
+            using (var cmd = new MySqlCommand(query, _dbContext.Connection))
             {
-                _dbContext.OpenConnection();
+                cmd.Parameters.AddWithValue("@name", jasa.Name);    // Ensure 'Name' matches your database schema
+                cmd.Parameters.AddWithValue("@price", jasa.Price);
+                cmd.Parameters.AddWithValue("@description", jasa.Description);
+                cmd.Parameters.AddWithValue("@admin_id", jasa.AdminId);
 
-                var query = "INSERT INTO jasa_bengkel (name, price, description) " +
-                    "VALUES (@name, @price, @description)";
+                cmd.ExecuteNonQuery();
+            }
 
-                using (var cmd = new MySqlCommand(query, _dbContext.Connection))
+            _dbContext.CloseConnection();
+        }
+
+        public void DeleteJasa(int id)
+        {
+            _dbContext.OpenConnection();
+
+            var query = "DELETE FROM jasa_bengkel WHERE id = @id";
+
+            using (var cmd = new MySqlCommand(query, _dbContext.Connection))
+            {
+                cmd.Parameters.AddWithValue("@id", id);
+
+                cmd.ExecuteNonQuery();
+            }
+
+            _dbContext.CloseConnection();
+        }
+
+        public List<Jasa> GetAllJasa(int adminId)
+        {
+            _dbContext.OpenConnection();
+
+            var query = "SELECT * FROM jasa_bengkel WHERE admin_id = @adminId";
+            var jasaList = new List<Jasa>();
+
+            using (var cmd = new MySqlCommand(query, _dbContext.Connection))
+            {
+                cmd.Parameters.AddWithValue("@adminId", adminId);
+
+                using (var reader = cmd.ExecuteReader())
                 {
-                    cmd.Parameters.AddWithValue("@name", jasa.Name);    // Ensure 'Name' matches your database schema
-                    cmd.Parameters.AddWithValue("@price", jasa.Price);
-                    cmd.Parameters.AddWithValue("@description", jasa.Description);
-                    cmd.Parameters.AddWithValue("@admin_id", jasa.AdminId);
+                    while (reader.Read())
+                    {
+                        var jasa = new Jasa
+                        {
+                            Id = reader.GetInt32("jasa_id"),
+                            Name = reader.GetString("name"),
+                            Price = reader.GetFloat("price"),
+                            Description = reader.GetString("description"),
+                            AdminId = reader.GetInt32("admin_id")
+                        };
 
-                    cmd.ExecuteNonQuery();
+                        jasaList.Add(jasa);
+                    }
                 }
             }
-            catch (Exception ex)
-            {
-                // Display error message if connection fails
-                MessageBox.Show($"Failed to connect to the database.\n\nError: {ex.Message}", "Connection Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                throw;
-            }
-            finally
-            {
-                _dbContext.CloseConnection();
-            }
+
+            _dbContext.CloseConnection();
+
+            return jasaList;
         }
+
     }
 }

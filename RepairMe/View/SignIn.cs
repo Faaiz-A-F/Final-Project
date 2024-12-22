@@ -94,6 +94,7 @@ namespace RepairMe
 
                             // Set current admin ID
                             Users.CurrentAdminId = user.Id;
+                            MessageBox.Show($"Logged-in Admin ID: {Users.CurrentAdminId}");
 
                             dashboardAdmin.Show();
                             this.Hide();
@@ -102,6 +103,10 @@ namespace RepairMe
                         {
                             // Open user dashboard
                             Dashboard dashboard = new Dashboard();
+
+                            // Set current user ID
+                            Users.CurrentUserId = user.Id;
+
                             dashboard.Show();
                             this.Hide();
                         }

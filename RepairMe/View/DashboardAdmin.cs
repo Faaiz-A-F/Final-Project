@@ -8,6 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+using RepairMe.Controller;
+using RepairMe.Model.Entity;
+using RepairMe.Model.Context;
+using RepairMe.View;
+
 namespace RepairMe
 {
     public partial class DashboardAdmin : Form
@@ -15,6 +20,16 @@ namespace RepairMe
         public DashboardAdmin()
         {
             InitializeComponent();
+        }
+
+        private void btnJasa_Click(object sender, EventArgs e)
+        {
+            new PenambahanJasa().Show();
+        }
+
+        private void btnexit_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

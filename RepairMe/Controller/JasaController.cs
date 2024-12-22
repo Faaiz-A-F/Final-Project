@@ -67,5 +67,33 @@ namespace RepairMe.Controller
                 MessageBox.Show($"An error occurred while adding jasa.\n\nError: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        public void DeleteJasa(int id)
+        {
+            try
+            {
+                // Delete jasa from database
+                _jasaRepository.DeleteJasa(id);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"An error occurred while deleting jasa.\n\nError: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        public List<Jasa> GetAllJasa(int adminId)
+        {
+            try
+            {
+                // Get all jasa for the specified admin from the repository
+                return _jasaRepository.GetAllJasa(adminId);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"An error occurred while getting jasa.\n\nError: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return new List<Jasa>(); // Return an empty list if an error occurs
+            }
+        }
+
     }
 }
