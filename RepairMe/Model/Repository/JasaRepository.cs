@@ -73,11 +73,11 @@ namespace RepairMe.Model.Repository
                     {
                         var jasa = new Jasa
                         {
-                            Id = reader.GetInt32("jasa_id"),
+                            Id = reader.GetInt32("jasa_id"), // kalo read harus sesuai nama di kolom tabel nya, tapi kok iki ra muncul ya id ne, opo tak hide ya lali, mbuh lah rapenting juga
                             Name = reader.GetString("name"),
                             Price = reader.GetFloat("price"),
                             Description = reader.GetString("description"),
-                            AdminId = reader.GetInt32("admin_id")
+                            AdminId = reader.GetInt32("admin_id") // kayake ra dinggo tur wait, iseh bingung
                         };
 
                         jasaList.Add(jasa);
