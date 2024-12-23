@@ -22,14 +22,17 @@ namespace RepairMe.View
             this.Close();
         }
 
-        private void guna2PictureBox1_Click(object sender, EventArgs e)
+        private void btnPemesanan_Click(object sender, EventArgs e)
         {
-
+            
         }
 
-        private void guna2Panel1_Paint(object sender, PaintEventArgs e)
+        private void btnWorkshopList_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            WorkshopList workshopList = new WorkshopList();
+            workshopList.Show();
+            workshopList.FormClosed += (s, args) => this.Show();
         }
     }
 }

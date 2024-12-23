@@ -135,5 +135,59 @@ namespace RepairMe.Model.Repository
 
             return null;
         }
+
+        public void DeleteUser(int id)
+        {
+            try
+            {
+                _dbContext.OpenConnection();
+
+                var query = "DELETE FROM users WHERE user_id = @id";
+
+                using (var cmd = new MySqlCommand(query, _dbContext.Connection))
+                {
+                    cmd.Parameters.AddWithValue("@id", id);
+
+                    cmd.ExecuteNonQuery();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Failed to connect to the database.\n\nError: {ex.Message}", "Connection Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                throw;
+            }
+            finally
+            {
+                _dbContext.CloseConnection();
+            }
+        }
+
+        public void DeleteAdmin(int id)
+        {
+            try
+            {
+                _dbContext.OpenConnection();
+
+                var query = "DELETE FROM admin WHERE admin_id = @id";
+
+                using (var cmd = new MySqlCommand(query, _dbContext.Connection))
+                {
+                    cmd.Parameters.AddWithValue("@id", id);
+
+                    cmd.ExecuteNonQuery();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Failed to connect to the database.\n\nError: {ex.Message}", "Connection Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                throw;
+            }
+            finally
+            {
+                _dbContext.CloseConnection();
+            }
+        }
+
+       
     }
 }

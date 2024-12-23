@@ -95,5 +95,9 @@ namespace RepairMe.Controller
             }
         }
 
+        public List<Jasa> GetJasaByWorkshopId(int workshopId)
+        {
+           return _jasaRepository.GetJasaByWorkshopId(workshopId);
+        }
     }
 }

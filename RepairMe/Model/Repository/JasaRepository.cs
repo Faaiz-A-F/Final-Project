@@ -90,5 +90,44 @@ namespace RepairMe.Model.Repository
             return jasaList;
         }
 
+        public List<Jasa> GetJasaByWorkshopId(int workshopId)
+        {
+            var jasaList = new List<Jasa>();
+
+            try
+            {
+                _dbContext.OpenConnection();
+
+                var query = "SELECT * FROM jasa_bengkel WHERE admin_id = @adminId";
+
+                using (var cmd = new MySqlCommand(query, _dbContext.Connection))
+                {
+                    cmd.Parameters.AddWithValue("@adminId", workshopId);
+
+                    using (var reader = cmd.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            var jasa = new Jasa
+                            {
+                                Id = reader.GetInt32("jasa_id"),
+                                Name = reader.GetString("name"),
+                                Price = (float)reader.GetDecimal("price"),
+                                Description = reader.GetString("description"),
+                                AdminId = reader.GetInt32("admin_id"),
+                            };
+
+                            jasaList.Add(jasa);
+                        }
+                    }
+                }
+            }
+            finally
+            {
+                _dbContext.CloseConnection();
+            }
+
+            return jasaList;
+        }
     }
 }

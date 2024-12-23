@@ -109,13 +109,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controller\JasaController.cs" />
+    <Compile Include="Controller\MotorController.cs" />
     <Compile Include="Controller\UsersController.cs" />
+    <Compile Include="Controller\WorkshopController.cs" />
     <Compile Include="Model\Entity\Jasa.cs" />
     <Compile Include="Model\Entity\Motor.cs" />
     <Compile Include="Model\Entity\Transaction.cs" />
+    <Compile Include="Model\Entity\Workshop.cs" />
     <Compile Include="Model\Repository\JasaRepository.cs" />
     <Compile Include="Model\Repository\MotorRepository.cs" />
     <Compile Include="Model\Repository\TransactionRepository.cs" />
+    <Compile Include="Model\Repository\WorkshopRepository.cs" />
     <Compile Include="View\DashboardAdmin.cs">
       <SubType>Form</SubType>
     </Compile>

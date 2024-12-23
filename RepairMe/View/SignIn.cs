@@ -98,6 +98,7 @@ namespace RepairMe
 
                             dashboardAdmin.Show();
                             this.Hide();
+                            dashboardAdmin.FormClosed += (s, args) => this.Show();
                         }
                         else if (user.Role == "user")
                         {
@@ -109,6 +110,7 @@ namespace RepairMe
 
                             dashboard.Show();
                             this.Hide();
+                            dashboard.FormClosed += (s, args) => this.Show();
                         }
                         else
                         {
