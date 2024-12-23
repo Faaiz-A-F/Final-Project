@@ -27,7 +27,7 @@ namespace RepairMe.Controller
             _jasaRepository = jasaRepository;
         }
 
-        public void AddJasa(string name, float price, string description, int id)
+        public void AddJasa(string name, decimal price, string description, int id)
         {
             try
             {

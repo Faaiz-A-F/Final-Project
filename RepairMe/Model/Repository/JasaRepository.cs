@@ -75,7 +75,7 @@ namespace RepairMe.Model.Repository
                         {
                             Id = reader.GetInt32("jasa_id"), // kalo read harus sesuai nama di kolom tabel nya, tapi kok iki ra muncul ya id ne, opo tak hide ya lali, mbuh lah rapenting juga
                             Name = reader.GetString("name"),
-                            Price = reader.GetFloat("price"),
+                            Price = reader.GetDecimal("price"),
                             Description = reader.GetString("description"),
                             AdminId = reader.GetInt32("admin_id") // kayake ra dinggo tur wait, iseh bingung
                         };
@@ -112,7 +112,7 @@ namespace RepairMe.Model.Repository
                             {
                                 Id = reader.GetInt32("jasa_id"),
                                 Name = reader.GetString("name"),
-                                Price = (float)reader.GetDecimal("price"),
+                                Price = reader.GetDecimal("price"),
                                 Description = reader.GetString("description"),
                                 AdminId = reader.GetInt32("admin_id"),
                             };

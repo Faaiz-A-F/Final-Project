@@ -36,41 +36,32 @@ namespace RepairMe.View
 
                 dtgJasaPilih.DataSource = jasaList;
 
-                // Customize DataGridView for jasa (implement this method if required)
+                // Add a checkbox column
+                AddCheckboxColumn();
+
+                // Customize DataGridView for jasa
                 CustomizeGunaDataGridView();
+            }
+        }
+
+        private void AddCheckboxColumn()
+        {
+            if (!dtgJasaPilih.Columns.Contains("Select"))
+            {
+                var checkboxColumn = new DataGridViewCheckBoxColumn
+                {
+                    Name = "Select",
+                    HeaderText = "Pilih",
+                    Width = 50
+                };
+
+                dtgJasaPilih.Columns.Insert(0, checkboxColumn); // Add checkbox as the first column
             }
         }
 
         private void CustomizeGunaDataGridView()
         {
-            // Clear existing columns
-            dtgJasaPilih.Columns.Clear();
-
-            // Add 'Nama Jasa' column
-            dtgJasaPilih.Columns.Add(new DataGridViewTextBoxColumn
-            {
-                Name = "nama",
-                DataPropertyName = "Name", // Matches the Jasa property
-                HeaderText = "Nama Jasa"
-            });
-
-            // Add 'Harga' column
-            dtgJasaPilih.Columns.Add(new DataGridViewTextBoxColumn
-            {
-                Name = "harga",
-                DataPropertyName = "Price", // Matches the Jasa property
-                HeaderText = "Harga (Rp)"
-            });
-
-            // Add 'Deskripsi' column
-            dtgJasaPilih.Columns.Add(new DataGridViewTextBoxColumn
-            {
-                Name = "deskripsi",
-                DataPropertyName = "Description", // Matches the Jasa property
-                HeaderText = "Deskripsi"
-            });
-
-            // Styling
+            // Styling and auto-resize
             dtgJasaPilih.ColumnHeadersDefaultCellStyle.BackColor = Color.Navy;
             dtgJasaPilih.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
             dtgJasaPilih.ColumnHeadersDefaultCellStyle.Font = new Font("Segoe UI", 10, FontStyle.Bold);
@@ -80,9 +71,59 @@ namespace RepairMe.View
             dtgJasaPilih.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
         }
 
+        private List<Jasa> GetSelectedJasa()
+        {
+            var selectedJasa = new List<Jasa>();
+
+            foreach (DataGridViewRow row in dtgJasaPilih.Rows)
+            {
+                if (row.Cells["Select"] is DataGridViewCheckBoxCell checkboxCell &&
+                    checkboxCell.Value is bool isChecked &&
+                    isChecked)
+                {
+                    selectedJasa.Add(new Jasa
+                    {
+                        Id = Convert.ToInt32(row.Cells["Id"].Value), // Use "Id" instead of "jasa_id"
+                        Name = row.Cells["Name"].Value.ToString(),
+                        Price = Convert.ToDecimal(row.Cells["Price"].Value),
+                        Description = row.Cells["Description"].Value.ToString()
+                    });
+                }
+            }
+
+            return selectedJasa;
+        }
+
         private void btnexit_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnPilih_Click(object sender, EventArgs e)
+        {
+            var selectedJasa = GetSelectedJasa();
+
+            if (selectedJasa.Count == 0)
+            {
+                MessageBox.Show("Silakan pilih jasa terlebih dahulu.", "Tidak ada jasa yang dipilih", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            // Display selected jasa in a new DataGridView below
+            dtgSelectedJasa.DataSource = selectedJasa;
+
+            // Calculate total price
+            decimal totalPrice = selectedJasa.Sum(jasa => jasa.Price);
+
+            // Display total price in tbTotalHarga
+            tbTotalHarga.Text = totalPrice.ToString("N0"); // Format as currency (e.g., "1,000")
+
+            MessageBox.Show("Jasa berhasil dipilih!", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void btnCo_Click(object sender, EventArgs e)
+        {
+            var selectedJasa = GetSelectedJasa();
         }
     }
 }

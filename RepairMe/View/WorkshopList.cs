@@ -157,7 +157,9 @@ namespace RepairMe.View
 
             // Example: Open a new form with the selected workshop ID
             var jasaForm = new DashboardPemesanan(selectedId);
+            this.Hide();
             jasaForm.Show();
+            jasaForm.FormClosed += (s, args) => this.Show();
         }
 
         private void btnCariBengkel_Click(object sender, EventArgs e)
