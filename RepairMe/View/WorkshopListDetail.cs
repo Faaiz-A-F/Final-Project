@@ -10,10 +10,10 @@ using System.Windows.Forms;
 
 namespace RepairMe.View
 {
-    public partial class HistoryPemesanan : Form
+    public partial class WorkshopListDetail : Form
     {
 
-        public HistoryPemesanan()
+        public WorkshopListDetail()
         {
             InitializeComponent();
         }

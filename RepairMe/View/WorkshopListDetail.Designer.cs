@@ -1,6 +1,6 @@
 ﻿namespace RepairMe.View
 {
-    partial class HistoryPemesanan
+    partial class WorkshopListDetail
     {
         /// <summary>
         /// Required designer variable.
@@ -43,15 +43,18 @@
             this.btnHome = new Guna.UI2.WinForms.Guna2Button();
             this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2GroupBox1 = new Guna.UI2.WinForms.Guna2GroupBox();
+            this.lvwUlasan = new System.Windows.Forms.ListView();
+            this.btnback = new Guna.UI2.WinForms.Guna2Button();
             this.guna2GroupBox2 = new Guna.UI2.WinForms.Guna2GroupBox();
-            this.dtgHistory = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.btnHistory = new Guna.UI2.WinForms.Guna2Button();
+            this.dtgJasa = new Guna.UI2.WinForms.Guna2DataGridView();
             this.guna2Panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbProfile)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
             this.guna2Panel1.SuspendLayout();
+            this.guna2GroupBox1.SuspendLayout();
             this.guna2GroupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgHistory)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgJasa)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2Elipse1
@@ -61,7 +64,6 @@
             // guna2Panel3
             // 
             this.guna2Panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(141)))), ((int)(((byte)(218)))));
-            this.guna2Panel3.Controls.Add(this.btnHistory);
             this.guna2Panel3.Controls.Add(this.pbProfile);
             this.guna2Panel3.Controls.Add(this.label9);
             this.guna2Panel3.Controls.Add(this.btnAboutUs);
@@ -71,7 +73,6 @@
             this.guna2Panel3.Controls.Add(this.btnHome);
             this.guna2Panel3.Controls.Add(this.guna2CirclePictureBox1);
             this.guna2Panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Panel3.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Panel3.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel3.Name = "guna2Panel3";
             this.guna2Panel3.ShadowDecoration.Parent = this.guna2Panel3;
@@ -108,10 +109,10 @@
             this.btnAboutUs.CheckedState.Parent = this.btnAboutUs;
             this.btnAboutUs.CustomImages.Parent = this.btnAboutUs;
             this.btnAboutUs.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(141)))), ((int)(((byte)(218)))));
-            this.btnAboutUs.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAboutUs.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAboutUs.ForeColor = System.Drawing.Color.White;
             this.btnAboutUs.HoverState.Parent = this.btnAboutUs;
-            this.btnAboutUs.Location = new System.Drawing.Point(1031, 20);
+            this.btnAboutUs.Location = new System.Drawing.Point(1033, 19);
             this.btnAboutUs.Name = "btnAboutUs";
             this.btnAboutUs.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(238)))), ((int)(((byte)(221)))));
             this.btnAboutUs.ShadowDecoration.Parent = this.btnAboutUs;
@@ -144,10 +145,10 @@
             this.btnPemesanan.CheckedState.Parent = this.btnPemesanan;
             this.btnPemesanan.CustomImages.Parent = this.btnPemesanan;
             this.btnPemesanan.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(141)))), ((int)(((byte)(218)))));
-            this.btnPemesanan.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPemesanan.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPemesanan.ForeColor = System.Drawing.Color.White;
             this.btnPemesanan.HoverState.Parent = this.btnPemesanan;
-            this.btnPemesanan.Location = new System.Drawing.Point(748, 20);
+            this.btnPemesanan.Location = new System.Drawing.Point(883, 20);
             this.btnPemesanan.Name = "btnPemesanan";
             this.btnPemesanan.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(238)))), ((int)(((byte)(221)))));
             this.btnPemesanan.ShadowDecoration.Parent = this.btnPemesanan;
@@ -162,10 +163,10 @@
             this.btnWorkshopList.CheckedState.Parent = this.btnWorkshopList;
             this.btnWorkshopList.CustomImages.Parent = this.btnWorkshopList;
             this.btnWorkshopList.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(141)))), ((int)(((byte)(218)))));
-            this.btnWorkshopList.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnWorkshopList.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnWorkshopList.ForeColor = System.Drawing.Color.White;
             this.btnWorkshopList.HoverState.Parent = this.btnWorkshopList;
-            this.btnWorkshopList.Location = new System.Drawing.Point(587, 20);
+            this.btnWorkshopList.Location = new System.Drawing.Point(726, 20);
             this.btnWorkshopList.Name = "btnWorkshopList";
             this.btnWorkshopList.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(238)))), ((int)(((byte)(221)))));
             this.btnWorkshopList.ShadowDecoration.Parent = this.btnWorkshopList;
@@ -180,10 +181,10 @@
             this.btnHome.CheckedState.Parent = this.btnHome;
             this.btnHome.CustomImages.Parent = this.btnHome;
             this.btnHome.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(141)))), ((int)(((byte)(218)))));
-            this.btnHome.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHome.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHome.ForeColor = System.Drawing.Color.White;
             this.btnHome.HoverState.Parent = this.btnHome;
-            this.btnHome.Location = new System.Drawing.Point(475, 20);
+            this.btnHome.Location = new System.Drawing.Point(612, 19);
             this.btnHome.Name = "btnHome";
             this.btnHome.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(238)))), ((int)(((byte)(221)))));
             this.btnHome.ShadowDecoration.Parent = this.btnHome;
@@ -208,6 +209,8 @@
             this.guna2Panel1.AutoScroll = true;
             this.guna2Panel1.AutoScrollMargin = new System.Drawing.Size(0, 20);
             this.guna2Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(238)))), ((int)(((byte)(221)))));
+            this.guna2Panel1.Controls.Add(this.guna2GroupBox1);
+            this.guna2Panel1.Controls.Add(this.btnback);
             this.guna2Panel1.Controls.Add(this.guna2GroupBox2);
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2Panel1.Location = new System.Drawing.Point(0, 76);
@@ -216,10 +219,53 @@
             this.guna2Panel1.Size = new System.Drawing.Size(1280, 644);
             this.guna2Panel1.TabIndex = 13;
             // 
+            // guna2GroupBox1
+            // 
+            this.guna2GroupBox1.BorderColor = System.Drawing.Color.Transparent;
+            this.guna2GroupBox1.Controls.Add(this.lvwUlasan);
+            this.guna2GroupBox1.CustomBorderColor = System.Drawing.Color.Transparent;
+            this.guna2GroupBox1.FillColor = System.Drawing.Color.Transparent;
+            this.guna2GroupBox1.Font = new System.Drawing.Font("Poppins SemiBold", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2GroupBox1.ForeColor = System.Drawing.Color.Black;
+            this.guna2GroupBox1.Location = new System.Drawing.Point(11, 528);
+            this.guna2GroupBox1.Name = "guna2GroupBox1";
+            this.guna2GroupBox1.ShadowDecoration.Parent = this.guna2GroupBox1;
+            this.guna2GroupBox1.Size = new System.Drawing.Size(1231, 482);
+            this.guna2GroupBox1.TabIndex = 34;
+            this.guna2GroupBox1.Text = "Ulasan Pengguna";
+            // 
+            // lvwUlasan
+            // 
+            this.lvwUlasan.HideSelection = false;
+            this.lvwUlasan.Location = new System.Drawing.Point(19, 51);
+            this.lvwUlasan.Name = "lvwUlasan";
+            this.lvwUlasan.Size = new System.Drawing.Size(1200, 411);
+            this.lvwUlasan.TabIndex = 36;
+            this.lvwUlasan.UseCompatibleStateImageBehavior = false;
+            // 
+            // btnback
+            // 
+            this.btnback.Animated = true;
+            this.btnback.BackColor = System.Drawing.Color.Transparent;
+            this.btnback.BorderRadius = 10;
+            this.btnback.CheckedState.Parent = this.btnback;
+            this.btnback.CustomImages.Parent = this.btnback;
+            this.btnback.FillColor = System.Drawing.Color.Transparent;
+            this.btnback.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnback.ForeColor = System.Drawing.Color.Black;
+            this.btnback.HoverState.Parent = this.btnback;
+            this.btnback.Location = new System.Drawing.Point(1014, 0);
+            this.btnback.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnback.Name = "btnback";
+            this.btnback.ShadowDecoration.Parent = this.btnback;
+            this.btnback.Size = new System.Drawing.Size(245, 39);
+            this.btnback.TabIndex = 32;
+            this.btnback.Text = "< Back To Workshop List";
+            // 
             // guna2GroupBox2
             // 
             this.guna2GroupBox2.BorderColor = System.Drawing.Color.Transparent;
-            this.guna2GroupBox2.Controls.Add(this.dtgHistory);
+            this.guna2GroupBox2.Controls.Add(this.dtgJasa);
             this.guna2GroupBox2.CustomBorderColor = System.Drawing.Color.Transparent;
             this.guna2GroupBox2.FillColor = System.Drawing.Color.Transparent;
             this.guna2GroupBox2.Font = new System.Drawing.Font("Poppins SemiBold", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -229,17 +275,17 @@
             this.guna2GroupBox2.ShadowDecoration.Parent = this.guna2GroupBox2;
             this.guna2GroupBox2.Size = new System.Drawing.Size(1230, 497);
             this.guna2GroupBox2.TabIndex = 33;
-            this.guna2GroupBox2.Text = "History Pemesanan";
+            this.guna2GroupBox2.Text = "Jasa yang tersedia";
             // 
-            // dtgHistory
+            // dtgJasa
             // 
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.dtgHistory.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dtgHistory.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dtgHistory.BackgroundColor = System.Drawing.Color.White;
-            this.dtgHistory.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dtgHistory.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.dtgHistory.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dtgJasa.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dtgJasa.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dtgJasa.BackgroundColor = System.Drawing.Color.White;
+            this.dtgJasa.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dtgJasa.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dtgJasa.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Poppins SemiBold", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -247,8 +293,8 @@
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgHistory.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dtgHistory.ColumnHeadersHeight = 4;
+            this.dtgJasa.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dtgJasa.ColumnHeadersHeight = 4;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Poppins SemiBold", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -256,59 +302,41 @@
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtgHistory.DefaultCellStyle = dataGridViewCellStyle3;
-            this.dtgHistory.EnableHeadersVisualStyles = false;
-            this.dtgHistory.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dtgHistory.Location = new System.Drawing.Point(18, 47);
-            this.dtgHistory.Name = "dtgHistory";
-            this.dtgHistory.RowHeadersVisible = false;
-            this.dtgHistory.RowHeadersWidth = 51;
-            this.dtgHistory.RowTemplate.Height = 24;
-            this.dtgHistory.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dtgHistory.Size = new System.Drawing.Size(1200, 420);
-            this.dtgHistory.TabIndex = 0;
-            this.dtgHistory.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
-            this.dtgHistory.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-            this.dtgHistory.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.dtgHistory.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.dtgHistory.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.dtgHistory.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.dtgHistory.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.dtgHistory.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dtgHistory.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.dtgHistory.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.dtgHistory.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Poppins SemiBold", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtgHistory.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.dtgHistory.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.dtgHistory.ThemeStyle.HeaderStyle.Height = 4;
-            this.dtgHistory.ThemeStyle.ReadOnly = false;
-            this.dtgHistory.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.dtgHistory.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.dtgHistory.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Poppins SemiBold", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtgHistory.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.Black;
-            this.dtgHistory.ThemeStyle.RowsStyle.Height = 24;
-            this.dtgHistory.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dtgHistory.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dtgJasa.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dtgJasa.EnableHeadersVisualStyles = false;
+            this.dtgJasa.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dtgJasa.Location = new System.Drawing.Point(18, 47);
+            this.dtgJasa.Name = "dtgJasa";
+            this.dtgJasa.RowHeadersVisible = false;
+            this.dtgJasa.RowHeadersWidth = 51;
+            this.dtgJasa.RowTemplate.Height = 24;
+            this.dtgJasa.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dtgJasa.Size = new System.Drawing.Size(1200, 420);
+            this.dtgJasa.TabIndex = 0;
+            this.dtgJasa.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
+            this.dtgJasa.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.dtgJasa.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.dtgJasa.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.dtgJasa.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.dtgJasa.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.dtgJasa.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.dtgJasa.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dtgJasa.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.dtgJasa.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dtgJasa.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Poppins SemiBold", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtgJasa.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.dtgJasa.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.dtgJasa.ThemeStyle.HeaderStyle.Height = 4;
+            this.dtgJasa.ThemeStyle.ReadOnly = false;
+            this.dtgJasa.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.dtgJasa.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dtgJasa.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Poppins SemiBold", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtgJasa.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.Black;
+            this.dtgJasa.ThemeStyle.RowsStyle.Height = 24;
+            this.dtgJasa.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dtgJasa.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
-            // btnHistory
-            // 
-            this.btnHistory.Animated = true;
-            this.btnHistory.BorderRadius = 15;
-            this.btnHistory.CheckedState.Parent = this.btnHistory;
-            this.btnHistory.CustomImages.Parent = this.btnHistory;
-            this.btnHistory.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(141)))), ((int)(((byte)(218)))));
-            this.btnHistory.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHistory.ForeColor = System.Drawing.Color.White;
-            this.btnHistory.HoverState.Parent = this.btnHistory;
-            this.btnHistory.Location = new System.Drawing.Point(902, 20);
-            this.btnHistory.Name = "btnHistory";
-            this.btnHistory.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(238)))), ((int)(((byte)(221)))));
-            this.btnHistory.ShadowDecoration.Parent = this.btnHistory;
-            this.btnHistory.Size = new System.Drawing.Size(119, 35);
-            this.btnHistory.TabIndex = 26;
-            this.btnHistory.Text = "History";
-            // 
-            // HistoryPemesanan
+            // WorkshopListDetail
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -316,7 +344,7 @@
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.guna2Panel3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "HistoryPemesanan";
+            this.Name = "WorkshopListDetail";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "WorkshopListDetail";
             this.guna2Panel3.ResumeLayout(false);
@@ -324,8 +352,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbProfile)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
             this.guna2Panel1.ResumeLayout(false);
+            this.guna2GroupBox1.ResumeLayout(false);
             this.guna2GroupBox2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dtgHistory)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgJasa)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -341,9 +370,11 @@
         private Guna.UI2.WinForms.Guna2Button btnWorkshopList;
         private Guna.UI2.WinForms.Guna2Button btnHome;
         private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox1;
+        private Guna.UI2.WinForms.Guna2Button btnback;
         private Guna.UI2.WinForms.Guna2GroupBox guna2GroupBox2;
-        private Guna.UI2.WinForms.Guna2DataGridView dtgHistory;
+        private Guna.UI2.WinForms.Guna2DataGridView dtgJasa;
+        private Guna.UI2.WinForms.Guna2GroupBox guna2GroupBox1;
+        private System.Windows.Forms.ListView lvwUlasan;
         private Guna.UI2.WinForms.Guna2CirclePictureBox pbProfile;
-        private Guna.UI2.WinForms.Guna2Button btnHistory;
     }
 }

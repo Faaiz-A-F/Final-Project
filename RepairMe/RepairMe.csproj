@@ -197,11 +197,11 @@
     <Compile Include="View\WorkshopList.Designer.cs">
       <DependentUpon>WorkshopList.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\HistoryPemesanan.cs">
+    <Compile Include="View\WorkshopListDetail.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\HistoryPemesanan.Designer.cs">
-      <DependentUpon>HistoryPemesanan.cs</DependentUpon>
+    <Compile Include="View\WorkshopListDetail.Designer.cs">
+      <DependentUpon>WorkshopListDetail.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="View\AboutUs.resx">
       <DependentUpon>AboutUs.cs</DependentUpon>
@@ -249,8 +249,8 @@
     <EmbeddedResource Include="View\WorkshopList.resx">
       <DependentUpon>WorkshopList.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\HistoryPemesanan.resx">
-      <DependentUpon>HistoryPemesanan.cs</DependentUpon>
+    <EmbeddedResource Include="View\WorkshopListDetail.resx">
+      <DependentUpon>WorkshopListDetail.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

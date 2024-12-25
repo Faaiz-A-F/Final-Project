@@ -41,39 +41,38 @@
             this.guna2Panel8 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2RatingStar6 = new Guna.UI2.WinForms.Guna2RatingStar();
             this.label14 = new System.Windows.Forms.Label();
-            this.guna2ImageButton6 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2Panel7 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2RatingStar5 = new Guna.UI2.WinForms.Guna2RatingStar();
             this.label13 = new System.Windows.Forms.Label();
-            this.guna2ImageButton5 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2Panel6 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2RatingStar4 = new Guna.UI2.WinForms.Guna2RatingStar();
             this.label5 = new System.Windows.Forms.Label();
-            this.guna2ImageButton4 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2Panel5 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2RatingStar3 = new Guna.UI2.WinForms.Guna2RatingStar();
             this.label4 = new System.Windows.Forms.Label();
-            this.guna2ImageButton3 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2RatingStar2 = new Guna.UI2.WinForms.Guna2RatingStar();
             this.label1 = new System.Windows.Forms.Label();
-            this.guna2ImageButton2 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2RatingStar1 = new Guna.UI2.WinForms.Guna2RatingStar();
             this.label3 = new System.Windows.Forms.Label();
-            this.guna2ImageButton1 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.label2 = new System.Windows.Forms.Label();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.pbProfile = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.label9 = new System.Windows.Forms.Label();
             this.btnAboutUs = new Guna.UI2.WinForms.Guna2Button();
             this.btnexit = new Guna.UI2.WinForms.Guna2CircleButton();
-            this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
-            this.btnHistory = new Guna.UI2.WinForms.Guna2Button();
             this.btnPemesanan = new Guna.UI2.WinForms.Guna2Button();
             this.btnWorkshopList = new Guna.UI2.WinForms.Guna2Button();
             this.btnHome = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2ImageButton6 = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.guna2ImageButton5 = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.guna2ImageButton4 = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.guna2ImageButton3 = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.guna2ImageButton2 = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.guna2ImageButton1 = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.pbProfile = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.guna2Panel2.SuspendLayout();
             this.guna2GroupBox2.SuspendLayout();
             this.guna2GroupBox1.SuspendLayout();
@@ -219,18 +218,6 @@
             this.label14.Text = "AKHMAL GALIH WITJAKSONO\r\n(Kepala Salesman)";
             this.label14.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // guna2ImageButton6
-            // 
-            this.guna2ImageButton6.CheckedState.Parent = this.guna2ImageButton6;
-            this.guna2ImageButton6.HoverState.Parent = this.guna2ImageButton6;
-            this.guna2ImageButton6.Image = global::RepairMe.Properties.Resources.Frog;
-            this.guna2ImageButton6.ImageSize = new System.Drawing.Size(150, 150);
-            this.guna2ImageButton6.Location = new System.Drawing.Point(26, 14);
-            this.guna2ImageButton6.Name = "guna2ImageButton6";
-            this.guna2ImageButton6.PressedState.Parent = this.guna2ImageButton6;
-            this.guna2ImageButton6.Size = new System.Drawing.Size(137, 102);
-            this.guna2ImageButton6.TabIndex = 0;
-            // 
             // guna2Panel7
             // 
             this.guna2Panel7.Controls.Add(this.guna2RatingStar5);
@@ -262,18 +249,6 @@
             this.label13.TabIndex = 5;
             this.label13.Text = "TTAQI SUTAN TAFUZI\r\n(Pemagang2 UI Desainer)\r\n";
             this.label13.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // guna2ImageButton5
-            // 
-            this.guna2ImageButton5.CheckedState.Parent = this.guna2ImageButton5;
-            this.guna2ImageButton5.HoverState.Parent = this.guna2ImageButton5;
-            this.guna2ImageButton5.Image = global::RepairMe.Properties.Resources.Frog;
-            this.guna2ImageButton5.ImageSize = new System.Drawing.Size(150, 150);
-            this.guna2ImageButton5.Location = new System.Drawing.Point(26, 14);
-            this.guna2ImageButton5.Name = "guna2ImageButton5";
-            this.guna2ImageButton5.PressedState.Parent = this.guna2ImageButton5;
-            this.guna2ImageButton5.Size = new System.Drawing.Size(137, 102);
-            this.guna2ImageButton5.TabIndex = 0;
             // 
             // guna2Panel6
             // 
@@ -307,18 +282,6 @@
             this.label5.Text = "ALFAN HANIF DWI PUTRA\r\n(Pemagang1 UI Desainer)\r\n";
             this.label5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // guna2ImageButton4
-            // 
-            this.guna2ImageButton4.CheckedState.Parent = this.guna2ImageButton4;
-            this.guna2ImageButton4.HoverState.Parent = this.guna2ImageButton4;
-            this.guna2ImageButton4.Image = global::RepairMe.Properties.Resources.Frog;
-            this.guna2ImageButton4.ImageSize = new System.Drawing.Size(150, 150);
-            this.guna2ImageButton4.Location = new System.Drawing.Point(18, 14);
-            this.guna2ImageButton4.Name = "guna2ImageButton4";
-            this.guna2ImageButton4.PressedState.Parent = this.guna2ImageButton4;
-            this.guna2ImageButton4.Size = new System.Drawing.Size(137, 102);
-            this.guna2ImageButton4.TabIndex = 0;
-            // 
             // guna2Panel5
             // 
             this.guna2Panel5.Controls.Add(this.guna2RatingStar3);
@@ -350,18 +313,6 @@
             this.label4.TabIndex = 5;
             this.label4.Text = "DAVIN JONATHAN SITINDAON\r\n(Desainer Logo)\r\n";
             this.label4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // guna2ImageButton3
-            // 
-            this.guna2ImageButton3.CheckedState.Parent = this.guna2ImageButton3;
-            this.guna2ImageButton3.HoverState.Parent = this.guna2ImageButton3;
-            this.guna2ImageButton3.Image = global::RepairMe.Properties.Resources.Frog;
-            this.guna2ImageButton3.ImageSize = new System.Drawing.Size(150, 150);
-            this.guna2ImageButton3.Location = new System.Drawing.Point(31, 14);
-            this.guna2ImageButton3.Name = "guna2ImageButton3";
-            this.guna2ImageButton3.PressedState.Parent = this.guna2ImageButton3;
-            this.guna2ImageButton3.Size = new System.Drawing.Size(137, 102);
-            this.guna2ImageButton3.TabIndex = 0;
             // 
             // guna2Panel4
             // 
@@ -395,18 +346,6 @@
             this.label1.Text = "FATIH IQBAL BAKHTIAR\r\n(Kepala UI Desainer)\r\n";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // guna2ImageButton2
-            // 
-            this.guna2ImageButton2.CheckedState.Parent = this.guna2ImageButton2;
-            this.guna2ImageButton2.HoverState.Parent = this.guna2ImageButton2;
-            this.guna2ImageButton2.Image = global::RepairMe.Properties.Resources.Frog;
-            this.guna2ImageButton2.ImageSize = new System.Drawing.Size(150, 150);
-            this.guna2ImageButton2.Location = new System.Drawing.Point(18, 14);
-            this.guna2ImageButton2.Name = "guna2ImageButton2";
-            this.guna2ImageButton2.PressedState.Parent = this.guna2ImageButton2;
-            this.guna2ImageButton2.Size = new System.Drawing.Size(137, 102);
-            this.guna2ImageButton2.TabIndex = 0;
-            // 
             // guna2Panel3
             // 
             this.guna2Panel3.Controls.Add(this.guna2RatingStar1);
@@ -439,18 +378,6 @@
             this.label3.Text = "FAAIZ AKHDAN FATKHI\r\n(kepala backend)";
             this.label3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // guna2ImageButton1
-            // 
-            this.guna2ImageButton1.CheckedState.Parent = this.guna2ImageButton1;
-            this.guna2ImageButton1.HoverState.Parent = this.guna2ImageButton1;
-            this.guna2ImageButton1.Image = global::RepairMe.Properties.Resources.Frog;
-            this.guna2ImageButton1.ImageSize = new System.Drawing.Size(150, 150);
-            this.guna2ImageButton1.Location = new System.Drawing.Point(18, 14);
-            this.guna2ImageButton1.Name = "guna2ImageButton1";
-            this.guna2ImageButton1.PressedState.Parent = this.guna2ImageButton1;
-            this.guna2ImageButton1.Size = new System.Drawing.Size(137, 102);
-            this.guna2ImageButton1.TabIndex = 0;
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -464,14 +391,13 @@
             // guna2Panel1
             // 
             this.guna2Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(141)))), ((int)(((byte)(218)))));
-            this.guna2Panel1.Controls.Add(this.btnHistory);
-            this.guna2Panel1.Controls.Add(this.btnPemesanan);
-            this.guna2Panel1.Controls.Add(this.btnWorkshopList);
-            this.guna2Panel1.Controls.Add(this.btnHome);
             this.guna2Panel1.Controls.Add(this.pbProfile);
             this.guna2Panel1.Controls.Add(this.label9);
             this.guna2Panel1.Controls.Add(this.btnAboutUs);
             this.guna2Panel1.Controls.Add(this.btnexit);
+            this.guna2Panel1.Controls.Add(this.btnPemesanan);
+            this.guna2Panel1.Controls.Add(this.btnWorkshopList);
+            this.guna2Panel1.Controls.Add(this.btnHome);
             this.guna2Panel1.Controls.Add(this.guna2CirclePictureBox1);
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
@@ -479,18 +405,6 @@
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
             this.guna2Panel1.Size = new System.Drawing.Size(1280, 76);
             this.guna2Panel1.TabIndex = 4;
-            // 
-            // pbProfile
-            // 
-            this.pbProfile.Image = global::RepairMe.Properties.Resources.profile_default;
-            this.pbProfile.Location = new System.Drawing.Point(1167, 6);
-            this.pbProfile.Name = "pbProfile";
-            this.pbProfile.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.pbProfile.ShadowDecoration.Parent = this.pbProfile;
-            this.pbProfile.Size = new System.Drawing.Size(66, 67);
-            this.pbProfile.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbProfile.TabIndex = 25;
-            this.pbProfile.TabStop = false;
             // 
             // label9
             // 
@@ -510,10 +424,10 @@
             this.btnAboutUs.CheckedState.Parent = this.btnAboutUs;
             this.btnAboutUs.CustomImages.Parent = this.btnAboutUs;
             this.btnAboutUs.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(141)))), ((int)(((byte)(218)))));
-            this.btnAboutUs.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAboutUs.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAboutUs.ForeColor = System.Drawing.Color.White;
             this.btnAboutUs.HoverState.Parent = this.btnAboutUs;
-            this.btnAboutUs.Location = new System.Drawing.Point(1032, 19);
+            this.btnAboutUs.Location = new System.Drawing.Point(1033, 19);
             this.btnAboutUs.Name = "btnAboutUs";
             this.btnAboutUs.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(238)))), ((int)(((byte)(221)))));
             this.btnAboutUs.ShadowDecoration.Parent = this.btnAboutUs;
@@ -538,6 +452,144 @@
             this.btnexit.TabIndex = 21;
             this.btnexit.Text = "X";
             // 
+            // btnPemesanan
+            // 
+            this.btnPemesanan.Animated = true;
+            this.btnPemesanan.BorderRadius = 15;
+            this.btnPemesanan.CheckedState.Parent = this.btnPemesanan;
+            this.btnPemesanan.CustomImages.Parent = this.btnPemesanan;
+            this.btnPemesanan.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(141)))), ((int)(((byte)(218)))));
+            this.btnPemesanan.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPemesanan.ForeColor = System.Drawing.Color.White;
+            this.btnPemesanan.HoverState.Parent = this.btnPemesanan;
+            this.btnPemesanan.Location = new System.Drawing.Point(883, 20);
+            this.btnPemesanan.Name = "btnPemesanan";
+            this.btnPemesanan.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(238)))), ((int)(((byte)(221)))));
+            this.btnPemesanan.ShadowDecoration.Parent = this.btnPemesanan;
+            this.btnPemesanan.Size = new System.Drawing.Size(144, 35);
+            this.btnPemesanan.TabIndex = 5;
+            this.btnPemesanan.Text = "Pemesanan";
+            // 
+            // btnWorkshopList
+            // 
+            this.btnWorkshopList.Animated = true;
+            this.btnWorkshopList.BorderRadius = 15;
+            this.btnWorkshopList.CheckedState.Parent = this.btnWorkshopList;
+            this.btnWorkshopList.CustomImages.Parent = this.btnWorkshopList;
+            this.btnWorkshopList.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(141)))), ((int)(((byte)(218)))));
+            this.btnWorkshopList.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnWorkshopList.ForeColor = System.Drawing.Color.White;
+            this.btnWorkshopList.HoverState.Parent = this.btnWorkshopList;
+            this.btnWorkshopList.Location = new System.Drawing.Point(726, 20);
+            this.btnWorkshopList.Name = "btnWorkshopList";
+            this.btnWorkshopList.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(238)))), ((int)(((byte)(221)))));
+            this.btnWorkshopList.ShadowDecoration.Parent = this.btnWorkshopList;
+            this.btnWorkshopList.Size = new System.Drawing.Size(151, 35);
+            this.btnWorkshopList.TabIndex = 3;
+            this.btnWorkshopList.Text = "Workshop list";
+            // 
+            // btnHome
+            // 
+            this.btnHome.Animated = true;
+            this.btnHome.BorderRadius = 15;
+            this.btnHome.CheckedState.Parent = this.btnHome;
+            this.btnHome.CustomImages.Parent = this.btnHome;
+            this.btnHome.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(141)))), ((int)(((byte)(218)))));
+            this.btnHome.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHome.ForeColor = System.Drawing.Color.White;
+            this.btnHome.HoverState.Parent = this.btnHome;
+            this.btnHome.Location = new System.Drawing.Point(612, 19);
+            this.btnHome.Name = "btnHome";
+            this.btnHome.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(238)))), ((int)(((byte)(221)))));
+            this.btnHome.ShadowDecoration.Parent = this.btnHome;
+            this.btnHome.Size = new System.Drawing.Size(102, 35);
+            this.btnHome.TabIndex = 2;
+            this.btnHome.Text = "Home";
+            // 
+            // guna2ImageButton6
+            // 
+            this.guna2ImageButton6.CheckedState.Parent = this.guna2ImageButton6;
+            this.guna2ImageButton6.HoverState.Parent = this.guna2ImageButton6;
+            this.guna2ImageButton6.Image = global::RepairMe.Properties.Resources.Frog;
+            this.guna2ImageButton6.ImageSize = new System.Drawing.Size(150, 150);
+            this.guna2ImageButton6.Location = new System.Drawing.Point(26, 14);
+            this.guna2ImageButton6.Name = "guna2ImageButton6";
+            this.guna2ImageButton6.PressedState.Parent = this.guna2ImageButton6;
+            this.guna2ImageButton6.Size = new System.Drawing.Size(137, 102);
+            this.guna2ImageButton6.TabIndex = 0;
+            // 
+            // guna2ImageButton5
+            // 
+            this.guna2ImageButton5.CheckedState.Parent = this.guna2ImageButton5;
+            this.guna2ImageButton5.HoverState.Parent = this.guna2ImageButton5;
+            this.guna2ImageButton5.Image = global::RepairMe.Properties.Resources.Frog;
+            this.guna2ImageButton5.ImageSize = new System.Drawing.Size(150, 150);
+            this.guna2ImageButton5.Location = new System.Drawing.Point(26, 14);
+            this.guna2ImageButton5.Name = "guna2ImageButton5";
+            this.guna2ImageButton5.PressedState.Parent = this.guna2ImageButton5;
+            this.guna2ImageButton5.Size = new System.Drawing.Size(137, 102);
+            this.guna2ImageButton5.TabIndex = 0;
+            // 
+            // guna2ImageButton4
+            // 
+            this.guna2ImageButton4.CheckedState.Parent = this.guna2ImageButton4;
+            this.guna2ImageButton4.HoverState.Parent = this.guna2ImageButton4;
+            this.guna2ImageButton4.Image = global::RepairMe.Properties.Resources.Frog;
+            this.guna2ImageButton4.ImageSize = new System.Drawing.Size(150, 150);
+            this.guna2ImageButton4.Location = new System.Drawing.Point(18, 14);
+            this.guna2ImageButton4.Name = "guna2ImageButton4";
+            this.guna2ImageButton4.PressedState.Parent = this.guna2ImageButton4;
+            this.guna2ImageButton4.Size = new System.Drawing.Size(137, 102);
+            this.guna2ImageButton4.TabIndex = 0;
+            // 
+            // guna2ImageButton3
+            // 
+            this.guna2ImageButton3.CheckedState.Parent = this.guna2ImageButton3;
+            this.guna2ImageButton3.HoverState.Parent = this.guna2ImageButton3;
+            this.guna2ImageButton3.Image = global::RepairMe.Properties.Resources.Frog;
+            this.guna2ImageButton3.ImageSize = new System.Drawing.Size(150, 150);
+            this.guna2ImageButton3.Location = new System.Drawing.Point(31, 14);
+            this.guna2ImageButton3.Name = "guna2ImageButton3";
+            this.guna2ImageButton3.PressedState.Parent = this.guna2ImageButton3;
+            this.guna2ImageButton3.Size = new System.Drawing.Size(137, 102);
+            this.guna2ImageButton3.TabIndex = 0;
+            // 
+            // guna2ImageButton2
+            // 
+            this.guna2ImageButton2.CheckedState.Parent = this.guna2ImageButton2;
+            this.guna2ImageButton2.HoverState.Parent = this.guna2ImageButton2;
+            this.guna2ImageButton2.Image = global::RepairMe.Properties.Resources.Frog;
+            this.guna2ImageButton2.ImageSize = new System.Drawing.Size(150, 150);
+            this.guna2ImageButton2.Location = new System.Drawing.Point(18, 14);
+            this.guna2ImageButton2.Name = "guna2ImageButton2";
+            this.guna2ImageButton2.PressedState.Parent = this.guna2ImageButton2;
+            this.guna2ImageButton2.Size = new System.Drawing.Size(137, 102);
+            this.guna2ImageButton2.TabIndex = 0;
+            // 
+            // guna2ImageButton1
+            // 
+            this.guna2ImageButton1.CheckedState.Parent = this.guna2ImageButton1;
+            this.guna2ImageButton1.HoverState.Parent = this.guna2ImageButton1;
+            this.guna2ImageButton1.Image = global::RepairMe.Properties.Resources.Frog;
+            this.guna2ImageButton1.ImageSize = new System.Drawing.Size(150, 150);
+            this.guna2ImageButton1.Location = new System.Drawing.Point(18, 14);
+            this.guna2ImageButton1.Name = "guna2ImageButton1";
+            this.guna2ImageButton1.PressedState.Parent = this.guna2ImageButton1;
+            this.guna2ImageButton1.Size = new System.Drawing.Size(137, 102);
+            this.guna2ImageButton1.TabIndex = 0;
+            // 
+            // pbProfile
+            // 
+            this.pbProfile.Image = global::RepairMe.Properties.Resources.profile_default;
+            this.pbProfile.Location = new System.Drawing.Point(1167, 6);
+            this.pbProfile.Name = "pbProfile";
+            this.pbProfile.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.pbProfile.ShadowDecoration.Parent = this.pbProfile;
+            this.pbProfile.Size = new System.Drawing.Size(66, 67);
+            this.pbProfile.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbProfile.TabIndex = 25;
+            this.pbProfile.TabStop = false;
+            // 
             // guna2CirclePictureBox1
             // 
             this.guna2CirclePictureBox1.Image = global::RepairMe.Properties.Resources._15;
@@ -549,78 +601,6 @@
             this.guna2CirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.guna2CirclePictureBox1.TabIndex = 0;
             this.guna2CirclePictureBox1.TabStop = false;
-            // 
-            // btnHistory
-            // 
-            this.btnHistory.Animated = true;
-            this.btnHistory.BorderRadius = 15;
-            this.btnHistory.CheckedState.Parent = this.btnHistory;
-            this.btnHistory.CustomImages.Parent = this.btnHistory;
-            this.btnHistory.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(141)))), ((int)(((byte)(218)))));
-            this.btnHistory.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHistory.ForeColor = System.Drawing.Color.White;
-            this.btnHistory.HoverState.Parent = this.btnHistory;
-            this.btnHistory.Location = new System.Drawing.Point(907, 19);
-            this.btnHistory.Name = "btnHistory";
-            this.btnHistory.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(238)))), ((int)(((byte)(221)))));
-            this.btnHistory.ShadowDecoration.Parent = this.btnHistory;
-            this.btnHistory.Size = new System.Drawing.Size(119, 35);
-            this.btnHistory.TabIndex = 30;
-            this.btnHistory.Text = "History";
-            // 
-            // btnPemesanan
-            // 
-            this.btnPemesanan.Animated = true;
-            this.btnPemesanan.BorderRadius = 15;
-            this.btnPemesanan.CheckedState.Parent = this.btnPemesanan;
-            this.btnPemesanan.CustomImages.Parent = this.btnPemesanan;
-            this.btnPemesanan.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(141)))), ((int)(((byte)(218)))));
-            this.btnPemesanan.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPemesanan.ForeColor = System.Drawing.Color.White;
-            this.btnPemesanan.HoverState.Parent = this.btnPemesanan;
-            this.btnPemesanan.Location = new System.Drawing.Point(757, 19);
-            this.btnPemesanan.Name = "btnPemesanan";
-            this.btnPemesanan.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(238)))), ((int)(((byte)(221)))));
-            this.btnPemesanan.ShadowDecoration.Parent = this.btnPemesanan;
-            this.btnPemesanan.Size = new System.Drawing.Size(144, 35);
-            this.btnPemesanan.TabIndex = 29;
-            this.btnPemesanan.Text = "Pemesanan";
-            // 
-            // btnWorkshopList
-            // 
-            this.btnWorkshopList.Animated = true;
-            this.btnWorkshopList.BorderRadius = 15;
-            this.btnWorkshopList.CheckedState.Parent = this.btnWorkshopList;
-            this.btnWorkshopList.CustomImages.Parent = this.btnWorkshopList;
-            this.btnWorkshopList.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(141)))), ((int)(((byte)(218)))));
-            this.btnWorkshopList.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnWorkshopList.ForeColor = System.Drawing.Color.White;
-            this.btnWorkshopList.HoverState.Parent = this.btnWorkshopList;
-            this.btnWorkshopList.Location = new System.Drawing.Point(600, 19);
-            this.btnWorkshopList.Name = "btnWorkshopList";
-            this.btnWorkshopList.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(238)))), ((int)(((byte)(221)))));
-            this.btnWorkshopList.ShadowDecoration.Parent = this.btnWorkshopList;
-            this.btnWorkshopList.Size = new System.Drawing.Size(151, 35);
-            this.btnWorkshopList.TabIndex = 28;
-            this.btnWorkshopList.Text = "Workshop list";
-            // 
-            // btnHome
-            // 
-            this.btnHome.Animated = true;
-            this.btnHome.BorderRadius = 15;
-            this.btnHome.CheckedState.Parent = this.btnHome;
-            this.btnHome.CustomImages.Parent = this.btnHome;
-            this.btnHome.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(141)))), ((int)(((byte)(218)))));
-            this.btnHome.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHome.ForeColor = System.Drawing.Color.White;
-            this.btnHome.HoverState.Parent = this.btnHome;
-            this.btnHome.Location = new System.Drawing.Point(492, 19);
-            this.btnHome.Name = "btnHome";
-            this.btnHome.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(238)))), ((int)(((byte)(221)))));
-            this.btnHome.ShadowDecoration.Parent = this.btnHome;
-            this.btnHome.Size = new System.Drawing.Size(102, 35);
-            this.btnHome.TabIndex = 27;
-            this.btnHome.Text = "Home";
             // 
             // AboutUs
             // 
@@ -698,10 +678,9 @@
         private System.Windows.Forms.Label label9;
         private Guna.UI2.WinForms.Guna2Button btnAboutUs;
         private Guna.UI2.WinForms.Guna2CircleButton btnexit;
-        private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox1;
-        private Guna.UI2.WinForms.Guna2Button btnHistory;
         private Guna.UI2.WinForms.Guna2Button btnPemesanan;
         private Guna.UI2.WinForms.Guna2Button btnWorkshopList;
         private Guna.UI2.WinForms.Guna2Button btnHome;
+        private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox1;
     }
 }
