@@ -31,6 +31,8 @@
             this.components = new System.ComponentModel.Container();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.btnexit = new Guna.UI2.WinForms.Guna2CircleButton();
+            this.btnSave = new Guna.UI2.WinForms.Guna2Button();
             this.guna2GroupBox1 = new Guna.UI2.WinForms.Guna2GroupBox();
             this.label14 = new System.Windows.Forms.Label();
             this.tbYear = new Guna.UI2.WinForms.Guna2TextBox();
@@ -45,11 +47,9 @@
             this.label8 = new System.Windows.Forms.Label();
             this.tbEngine = new Guna.UI2.WinForms.Guna2TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.tbNameMtr = new Guna.UI2.WinForms.Guna2TextBox();
+            this.tbName = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.label11 = new System.Windows.Forms.Label();
-            this.btnSave = new Guna.UI2.WinForms.Guna2Button();
-            this.btnexit = new Guna.UI2.WinForms.Guna2CircleButton();
             this.guna2Panel1.SuspendLayout();
             this.guna2GroupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -66,10 +66,48 @@
             this.guna2Panel1.Controls.Add(this.guna2GroupBox1);
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
+            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
-            this.guna2Panel1.Size = new System.Drawing.Size(733, 497);
+            this.guna2Panel1.Size = new System.Drawing.Size(550, 404);
             this.guna2Panel1.TabIndex = 0;
+            // 
+            // btnexit
+            // 
+            this.btnexit.BackColor = System.Drawing.Color.Transparent;
+            this.btnexit.CheckedState.Parent = this.btnexit;
+            this.btnexit.CustomImages.Parent = this.btnexit;
+            this.btnexit.FillColor = System.Drawing.Color.Transparent;
+            this.btnexit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnexit.ForeColor = System.Drawing.Color.Red;
+            this.btnexit.HoverState.Parent = this.btnexit;
+            this.btnexit.Location = new System.Drawing.Point(525, 0);
+            this.btnexit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnexit.Name = "btnexit";
+            this.btnexit.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.btnexit.ShadowDecoration.Parent = this.btnexit;
+            this.btnexit.Size = new System.Drawing.Size(25, 28);
+            this.btnexit.TabIndex = 40;
+            this.btnexit.Text = "X";
+            this.btnexit.Click += new System.EventHandler(this.btnexit_Click);
+            // 
+            // btnSave
+            // 
+            this.btnSave.Animated = true;
+            this.btnSave.BorderRadius = 10;
+            this.btnSave.CheckedState.Parent = this.btnSave;
+            this.btnSave.CustomImages.Parent = this.btnSave;
+            this.btnSave.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave.ForeColor = System.Drawing.Color.White;
+            this.btnSave.HoverState.Parent = this.btnSave;
+            this.btnSave.Location = new System.Drawing.Point(9, 351);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.ShadowDecoration.Parent = this.btnSave;
+            this.btnSave.Size = new System.Drawing.Size(147, 37);
+            this.btnSave.TabIndex = 39;
+            this.btnSave.Text = "Save";
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // guna2GroupBox1
             // 
@@ -87,17 +125,18 @@
             this.guna2GroupBox1.Controls.Add(this.label8);
             this.guna2GroupBox1.Controls.Add(this.tbEngine);
             this.guna2GroupBox1.Controls.Add(this.label10);
-            this.guna2GroupBox1.Controls.Add(this.tbNameMtr);
+            this.guna2GroupBox1.Controls.Add(this.tbName);
             this.guna2GroupBox1.Controls.Add(this.guna2Button1);
             this.guna2GroupBox1.Controls.Add(this.label11);
             this.guna2GroupBox1.CustomBorderColor = System.Drawing.Color.Transparent;
             this.guna2GroupBox1.FillColor = System.Drawing.Color.Transparent;
             this.guna2GroupBox1.Font = new System.Drawing.Font("Poppins SemiBold", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2GroupBox1.ForeColor = System.Drawing.Color.Black;
-            this.guna2GroupBox1.Location = new System.Drawing.Point(12, 30);
+            this.guna2GroupBox1.Location = new System.Drawing.Point(9, 24);
+            this.guna2GroupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2GroupBox1.Name = "guna2GroupBox1";
             this.guna2GroupBox1.ShadowDecoration.Parent = this.guna2GroupBox1;
-            this.guna2GroupBox1.Size = new System.Drawing.Size(578, 396);
+            this.guna2GroupBox1.Size = new System.Drawing.Size(434, 322);
             this.guna2GroupBox1.TabIndex = 38;
             this.guna2GroupBox1.Text = "Data Motor";
             // 
@@ -105,9 +144,10 @@
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Poppins", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(14, 360);
+            this.label14.Location = new System.Drawing.Point(10, 292);
+            this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(271, 23);
+            this.label14.Size = new System.Drawing.Size(230, 19);
             this.label14.TabIndex = 42;
             this.label14.Text = "*Harap diisi untuk memudahkan bengkel";
             // 
@@ -127,23 +167,24 @@
             this.tbYear.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbYear.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbYear.HoverState.Parent = this.tbYear;
-            this.tbYear.Location = new System.Drawing.Point(124, 322);
-            this.tbYear.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
+            this.tbYear.Location = new System.Drawing.Point(93, 262);
+            this.tbYear.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.tbYear.Name = "tbYear";
             this.tbYear.PasswordChar = '\0';
             this.tbYear.PlaceholderText = "";
             this.tbYear.SelectedText = "";
             this.tbYear.ShadowDecoration.Parent = this.tbYear;
-            this.tbYear.Size = new System.Drawing.Size(354, 30);
+            this.tbYear.Size = new System.Drawing.Size(266, 24);
             this.tbYear.TabIndex = 41;
             // 
             // label13
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(13, 322);
+            this.label13.Location = new System.Drawing.Point(10, 262);
+            this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(107, 30);
+            this.label13.Size = new System.Drawing.Size(85, 25);
             this.label13.TabIndex = 40;
             this.label13.Text = "Year             :";
             // 
@@ -163,25 +204,26 @@
             this.tbPlate.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbPlate.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbPlate.HoverState.Parent = this.tbPlate;
-            this.tbPlate.Location = new System.Drawing.Point(124, 276);
-            this.tbPlate.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
+            this.tbPlate.Location = new System.Drawing.Point(93, 224);
+            this.tbPlate.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.tbPlate.Name = "tbPlate";
             this.tbPlate.PasswordChar = '\0';
             this.tbPlate.PlaceholderText = "";
             this.tbPlate.SelectedText = "";
             this.tbPlate.ShadowDecoration.Parent = this.tbPlate;
-            this.tbPlate.Size = new System.Drawing.Size(354, 30);
+            this.tbPlate.Size = new System.Drawing.Size(266, 24);
             this.tbPlate.TabIndex = 39;
             // 
             // label12
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(13, 276);
+            this.label12.Location = new System.Drawing.Point(10, 224);
+            this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(109, 30);
+            this.label12.Size = new System.Drawing.Size(85, 25);
             this.label12.TabIndex = 38;
-            this.label12.Text = "PLate            :";
+            this.label12.Text = "Plate            :";
             // 
             // cbType
             // 
@@ -203,10 +245,11 @@
             "Fairing",
             "Naked"});
             this.cbType.ItemsAppearance.Parent = this.cbType;
-            this.cbType.Location = new System.Drawing.Point(124, 181);
+            this.cbType.Location = new System.Drawing.Point(93, 143);
+            this.cbType.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cbType.Name = "cbType";
             this.cbType.ShadowDecoration.Parent = this.cbType;
-            this.cbType.Size = new System.Drawing.Size(354, 36);
+            this.cbType.Size = new System.Drawing.Size(266, 36);
             this.cbType.TabIndex = 37;
             // 
             // tbColor
@@ -225,23 +268,24 @@
             this.tbColor.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbColor.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbColor.HoverState.Parent = this.tbColor;
-            this.tbColor.Location = new System.Drawing.Point(124, 230);
-            this.tbColor.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
+            this.tbColor.Location = new System.Drawing.Point(93, 187);
+            this.tbColor.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.tbColor.Name = "tbColor";
             this.tbColor.PasswordChar = '\0';
             this.tbColor.PlaceholderText = "";
             this.tbColor.SelectedText = "";
             this.tbColor.ShadowDecoration.Parent = this.tbColor;
-            this.tbColor.Size = new System.Drawing.Size(354, 30);
+            this.tbColor.Size = new System.Drawing.Size(266, 24);
             this.tbColor.TabIndex = 36;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(13, 230);
+            this.label6.Location = new System.Drawing.Point(10, 187);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(110, 30);
+            this.label6.Size = new System.Drawing.Size(88, 25);
             this.label6.TabIndex = 35;
             this.label6.Text = "Color            :";
             // 
@@ -249,9 +293,10 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(13, 184);
+            this.label7.Location = new System.Drawing.Point(10, 150);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(109, 30);
+            this.label7.Size = new System.Drawing.Size(87, 25);
             this.label7.TabIndex = 33;
             this.label7.Text = "Type             :";
             // 
@@ -271,23 +316,24 @@
             this.tbBrand.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbBrand.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbBrand.HoverState.Parent = this.tbBrand;
-            this.tbBrand.Location = new System.Drawing.Point(124, 138);
-            this.tbBrand.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
+            this.tbBrand.Location = new System.Drawing.Point(93, 112);
+            this.tbBrand.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.tbBrand.Name = "tbBrand";
             this.tbBrand.PasswordChar = '\0';
             this.tbBrand.PlaceholderText = "";
             this.tbBrand.SelectedText = "";
             this.tbBrand.ShadowDecoration.Parent = this.tbBrand;
-            this.tbBrand.Size = new System.Drawing.Size(354, 30);
+            this.tbBrand.Size = new System.Drawing.Size(266, 24);
             this.tbBrand.TabIndex = 32;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(13, 138);
+            this.label8.Location = new System.Drawing.Point(10, 112);
+            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(110, 30);
+            this.label8.Size = new System.Drawing.Size(88, 25);
             this.label8.TabIndex = 31;
             this.label8.Text = "Brand           :";
             // 
@@ -307,51 +353,52 @@
             this.tbEngine.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbEngine.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbEngine.HoverState.Parent = this.tbEngine;
-            this.tbEngine.Location = new System.Drawing.Point(124, 92);
-            this.tbEngine.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
+            this.tbEngine.Location = new System.Drawing.Point(93, 75);
+            this.tbEngine.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.tbEngine.Name = "tbEngine";
             this.tbEngine.PasswordChar = '\0';
             this.tbEngine.PlaceholderText = "";
             this.tbEngine.SelectedText = "";
             this.tbEngine.ShadowDecoration.Parent = this.tbEngine;
-            this.tbEngine.Size = new System.Drawing.Size(354, 30);
+            this.tbEngine.Size = new System.Drawing.Size(266, 24);
             this.tbEngine.TabIndex = 30;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(13, 92);
+            this.label10.Location = new System.Drawing.Point(10, 75);
+            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(109, 30);
+            this.label10.Size = new System.Drawing.Size(88, 25);
             this.label10.TabIndex = 29;
             this.label10.Text = "Engine         :";
             // 
-            // tbNameMtr
+            // tbName
             // 
-            this.tbNameMtr.BorderRadius = 10;
-            this.tbNameMtr.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.tbNameMtr.DefaultText = "";
-            this.tbNameMtr.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.tbNameMtr.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.tbNameMtr.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.tbNameMtr.DisabledState.Parent = this.tbNameMtr;
-            this.tbNameMtr.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.tbNameMtr.FillColor = System.Drawing.Color.WhiteSmoke;
-            this.tbNameMtr.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.tbNameMtr.FocusedState.Parent = this.tbNameMtr;
-            this.tbNameMtr.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbNameMtr.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.tbNameMtr.HoverState.Parent = this.tbNameMtr;
-            this.tbNameMtr.Location = new System.Drawing.Point(124, 46);
-            this.tbNameMtr.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
-            this.tbNameMtr.Name = "tbNameMtr";
-            this.tbNameMtr.PasswordChar = '\0';
-            this.tbNameMtr.PlaceholderText = "";
-            this.tbNameMtr.SelectedText = "";
-            this.tbNameMtr.ShadowDecoration.Parent = this.tbNameMtr;
-            this.tbNameMtr.Size = new System.Drawing.Size(354, 30);
-            this.tbNameMtr.TabIndex = 28;
+            this.tbName.BorderRadius = 10;
+            this.tbName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tbName.DefaultText = "";
+            this.tbName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.tbName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.tbName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbName.DisabledState.Parent = this.tbName;
+            this.tbName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbName.FillColor = System.Drawing.Color.WhiteSmoke;
+            this.tbName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tbName.FocusedState.Parent = this.tbName;
+            this.tbName.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tbName.HoverState.Parent = this.tbName;
+            this.tbName.Location = new System.Drawing.Point(93, 37);
+            this.tbName.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.tbName.Name = "tbName";
+            this.tbName.PasswordChar = '\0';
+            this.tbName.PlaceholderText = "";
+            this.tbName.SelectedText = "";
+            this.tbName.ShadowDecoration.Parent = this.tbName;
+            this.tbName.Size = new System.Drawing.Size(266, 24);
+            this.tbName.TabIndex = 28;
             // 
             // guna2Button1
             // 
@@ -362,10 +409,11 @@
             this.guna2Button1.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button1.ForeColor = System.Drawing.Color.White;
             this.guna2Button1.HoverState.Parent = this.guna2Button1;
-            this.guna2Button1.Location = new System.Drawing.Point(1072, 477);
+            this.guna2Button1.Location = new System.Drawing.Point(804, 388);
+            this.guna2Button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
-            this.guna2Button1.Size = new System.Drawing.Size(149, 45);
+            this.guna2Button1.Size = new System.Drawing.Size(112, 37);
             this.guna2Button1.TabIndex = 13;
             this.guna2Button1.Text = "Pilih";
             // 
@@ -373,53 +421,21 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(13, 46);
+            this.label11.Location = new System.Drawing.Point(10, 37);
+            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(110, 30);
+            this.label11.Size = new System.Drawing.Size(90, 25);
             this.label11.TabIndex = 27;
-            this.label11.Text = "name           :";
-            // 
-            // btnSave
-            // 
-            this.btnSave.Animated = true;
-            this.btnSave.BorderRadius = 10;
-            this.btnSave.CheckedState.Parent = this.btnSave;
-            this.btnSave.CustomImages.Parent = this.btnSave;
-            this.btnSave.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSave.ForeColor = System.Drawing.Color.White;
-            this.btnSave.HoverState.Parent = this.btnSave;
-            this.btnSave.Location = new System.Drawing.Point(12, 432);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.ShadowDecoration.Parent = this.btnSave;
-            this.btnSave.Size = new System.Drawing.Size(196, 45);
-            this.btnSave.TabIndex = 39;
-            this.btnSave.Text = "Save";
-            // 
-            // btnexit
-            // 
-            this.btnexit.BackColor = System.Drawing.Color.Transparent;
-            this.btnexit.CheckedState.Parent = this.btnexit;
-            this.btnexit.CustomImages.Parent = this.btnexit;
-            this.btnexit.FillColor = System.Drawing.Color.Transparent;
-            this.btnexit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnexit.ForeColor = System.Drawing.Color.Red;
-            this.btnexit.HoverState.Parent = this.btnexit;
-            this.btnexit.Location = new System.Drawing.Point(700, 0);
-            this.btnexit.Name = "btnexit";
-            this.btnexit.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.btnexit.ShadowDecoration.Parent = this.btnexit;
-            this.btnexit.Size = new System.Drawing.Size(33, 35);
-            this.btnexit.TabIndex = 40;
-            this.btnexit.Text = "X";
-            this.btnexit.Click += new System.EventHandler(this.btnexit_Click);
+            this.label11.Text = "Name           :";
             // 
             // TambahMotorUser
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(733, 497);
+            this.ClientSize = new System.Drawing.Size(550, 404);
             this.Controls.Add(this.guna2Panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "TambahMotorUser";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TambahMotorUser";
@@ -448,7 +464,7 @@
         private System.Windows.Forms.Label label8;
         private Guna.UI2.WinForms.Guna2TextBox tbEngine;
         private System.Windows.Forms.Label label10;
-        private Guna.UI2.WinForms.Guna2TextBox tbNameMtr;
+        private Guna.UI2.WinForms.Guna2TextBox tbName;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private System.Windows.Forms.Label label11;
         private Guna.UI2.WinForms.Guna2Button btnSave;

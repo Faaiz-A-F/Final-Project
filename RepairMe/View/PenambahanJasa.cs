@@ -61,10 +61,16 @@ namespace RepairMe.View
             {
                 try
                 {
+                    if (Users.CurrentAdminId == null)
+                    {
+                        MessageBox.Show("Admin ID is not available. Please log in again.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return;
+                    }
+
                     JasaController jasaController = new JasaController(dbContext);
 
                     // Use the currently logged-in admin's ID
-                    var adminId = Users.CurrentAdminId;
+                    var adminId = Users.CurrentAdminId.Value; // Convert nullable int to non-nullable
 
                     // Fetch data for the current admin
                     var jasaData = jasaController.GetAllJasa(adminId);
@@ -87,6 +93,7 @@ namespace RepairMe.View
         }
 
 
+
         public PenambahanJasa()
         {
             InitializeComponent();
@@ -99,6 +106,12 @@ namespace RepairMe.View
             {
                 try
                 {
+                    if (Users.CurrentAdminId == null)
+                    {
+                        MessageBox.Show("Admin ID is not available. Please log in again.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return;
+                    }
+
                     // Pass DbContext to UsersController
                     var usersController = new UsersController(dbContext);
 
@@ -106,7 +119,8 @@ namespace RepairMe.View
                     var nama = tbNama.Text.Trim();
                     var harga = int.Parse(tbHarga.Text.Trim());
                     var deskripsi = rbDeskripsi.Text.Trim();
-                    var id = Users.CurrentAdminId;
+                    var id = Users.CurrentAdminId.Value; // Convert nullable int to non-nullable
+
                     JasaController jasaController = new JasaController(dbContext);
                     jasaController.AddJasa(nama, harga, deskripsi, id);
 
@@ -125,6 +139,7 @@ namespace RepairMe.View
                 }
             }
         }
+
 
         private void btnHapus_Click(object sender, EventArgs e)
         {

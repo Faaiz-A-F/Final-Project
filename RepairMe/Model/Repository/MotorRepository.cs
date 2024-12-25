@@ -25,12 +25,11 @@ namespace RepairMe.Model.Repository
             var dbContext = new DbContext();
             dbContext.OpenConnection();
 
-            var query = "INSERT INTO motor (name, brand, engine, type, color, year, plate, user_id) " +
-                "VALUES (@name, @brand, @engine, @type, @color, @year, @plate, @userId)";
+            var query = "INSERT INTO motor (brand, engine, type, color, year, plate, user_id) " +
+                "VALUES (@brand, @engine, @type, @color, @year, @plate, @userId)";
 
             using (var cmd = new MySqlCommand(query, dbContext.Connection))
             {
-                cmd.Parameters.AddWithValue("@name", motor.Name);    // Ensure 'Name' matches your database schema
                 cmd.Parameters.AddWithValue("@brand", motor.Brand);
                 cmd.Parameters.AddWithValue("@engine", motor.Engine);
                 cmd.Parameters.AddWithValue("@type", motor.Type);
@@ -60,6 +59,50 @@ namespace RepairMe.Model.Repository
             }
 
             dbContext.CloseConnection();
+        }
+
+        public List<Motor> GetMotorByUserId(int userId)
+        {
+            var motorList = new List<Motor>();
+
+            try
+            {
+                _dbContext.OpenConnection();
+                var query = "SELECT * FROM motor WHERE user_id = @userId";
+
+                using (var cmd = new MySqlCommand(query, _dbContext.Connection))
+                {
+                    cmd.Parameters.AddWithValue("@userId", userId);
+
+                    using (var reader = cmd.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            var motor = new Motor
+                            {
+                                Id = reader.GetInt32("motor_id"),
+                                Brand = reader.GetString("brand"),
+                                Engine = reader.GetString("engine"),
+                                Plate = reader.GetString("plate"),
+                                Type = reader.GetString("type"),
+                                Color = reader.GetString("color"),
+                                Year = reader.GetString("year"),
+                                UserId = reader.GetInt32("user_id")
+                            };
+
+                            motorList.Add(motor);
+                        }
+                    }
+                }
+
+                _dbContext.CloseConnection();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error loading motors: " + ex.Message);
+            }
+
+            return motorList;
         }
     }
 }

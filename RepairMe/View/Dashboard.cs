@@ -34,5 +34,13 @@ namespace RepairMe.View
             workshopList.Show();
             workshopList.FormClosed += (s, args) => this.Show();
         }
+
+        private void pbProfile_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            UserProfil userProfil = new UserProfil();
+            userProfil.Show();
+            userProfil.FormClosed += (s, args) => this.Show();
+        }
     }
 }

@@ -95,7 +95,6 @@ namespace RepairMe
                             // Set current admin ID
                             Users.CurrentAdminId = user.Id;
                             MessageBox.Show($"Logged-in Admin ID: {Users.CurrentAdminId}");
-
                             dashboardAdmin.Show();
                             this.Hide();
                             dashboardAdmin.FormClosed += (s, args) => this.Show();

@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 using RepairMe.Model.Entity;
 using MySql.Data.MySqlClient;
 using System.Windows.Forms;
+using Microsoft.VisualBasic.ApplicationServices;
 
 namespace RepairMe.Model.Repository
 {
@@ -188,6 +189,63 @@ namespace RepairMe.Model.Repository
             }
         }
 
-       
+        public Users GetCurrentUserOrAdmin()
+        {
+            try
+            {
+                _dbContext.OpenConnection();
+
+                string query;
+                if (Users.CurrentAdminId != null)
+                {
+                    // Query for admin
+                    query = "SELECT admin_id AS Id, name AS Username, email, NULL AS Age, phone, address " +
+                            "FROM admin WHERE admin_id = @Id";
+                }
+                else if (Users.CurrentUserId != null)
+                {
+                    // Query for user
+                    query = "SELECT user_id AS Id, name AS Username, email, age, phone, address " +
+                            "FROM users WHERE user_id = @Id";
+                }
+                else
+                {
+                    return null; // No logged-in user or admin
+                }
+
+                using (var cmd = new MySqlCommand(query, _dbContext.Connection))
+                {
+                    cmd.Parameters.AddWithValue("@Id", Users.CurrentAdminId ?? Users.CurrentUserId);
+
+                    using (var reader = cmd.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            return new Users
+                            {
+                                Id = reader.GetInt32("Id"),
+                                Username = reader.GetString("Username"),
+                                Email = reader.GetString("Email"),
+                                Age = reader.GetInt32(reader.GetOrdinal("Age")),
+                                Phone = reader.GetString("Phone"),
+                                Address = reader.GetString("Address")
+                            };
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Failed to fetch user data.\n\nError: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                throw;
+            }
+            finally
+            {
+                _dbContext.CloseConnection();
+            }
+
+            return null;
+        }
+
     }
 }

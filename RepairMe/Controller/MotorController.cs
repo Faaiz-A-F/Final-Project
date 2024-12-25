@@ -32,12 +32,6 @@ namespace RepairMe.Controller
             try
             {
                 // Validate inputs
-                if (string.IsNullOrWhiteSpace(name))
-                {
-                    MessageBox.Show("Name cannot be empty.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    return;
-                }
-
                 if (string.IsNullOrWhiteSpace(engine))
                 {
                     MessageBox.Show("Engine cannot be empty.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -77,7 +71,6 @@ namespace RepairMe.Controller
                 // Create motor object
                 var motor = new Motor
                 {
-                    Name = name,
                     Engine = engine,
                     Brand = brand,
                     Type = type,
@@ -106,6 +99,20 @@ namespace RepairMe.Controller
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        public List<Motor> GetMotorByUserId(int userId)
+        {
+            try
+            {
+                // Get motor by user ID
+                return _motorRepository.GetMotorByUserId(userId);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return null;
             }
         }
     }
