@@ -22,13 +22,12 @@ namespace RepairMe.Model.Repository
 
         public void AddMotor(Motor motor)
         {
-            var dbContext = new DbContext();
-            dbContext.OpenConnection();
+            _dbContext.OpenConnection();
 
-            var query = "INSERT INTO motor (brand, engine, type, color, year, plate, user_id) " +
-                "VALUES (@brand, @engine, @type, @color, @year, @plate, @userId)";
+            var query = "INSERT INTO motor (brand, engine, type, color, year, plate, user_id, name) " +
+                "VALUES (@brand, @engine, @type, @color, @year, @plate, @userId, @name)";
 
-            using (var cmd = new MySqlCommand(query, dbContext.Connection))
+            using (var cmd = new MySqlCommand(query, _dbContext.Connection))
             {
                 cmd.Parameters.AddWithValue("@brand", motor.Brand);
                 cmd.Parameters.AddWithValue("@engine", motor.Engine);
@@ -37,28 +36,28 @@ namespace RepairMe.Model.Repository
                 cmd.Parameters.AddWithValue("@year", motor.Year);
                 cmd.Parameters.AddWithValue("@plate", motor.Plate);
                 cmd.Parameters.AddWithValue("@userId", motor.UserId);
+                cmd.Parameters.AddWithValue("@name", motor.Name);
 
                 cmd.ExecuteNonQuery();
             }
 
-            dbContext.CloseConnection();
+            _dbContext.CloseConnection();
         }
 
         public void DeleteMotor(int id)
         {
-            var dbContext = new DbContext();
-            dbContext.OpenConnection();
+            _dbContext.OpenConnection();
 
-            var query = "DELETE FROM motor WHERE id = @id";
+            var query = "DELETE FROM motor WHERE motor_id = @id";
 
-            using (var cmd = new MySqlCommand(query, dbContext.Connection))
+            using (var cmd = new MySqlCommand(query, _dbContext.Connection))
             {
                 cmd.Parameters.AddWithValue("@id", id);
 
                 cmd.ExecuteNonQuery();
             }
 
-            dbContext.CloseConnection();
+            _dbContext.CloseConnection();
         }
 
         public List<Motor> GetMotorByUserId(int userId)
@@ -87,7 +86,8 @@ namespace RepairMe.Model.Repository
                                 Type = reader.GetString("type"),
                                 Color = reader.GetString("color"),
                                 Year = reader.GetString("year"),
-                                UserId = reader.GetInt32("user_id")
+                                UserId = reader.GetInt32("user_id"),
+                                Name = reader.GetString("name")
                             };
 
                             motorList.Add(motor);

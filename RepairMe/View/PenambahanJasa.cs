@@ -55,6 +55,21 @@ namespace RepairMe.View
             guna2DataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
         }
 
+        private void AddCheckboxColumn()
+        {
+            if (!guna2DataGridView1.Columns.Contains("Select"))
+            {
+                var checkboxColumn = new DataGridViewCheckBoxColumn
+                {
+                    Name = "Select",
+                    HeaderText = "Pilih",
+                    Width = 50
+                };
+
+                guna2DataGridView1.Columns.Insert(0, checkboxColumn); // Add checkbox as the first column
+            }
+        }
+
         private void LoadData()
         {
             using (var dbContext = new DbContext())
@@ -84,6 +99,7 @@ namespace RepairMe.View
 
                     // Customize the appearance
                     CustomizeGunaDataGridView();
+                    AddCheckboxColumn();
                 }
                 catch (Exception ex)
                 {
@@ -91,8 +107,6 @@ namespace RepairMe.View
                 }
             }
         }
-
-
 
         public PenambahanJasa()
         {

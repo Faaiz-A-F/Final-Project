@@ -10,11 +10,12 @@ namespace RepairMe.Model.Entity
     {
         public int Id { get; set; }
         public int UserId { get; set; }
-        public int JasaId { get; set; }
         public int MotorId { get; set; }
+        public int AdminId { get; set; }
         public DateTime Date { get; set; }
         public string Status { get; set; }
         public string Review { get; set; }
         public int Rating { get; set; }
+        public decimal Total { get; set; }
     }
 }

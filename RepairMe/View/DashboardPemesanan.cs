@@ -25,6 +25,7 @@ namespace RepairMe.View
             InitializeComponent();
             _workshopId = workshopId;
             LoadWorkshopJasa(); // Load jasa based on the workshop ID
+            LoadUserMotors();   // Load user motors
         }
 
         private void LoadWorkshopJasa()
@@ -43,6 +44,30 @@ namespace RepairMe.View
                 CustomizeGunaDataGridView();
             }
         }
+
+        private void LoadUserMotors()
+        {
+            using (var dbContext = new DbContext())
+            {
+                try
+                {
+                    MotorController motorController = new MotorController(dbContext);
+
+                    // Get the list of motors for the current user
+                    var motor = motorController.GetMotorByUserId(Users.CurrentUserId.Value);
+
+                    // Bind to the ComboBox
+                    cbPilihMotor.DataSource = motor;
+                    cbPilihMotor.DisplayMember = "Name"; // Assuming the motor has a "Name" property
+                    cbPilihMotor.ValueMember = "Id";    // Assuming the motor has an "Id" property
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Failed to load user motors.\n\nError: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
+
 
         private void AddCheckboxColumn()
         {
@@ -123,7 +148,52 @@ namespace RepairMe.View
 
         private void btnCo_Click(object sender, EventArgs e)
         {
-            var selectedJasa = GetSelectedJasa();
+            using (var dbContext = new DbContext())
+            {
+                try
+                {
+                    // Ensure the user selects a motor and a service
+                    if (cbPilihMotor.SelectedItem == null)
+                    {
+                        MessageBox.Show("Please select a motor.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        return;
+                    }
+
+                    if (dtgSelectedJasa.SelectedRows.Count == 0)
+                    {
+                        MessageBox.Show("Please select a service.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        return;
+                    }
+
+                    // Get the selected motor ID
+                    var selectedMotorId = (int)cbPilihMotor.SelectedValue;
+
+                    // Get the selected service ID (assuming the ID column is in the DataGridView)
+                    var selectedRow = dtgSelectedJasa.SelectedRows[0];
+
+                    // Get the current user ID
+                    var userId = Users.CurrentUserId.Value;
+
+                    // Calculate total price
+                    decimal totalPrice = 0;
+                    foreach (DataGridViewRow row in dtgSelectedJasa.Rows)
+                    {
+                        totalPrice += Convert.ToDecimal(row.Cells["Price"].Value);
+                    }
+
+                    // Add the transaction
+                    var transactionController = new TransactionController(dbContext);
+                    transactionController.AddTransaction(userId, selectedMotorId, _workshopId, "Pending", totalPrice);
+
+                    MessageBox.Show("Transaction successfully created!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    // Optionally clear or refresh UI
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Failed to create transaction.\n\nError: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
         }
     }
 }

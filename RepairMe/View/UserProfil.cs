@@ -68,14 +68,29 @@ namespace RepairMe.View
 
         private void CustomizeGunaDataGridView()
         {
-            // Styling and auto-resize
+            // Ensure column headers are visible
+            dtgMotor.ColumnHeadersVisible = true;
+
+            // Styling for the header
             dtgMotor.ColumnHeadersDefaultCellStyle.BackColor = Color.Navy;
             dtgMotor.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
             dtgMotor.ColumnHeadersDefaultCellStyle.Font = new Font("Segoe UI", 10, FontStyle.Bold);
+            dtgMotor.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+
+            // Styling for rows
             dtgMotor.DefaultCellStyle.Font = new Font("Segoe UI", 10);
+            dtgMotor.DefaultCellStyle.ForeColor = Color.Black;
+            dtgMotor.DefaultCellStyle.BackColor = Color.White;
             dtgMotor.AlternatingRowsDefaultCellStyle.BackColor = Color.LightBlue;
 
+            // Grid appearance
+            dtgMotor.EnableHeadersVisualStyles = false; // Disable default theme styles
+            dtgMotor.GridColor = Color.Gray;
+            dtgMotor.RowHeadersVisible = false; // Hides row headers (optional)
+
+            // Auto-resize and fill columns
             dtgMotor.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dtgMotor.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
         }
 
         private void LoadMotorData()
@@ -85,6 +100,8 @@ namespace RepairMe.View
                 var motorController = new MotorController(dbContext);
                 var motorList = motorController.GetMotorByUserId(_userId);
 
+                dtgMotor.AutoGenerateColumns = true; // Ensure columns are auto-generated
+                dtgMotor.DataSource = null;         // Clear existing binding
                 dtgMotor.DataSource = motorList;
 
                 // Add a checkbox column
@@ -97,10 +114,14 @@ namespace RepairMe.View
 
         private void btnTambahData_Click(object sender, EventArgs e)
         {
-            this.Hide();
             TambahMotorUser tambahMotorUser = new TambahMotorUser();
             tambahMotorUser.Show();
-            tambahMotorUser.FormClosed += (s, args) => this.Show();
+            // Subscribe to the FormClosed event
+            tambahMotorUser.FormClosed += (s, args) =>
+            {
+                // Reload the data after the form is closed
+                LoadMotorData();
+            };
         }
 
         private void btnexit_Click(object sender, EventArgs e)
@@ -111,6 +132,44 @@ namespace RepairMe.View
         private void btnHapusData_Click(object sender, EventArgs e)
         {
 
+            if (dtgMotor.SelectedRows.Count > 0)
+            {
+                // Confirm deletion
+                var confirmation = MessageBox.Show("Are you sure you want to delete the selected motor(s)?", "Confirm Deletion", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (confirmation != DialogResult.Yes)
+                {
+                    return;
+                }
+
+                try
+                {
+                    // Get the ID of the selected row
+                    var selectedRow = dtgMotor.SelectedRows[0];
+                    int id = Convert.ToInt32(selectedRow.Cells["id"].Value);
+
+                    using (var dbContext = new DbContext())
+                    {
+                        MotorController motorController = new MotorController(dbContext);
+
+                        // Delete the data
+                        motorController.DeleteMotor(id);
+                    }
+
+                    // Refresh data in the DataGridView
+                    LoadMotorData();
+
+                    // Show success message
+                    MessageBox.Show("Item successfully deleted!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Failed to delete item.\n\nError: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Please select a row to delete.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
     }
 }

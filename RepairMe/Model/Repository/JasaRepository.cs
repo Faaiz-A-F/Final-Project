@@ -44,7 +44,7 @@ namespace RepairMe.Model.Repository
         {
             _dbContext.OpenConnection();
 
-            var query = "DELETE FROM jasa_bengkel WHERE id = @id";
+            var query = "DELETE FROM jasa_bengkel WHERE jasa_id = @id";
 
             using (var cmd = new MySqlCommand(query, _dbContext.Connection))
             {

@@ -110,6 +110,7 @@
   <ItemGroup>
     <Compile Include="Controller\JasaController.cs" />
     <Compile Include="Controller\MotorController.cs" />
+    <Compile Include="Controller\TransactionController.cs" />
     <Compile Include="Controller\UsersController.cs" />
     <Compile Include="Controller\WorkshopController.cs" />
     <Compile Include="Model\Entity\Jasa.cs" />

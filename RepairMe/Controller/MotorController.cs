@@ -71,6 +71,7 @@ namespace RepairMe.Controller
                 // Create motor object
                 var motor = new Motor
                 {
+                    Name = name,
                     Engine = engine,
                     Brand = brand,
                     Type = type,
