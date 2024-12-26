@@ -41,7 +41,7 @@
             this.btnHapus = new Guna.UI2.WinForms.Guna2Button();
             this.guna2GroupBox2 = new Guna.UI2.WinForms.Guna2GroupBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.dtgJasaPilih = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.dtgPesananMasuk = new Guna.UI2.WinForms.Guna2DataGridView();
             this.btnSelesai = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.pbProfile = new Guna.UI2.WinForms.Guna2CirclePictureBox();
@@ -54,7 +54,7 @@
             this.guna2Panel2.SuspendLayout();
             this.guna2GroupBox1.SuspendLayout();
             this.guna2GroupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgJasaPilih)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgPesananMasuk)).BeginInit();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbProfile)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
@@ -71,11 +71,11 @@
             this.guna2Panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(238)))), ((int)(((byte)(221)))));
             this.guna2Panel2.Controls.Add(this.guna2GroupBox1);
             this.guna2Panel2.Controls.Add(this.guna2GroupBox2);
-            this.guna2Panel2.Location = new System.Drawing.Point(0, 76);
-            this.guna2Panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2Panel2.Location = new System.Drawing.Point(0, 62);
+            this.guna2Panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.ShadowDecoration.Parent = this.guna2Panel2;
-            this.guna2Panel2.Size = new System.Drawing.Size(1280, 644);
+            this.guna2Panel2.Size = new System.Drawing.Size(960, 523);
             this.guna2Panel2.TabIndex = 3;
             // 
             // guna2GroupBox1
@@ -89,11 +89,11 @@
             this.guna2GroupBox1.FillColor = System.Drawing.Color.Transparent;
             this.guna2GroupBox1.Font = new System.Drawing.Font("Poppins SemiBold", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2GroupBox1.ForeColor = System.Drawing.Color.Black;
-            this.guna2GroupBox1.Location = new System.Drawing.Point(11, 562);
-            this.guna2GroupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2GroupBox1.Location = new System.Drawing.Point(8, 457);
+            this.guna2GroupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2GroupBox1.Name = "guna2GroupBox1";
             this.guna2GroupBox1.ShadowDecoration.Parent = this.guna2GroupBox1;
-            this.guna2GroupBox1.Size = new System.Drawing.Size(1235, 546);
+            this.guna2GroupBox1.Size = new System.Drawing.Size(926, 444);
             this.guna2GroupBox1.TabIndex = 35;
             this.guna2GroupBox1.Text = "Pesanan Selesai";
             // 
@@ -113,33 +113,34 @@
             this.tbPemasukan.ForeColor = System.Drawing.Color.Black;
             this.tbPemasukan.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbPemasukan.HoverState.Parent = this.tbPemasukan;
-            this.tbPemasukan.Location = new System.Drawing.Point(139, 480);
-            this.tbPemasukan.Margin = new System.Windows.Forms.Padding(5, 7, 5, 7);
+            this.tbPemasukan.Location = new System.Drawing.Point(104, 390);
+            this.tbPemasukan.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.tbPemasukan.Name = "tbPemasukan";
             this.tbPemasukan.PasswordChar = '\0';
             this.tbPemasukan.PlaceholderText = "";
             this.tbPemasukan.ReadOnly = true;
             this.tbPemasukan.SelectedText = "";
             this.tbPemasukan.ShadowDecoration.Parent = this.tbPemasukan;
-            this.tbPemasukan.Size = new System.Drawing.Size(267, 31);
+            this.tbPemasukan.Size = new System.Drawing.Size(200, 25);
             this.tbPemasukan.TabIndex = 16;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(13, 479);
+            this.label1.Location = new System.Drawing.Point(10, 389);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(125, 30);
+            this.label1.Size = new System.Drawing.Size(101, 25);
             this.label1.TabIndex = 15;
             this.label1.Text = "Pemasukan :";
             // 
             // lvwCo
             // 
             this.lvwCo.HideSelection = false;
-            this.lvwCo.Location = new System.Drawing.Point(12, 42);
-            this.lvwCo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.lvwCo.Location = new System.Drawing.Point(9, 34);
+            this.lvwCo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.lvwCo.Name = "lvwCo";
-            this.lvwCo.Size = new System.Drawing.Size(1209, 429);
+            this.lvwCo.Size = new System.Drawing.Size(908, 349);
             this.lvwCo.TabIndex = 14;
             this.lvwCo.UseCompatibleStateImageBehavior = false;
             // 
@@ -152,11 +153,11 @@
             this.btnHapus.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHapus.ForeColor = System.Drawing.Color.White;
             this.btnHapus.HoverState.Parent = this.btnHapus;
-            this.btnHapus.Location = new System.Drawing.Point(1091, 478);
-            this.btnHapus.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnHapus.Location = new System.Drawing.Point(818, 388);
+            this.btnHapus.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnHapus.Name = "btnHapus";
             this.btnHapus.ShadowDecoration.Parent = this.btnHapus;
-            this.btnHapus.Size = new System.Drawing.Size(131, 34);
+            this.btnHapus.Size = new System.Drawing.Size(98, 28);
             this.btnHapus.TabIndex = 13;
             this.btnHapus.Text = "Hapus history";
             // 
@@ -164,17 +165,17 @@
             // 
             this.guna2GroupBox2.BorderColor = System.Drawing.Color.Transparent;
             this.guna2GroupBox2.Controls.Add(this.label2);
-            this.guna2GroupBox2.Controls.Add(this.dtgJasaPilih);
+            this.guna2GroupBox2.Controls.Add(this.dtgPesananMasuk);
             this.guna2GroupBox2.Controls.Add(this.btnSelesai);
             this.guna2GroupBox2.CustomBorderColor = System.Drawing.Color.Transparent;
             this.guna2GroupBox2.FillColor = System.Drawing.Color.Transparent;
             this.guna2GroupBox2.Font = new System.Drawing.Font("Poppins SemiBold", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2GroupBox2.ForeColor = System.Drawing.Color.Black;
-            this.guna2GroupBox2.Location = new System.Drawing.Point(11, 21);
-            this.guna2GroupBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2GroupBox2.Location = new System.Drawing.Point(8, 17);
+            this.guna2GroupBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2GroupBox2.Name = "guna2GroupBox2";
             this.guna2GroupBox2.ShadowDecoration.Parent = this.guna2GroupBox2;
-            this.guna2GroupBox2.Size = new System.Drawing.Size(1235, 537);
+            this.guna2GroupBox2.Size = new System.Drawing.Size(926, 436);
             this.guna2GroupBox2.TabIndex = 34;
             this.guna2GroupBox2.Text = "Pesanan Masuk";
             // 
@@ -182,21 +183,22 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Poppins SemiBold", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(16, 469);
+            this.label2.Location = new System.Drawing.Point(12, 381);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(502, 23);
+            this.label2.Size = new System.Drawing.Size(414, 19);
             this.label2.TabIndex = 15;
             this.label2.Text = "*Jika Pesanan sudah selesai pencet pesanannya lalu tekan tombol selesai";
             // 
-            // dtgJasaPilih
+            // dtgPesananMasuk
             // 
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.dtgJasaPilih.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dtgJasaPilih.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dtgJasaPilih.BackgroundColor = System.Drawing.Color.White;
-            this.dtgJasaPilih.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dtgJasaPilih.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.dtgJasaPilih.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dtgPesananMasuk.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dtgPesananMasuk.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dtgPesananMasuk.BackgroundColor = System.Drawing.Color.White;
+            this.dtgPesananMasuk.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dtgPesananMasuk.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dtgPesananMasuk.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Poppins SemiBold", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -204,8 +206,8 @@
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgJasaPilih.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dtgJasaPilih.ColumnHeadersHeight = 4;
+            this.dtgPesananMasuk.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dtgPesananMasuk.ColumnHeadersHeight = 4;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Poppins SemiBold", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -213,40 +215,40 @@
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtgJasaPilih.DefaultCellStyle = dataGridViewCellStyle3;
-            this.dtgJasaPilih.EnableHeadersVisualStyles = false;
-            this.dtgJasaPilih.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dtgJasaPilih.Location = new System.Drawing.Point(12, 42);
-            this.dtgJasaPilih.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dtgJasaPilih.Name = "dtgJasaPilih";
-            this.dtgJasaPilih.RowHeadersVisible = false;
-            this.dtgJasaPilih.RowHeadersWidth = 51;
-            this.dtgJasaPilih.RowTemplate.Height = 24;
-            this.dtgJasaPilih.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dtgJasaPilih.Size = new System.Drawing.Size(1209, 425);
-            this.dtgJasaPilih.TabIndex = 14;
-            this.dtgJasaPilih.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
-            this.dtgJasaPilih.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-            this.dtgJasaPilih.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.dtgJasaPilih.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.dtgJasaPilih.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.dtgJasaPilih.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.dtgJasaPilih.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.dtgJasaPilih.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dtgJasaPilih.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.dtgJasaPilih.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.dtgJasaPilih.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Poppins SemiBold", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtgJasaPilih.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.dtgJasaPilih.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.dtgJasaPilih.ThemeStyle.HeaderStyle.Height = 4;
-            this.dtgJasaPilih.ThemeStyle.ReadOnly = false;
-            this.dtgJasaPilih.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.dtgJasaPilih.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.dtgJasaPilih.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Poppins SemiBold", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtgJasaPilih.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.Black;
-            this.dtgJasaPilih.ThemeStyle.RowsStyle.Height = 24;
-            this.dtgJasaPilih.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dtgJasaPilih.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dtgPesananMasuk.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dtgPesananMasuk.EnableHeadersVisualStyles = false;
+            this.dtgPesananMasuk.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dtgPesananMasuk.Location = new System.Drawing.Point(9, 34);
+            this.dtgPesananMasuk.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dtgPesananMasuk.Name = "dtgPesananMasuk";
+            this.dtgPesananMasuk.RowHeadersVisible = false;
+            this.dtgPesananMasuk.RowHeadersWidth = 51;
+            this.dtgPesananMasuk.RowTemplate.Height = 24;
+            this.dtgPesananMasuk.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dtgPesananMasuk.Size = new System.Drawing.Size(907, 345);
+            this.dtgPesananMasuk.TabIndex = 14;
+            this.dtgPesananMasuk.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
+            this.dtgPesananMasuk.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.dtgPesananMasuk.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.dtgPesananMasuk.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.dtgPesananMasuk.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.dtgPesananMasuk.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.dtgPesananMasuk.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.dtgPesananMasuk.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dtgPesananMasuk.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.dtgPesananMasuk.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dtgPesananMasuk.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Poppins SemiBold", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtgPesananMasuk.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.dtgPesananMasuk.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.dtgPesananMasuk.ThemeStyle.HeaderStyle.Height = 4;
+            this.dtgPesananMasuk.ThemeStyle.ReadOnly = false;
+            this.dtgPesananMasuk.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.dtgPesananMasuk.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dtgPesananMasuk.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Poppins SemiBold", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtgPesananMasuk.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.Black;
+            this.dtgPesananMasuk.ThemeStyle.RowsStyle.Height = 24;
+            this.dtgPesananMasuk.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dtgPesananMasuk.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
             // btnSelesai
             // 
@@ -257,11 +259,11 @@
             this.btnSelesai.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSelesai.ForeColor = System.Drawing.Color.White;
             this.btnSelesai.HoverState.Parent = this.btnSelesai;
-            this.btnSelesai.Location = new System.Drawing.Point(1072, 478);
-            this.btnSelesai.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnSelesai.Location = new System.Drawing.Point(804, 388);
+            this.btnSelesai.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSelesai.Name = "btnSelesai";
             this.btnSelesai.ShadowDecoration.Parent = this.btnSelesai;
-            this.btnSelesai.Size = new System.Drawing.Size(149, 46);
+            this.btnSelesai.Size = new System.Drawing.Size(112, 37);
             this.btnSelesai.TabIndex = 13;
             this.btnSelesai.Text = "Selesai";
             // 
@@ -277,21 +279,21 @@
             this.guna2Panel1.Controls.Add(this.guna2CirclePictureBox1);
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
-            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
-            this.guna2Panel1.Size = new System.Drawing.Size(1280, 76);
+            this.guna2Panel1.Size = new System.Drawing.Size(960, 62);
             this.guna2Panel1.TabIndex = 4;
             // 
             // pbProfile
             // 
             this.pbProfile.Image = global::RepairMe.Properties.Resources.profile_default;
-            this.pbProfile.Location = new System.Drawing.Point(1167, 5);
-            this.pbProfile.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pbProfile.Location = new System.Drawing.Point(875, 4);
+            this.pbProfile.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pbProfile.Name = "pbProfile";
             this.pbProfile.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.pbProfile.ShadowDecoration.Parent = this.pbProfile;
-            this.pbProfile.Size = new System.Drawing.Size(67, 66);
+            this.pbProfile.Size = new System.Drawing.Size(50, 54);
             this.pbProfile.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbProfile.TabIndex = 25;
             this.pbProfile.TabStop = false;
@@ -301,9 +303,10 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Poppins", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(109, 20);
+            this.label9.Location = new System.Drawing.Point(82, 16);
+            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(117, 36);
+            this.label9.Size = new System.Drawing.Size(94, 28);
             this.label9.TabIndex = 23;
             this.label9.Text = "Repair Me";
             // 
@@ -317,12 +320,12 @@
             this.btnAboutUs.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAboutUs.ForeColor = System.Drawing.Color.White;
             this.btnAboutUs.HoverState.Parent = this.btnAboutUs;
-            this.btnAboutUs.Location = new System.Drawing.Point(1043, 21);
-            this.btnAboutUs.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnAboutUs.Location = new System.Drawing.Point(782, 17);
+            this.btnAboutUs.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnAboutUs.Name = "btnAboutUs";
             this.btnAboutUs.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(238)))), ((int)(((byte)(221)))));
             this.btnAboutUs.ShadowDecoration.Parent = this.btnAboutUs;
-            this.btnAboutUs.Size = new System.Drawing.Size(107, 34);
+            this.btnAboutUs.Size = new System.Drawing.Size(80, 28);
             this.btnAboutUs.TabIndex = 22;
             this.btnAboutUs.Text = "About Us";
             // 
@@ -335,12 +338,12 @@
             this.btnexit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnexit.ForeColor = System.Drawing.Color.Red;
             this.btnexit.HoverState.Parent = this.btnexit;
-            this.btnexit.Location = new System.Drawing.Point(1251, -4);
-            this.btnexit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnexit.Location = new System.Drawing.Point(938, -3);
+            this.btnexit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnexit.Name = "btnexit";
             this.btnexit.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.btnexit.ShadowDecoration.Parent = this.btnexit;
-            this.btnexit.Size = new System.Drawing.Size(33, 34);
+            this.btnexit.Size = new System.Drawing.Size(25, 28);
             this.btnexit.TabIndex = 21;
             this.btnexit.Text = "X";
             this.btnexit.Click += new System.EventHandler(this.btnexit_Click);
@@ -355,12 +358,12 @@
             this.btnJasa.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnJasa.ForeColor = System.Drawing.Color.White;
             this.btnJasa.HoverState.Parent = this.btnJasa;
-            this.btnJasa.Location = new System.Drawing.Point(835, 21);
-            this.btnJasa.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnJasa.Location = new System.Drawing.Point(626, 17);
+            this.btnJasa.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnJasa.Name = "btnJasa";
             this.btnJasa.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(238)))), ((int)(((byte)(221)))));
             this.btnJasa.ShadowDecoration.Parent = this.btnJasa;
-            this.btnJasa.Size = new System.Drawing.Size(203, 34);
+            this.btnJasa.Size = new System.Drawing.Size(152, 28);
             this.btnJasa.TabIndex = 5;
             this.btnJasa.Text = "Penambahan Jasa";
             this.btnJasa.Click += new System.EventHandler(this.btnJasa_Click);
@@ -375,37 +378,36 @@
             this.btnPesanan.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPesanan.ForeColor = System.Drawing.Color.White;
             this.btnPesanan.HoverState.Parent = this.btnPesanan;
-            this.btnPesanan.Location = new System.Drawing.Point(703, 21);
-            this.btnPesanan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnPesanan.Location = new System.Drawing.Point(527, 17);
+            this.btnPesanan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnPesanan.Name = "btnPesanan";
             this.btnPesanan.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(238)))), ((int)(((byte)(221)))));
             this.btnPesanan.ShadowDecoration.Parent = this.btnPesanan;
-            this.btnPesanan.Size = new System.Drawing.Size(136, 34);
+            this.btnPesanan.Size = new System.Drawing.Size(102, 28);
             this.btnPesanan.TabIndex = 3;
             this.btnPesanan.Text = "Pesanan";
             // 
             // guna2CirclePictureBox1
             // 
             this.guna2CirclePictureBox1.Image = global::RepairMe.Properties.Resources._15;
-            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(11, 10);
-            this.guna2CirclePictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(8, 8);
+            this.guna2CirclePictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
             this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.guna2CirclePictureBox1.ShadowDecoration.Parent = this.guna2CirclePictureBox1;
-            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(77, 59);
+            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(58, 48);
             this.guna2CirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.guna2CirclePictureBox1.TabIndex = 0;
             this.guna2CirclePictureBox1.TabStop = false;
             // 
             // DashboardAdmin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1280, 720);
+            this.ClientSize = new System.Drawing.Size(960, 585);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.guna2Panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "DashboardAdmin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DashboardAdmin";
@@ -414,7 +416,7 @@
             this.guna2GroupBox1.PerformLayout();
             this.guna2GroupBox2.ResumeLayout(false);
             this.guna2GroupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgJasaPilih)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgPesananMasuk)).EndInit();
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbProfile)).EndInit();
@@ -433,7 +435,7 @@
         private System.Windows.Forms.ListView lvwCo;
         private Guna.UI2.WinForms.Guna2Button btnHapus;
         private Guna.UI2.WinForms.Guna2GroupBox guna2GroupBox2;
-        private Guna.UI2.WinForms.Guna2DataGridView dtgJasaPilih;
+        private Guna.UI2.WinForms.Guna2DataGridView dtgPesananMasuk;
         private Guna.UI2.WinForms.Guna2Button btnSelesai;
         private System.Windows.Forms.Label label2;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;

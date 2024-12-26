@@ -59,9 +59,47 @@ namespace RepairMe.Model.Repository
             throw new NotImplementedException();
         }
 
-        public void GetTransactionAdmin(int id)
+        public List<Transaction> GetPendingTransactionAdmin(int adminId)
         {
-            throw new NotImplementedException();
+            var transactionsList = new List<Transaction>();
+
+            try
+            {
+                _dbContext.OpenConnection();
+
+                var query = "SELECT * FROM transaction WHERE admin_id = @id AND status = 'pending';";
+
+                using (var cmd = new MySqlCommand(query, _dbContext.Connection))
+                {
+                    cmd.Parameters.AddWithValue("@id", adminId);
+
+                    using (var reader = cmd.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            var transaction = new Transaction
+                            {
+                                Id = reader.GetInt32("transaction_id"),
+                                UserId = reader.GetInt32("user_id"),
+                                MotorId = reader.GetInt32("motor_id"),
+                                AdminId = reader.GetInt32("admin_id"),
+                                Status = reader.GetString("status"),
+                                Total = reader.GetInt32("total"),
+                                Date = reader.GetDateTime("transaction_date")
+                            };
+
+                            transactionsList.Add(transaction);
+                        }
+                    }
+                }
+                _dbContext.CloseConnection();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Failed to get transaction: " + ex.Message);
+            }
+
+            return transactionsList;
         }
     }
 }

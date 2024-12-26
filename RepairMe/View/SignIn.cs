@@ -89,23 +89,23 @@ namespace RepairMe
                         // Check role and open corresponding dashboard
                         if (user.Role == "admin")
                         {
+                            // Set current admin ID
+                            Users.CurrentAdminId = user.Id;
+
                             // Open admin dashboard
                             DashboardAdmin dashboardAdmin = new DashboardAdmin();
 
-                            // Set current admin ID
-                            Users.CurrentAdminId = user.Id;
-                            MessageBox.Show($"Logged-in Admin ID: {Users.CurrentAdminId}");
                             dashboardAdmin.Show();
                             this.Hide();
                             dashboardAdmin.FormClosed += (s, args) => this.Show();
                         }
                         else if (user.Role == "user")
                         {
-                            // Open user dashboard
-                            Dashboard dashboard = new Dashboard();
-
                             // Set current user ID
                             Users.CurrentUserId = user.Id;
+
+                            // Open user dashboard
+                            Dashboard dashboard = new Dashboard();
 
                             dashboard.Show();
                             this.Hide();
@@ -117,13 +117,6 @@ namespace RepairMe
                             MessageBox.Show("Role not recognized.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                             return;
                         }
-
-                        // Hide current sign-in form
-                        this.Hide();
-
-                        // Event handler: Show sign-in form when dashboard is closed
-                        Form activeDashboard = user.Role == "admin" ? (Form)new DashboardAdmin() : new Dashboard();
-                        activeDashboard.FormClosed += (s, args) => this.Show();
                     }
                     else
                     {

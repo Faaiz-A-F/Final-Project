@@ -86,5 +86,19 @@ namespace RepairMe.Controller
                 MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        public List<Transaction> GetPendingTransactionAdmin(int adminId)
+        {
+            try
+            {
+                // Get transaction by admin ID
+                return _transactionRepository.GetPendingTransactionAdmin(adminId);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return null;
+            }
+        }
     }
 }

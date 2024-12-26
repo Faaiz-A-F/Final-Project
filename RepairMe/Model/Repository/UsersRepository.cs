@@ -199,7 +199,7 @@ namespace RepairMe.Model.Repository
                 if (Users.CurrentAdminId != null)
                 {
                     // Query for admin
-                    query = "SELECT admin_id AS Id, name AS Username, email, NULL AS Age, phone, address " +
+                    query = "SELECT admin_id AS Id, name AS Username, email, age, phone, address " +
                             "FROM admin WHERE admin_id = @Id";
                 }
                 else if (Users.CurrentUserId != null)
@@ -243,7 +243,6 @@ namespace RepairMe.Model.Repository
             {
                 _dbContext.CloseConnection();
             }
-
             return null;
         }
 
