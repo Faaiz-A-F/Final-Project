@@ -109,7 +109,7 @@
             this.guna2Panel1.Controls.Add(this.guna2CirclePictureBox1);
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
-            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
             this.guna2Panel1.Size = new System.Drawing.Size(960, 62);
@@ -126,7 +126,7 @@
             this.btnHistory.ForeColor = System.Drawing.Color.White;
             this.btnHistory.HoverState.Parent = this.btnHistory;
             this.btnHistory.Location = new System.Drawing.Point(641, 15);
-            this.btnHistory.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnHistory.Margin = new System.Windows.Forms.Padding(2);
             this.btnHistory.Name = "btnHistory";
             this.btnHistory.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(238)))), ((int)(((byte)(221)))));
             this.btnHistory.ShadowDecoration.Parent = this.btnHistory;
@@ -138,7 +138,7 @@
             // 
             this.pbProfile.Image = global::RepairMe.Properties.Resources.profile_default;
             this.pbProfile.Location = new System.Drawing.Point(878, 5);
-            this.pbProfile.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pbProfile.Margin = new System.Windows.Forms.Padding(2);
             this.pbProfile.Name = "pbProfile";
             this.pbProfile.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.pbProfile.ShadowDecoration.Parent = this.pbProfile;
@@ -171,7 +171,7 @@
             this.btnAboutUs.ForeColor = System.Drawing.Color.White;
             this.btnAboutUs.HoverState.Parent = this.btnAboutUs;
             this.btnAboutUs.Location = new System.Drawing.Point(775, 15);
-            this.btnAboutUs.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAboutUs.Margin = new System.Windows.Forms.Padding(2);
             this.btnAboutUs.Name = "btnAboutUs";
             this.btnAboutUs.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(238)))), ((int)(((byte)(221)))));
             this.btnAboutUs.ShadowDecoration.Parent = this.btnAboutUs;
@@ -189,7 +189,7 @@
             this.btnexit.ForeColor = System.Drawing.Color.Red;
             this.btnexit.HoverState.Parent = this.btnexit;
             this.btnexit.Location = new System.Drawing.Point(938, -3);
-            this.btnexit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnexit.Margin = new System.Windows.Forms.Padding(2);
             this.btnexit.Name = "btnexit";
             this.btnexit.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.btnexit.ShadowDecoration.Parent = this.btnexit;
@@ -209,7 +209,7 @@
             this.btnPemesanan.ForeColor = System.Drawing.Color.White;
             this.btnPemesanan.HoverState.Parent = this.btnPemesanan;
             this.btnPemesanan.Location = new System.Drawing.Point(528, 15);
-            this.btnPemesanan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnPemesanan.Margin = new System.Windows.Forms.Padding(2);
             this.btnPemesanan.Name = "btnPemesanan";
             this.btnPemesanan.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(238)))), ((int)(((byte)(221)))));
             this.btnPemesanan.ShadowDecoration.Parent = this.btnPemesanan;
@@ -229,7 +229,7 @@
             this.btnWorkshopList.ForeColor = System.Drawing.Color.White;
             this.btnWorkshopList.HoverState.Parent = this.btnWorkshopList;
             this.btnWorkshopList.Location = new System.Drawing.Point(410, 15);
-            this.btnWorkshopList.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnWorkshopList.Margin = new System.Windows.Forms.Padding(2);
             this.btnWorkshopList.Name = "btnWorkshopList";
             this.btnWorkshopList.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(238)))), ((int)(((byte)(221)))));
             this.btnWorkshopList.ShadowDecoration.Parent = this.btnWorkshopList;
@@ -249,7 +249,7 @@
             this.btnHome.ForeColor = System.Drawing.Color.White;
             this.btnHome.HoverState.Parent = this.btnHome;
             this.btnHome.Location = new System.Drawing.Point(325, 14);
-            this.btnHome.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnHome.Margin = new System.Windows.Forms.Padding(2);
             this.btnHome.Name = "btnHome";
             this.btnHome.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(238)))), ((int)(((byte)(221)))));
             this.btnHome.ShadowDecoration.Parent = this.btnHome;
@@ -261,7 +261,7 @@
             // 
             this.guna2CirclePictureBox1.Image = global::RepairMe.Properties.Resources._15;
             this.guna2CirclePictureBox1.Location = new System.Drawing.Point(8, 8);
-            this.guna2CirclePictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2CirclePictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
             this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.guna2CirclePictureBox1.ShadowDecoration.Parent = this.guna2CirclePictureBox1;
@@ -281,7 +281,7 @@
             this.guna2Panel2.Controls.Add(this.guna2PictureBox1);
             this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2Panel2.Location = new System.Drawing.Point(0, 62);
-            this.guna2Panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2Panel2.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.ShadowDecoration.Parent = this.guna2Panel2;
             this.guna2Panel2.Size = new System.Drawing.Size(960, 523);
@@ -296,7 +296,7 @@
             this.guna2GroupBox2.Font = new System.Drawing.Font("Poppins SemiBold", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2GroupBox2.ForeColor = System.Drawing.Color.Black;
             this.guna2GroupBox2.Location = new System.Drawing.Point(16, 501);
-            this.guna2GroupBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2GroupBox2.Margin = new System.Windows.Forms.Padding(2);
             this.guna2GroupBox2.Name = "guna2GroupBox2";
             this.guna2GroupBox2.ShadowDecoration.Parent = this.guna2GroupBox2;
             this.guna2GroupBox2.Size = new System.Drawing.Size(914, 443);
@@ -328,7 +328,7 @@
             this.guna2GroupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2GroupBox1.ForeColor = System.Drawing.Color.Black;
             this.guna2GroupBox1.Location = new System.Drawing.Point(16, 272);
-            this.guna2GroupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2GroupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2GroupBox1.Name = "guna2GroupBox1";
             this.guna2GroupBox1.ShadowDecoration.Parent = this.guna2GroupBox1;
             this.guna2GroupBox1.Size = new System.Drawing.Size(914, 234);
@@ -342,7 +342,7 @@
             this.guna2Panel8.Controls.Add(this.label8);
             this.guna2Panel8.Controls.Add(this.guna2ImageButton6);
             this.guna2Panel8.Location = new System.Drawing.Point(759, 32);
-            this.guna2Panel8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2Panel8.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Panel8.Name = "guna2Panel8";
             this.guna2Panel8.ShadowDecoration.Parent = this.guna2Panel8;
             this.guna2Panel8.Size = new System.Drawing.Size(130, 180);
@@ -357,7 +357,7 @@
             this.guna2Button10.ForeColor = System.Drawing.Color.White;
             this.guna2Button10.HoverState.Parent = this.guna2Button10;
             this.guna2Button10.Location = new System.Drawing.Point(14, 144);
-            this.guna2Button10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2Button10.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Button10.Name = "guna2Button10";
             this.guna2Button10.ShadowDecoration.Parent = this.guna2Button10;
             this.guna2Button10.Size = new System.Drawing.Size(103, 24);
@@ -367,7 +367,7 @@
             // guna2RatingStar6
             // 
             this.guna2RatingStar6.Location = new System.Drawing.Point(14, 118);
-            this.guna2RatingStar6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2RatingStar6.Margin = new System.Windows.Forms.Padding(2);
             this.guna2RatingStar6.Name = "guna2RatingStar6";
             this.guna2RatingStar6.RatingColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.guna2RatingStar6.Size = new System.Drawing.Size(98, 18);
@@ -393,7 +393,7 @@
             this.guna2ImageButton6.Image = global::RepairMe.Properties.Resources.Frog;
             this.guna2ImageButton6.ImageSize = new System.Drawing.Size(150, 150);
             this.guna2ImageButton6.Location = new System.Drawing.Point(14, 11);
-            this.guna2ImageButton6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2ImageButton6.Margin = new System.Windows.Forms.Padding(2);
             this.guna2ImageButton6.Name = "guna2ImageButton6";
             this.guna2ImageButton6.PressedState.Parent = this.guna2ImageButton6;
             this.guna2ImageButton6.Size = new System.Drawing.Size(103, 83);
@@ -406,7 +406,7 @@
             this.guna2Panel7.Controls.Add(this.label7);
             this.guna2Panel7.Controls.Add(this.guna2ImageButton5);
             this.guna2Panel7.Location = new System.Drawing.Point(612, 32);
-            this.guna2Panel7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2Panel7.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Panel7.Name = "guna2Panel7";
             this.guna2Panel7.ShadowDecoration.Parent = this.guna2Panel7;
             this.guna2Panel7.Size = new System.Drawing.Size(130, 180);
@@ -421,7 +421,7 @@
             this.guna2Button9.ForeColor = System.Drawing.Color.White;
             this.guna2Button9.HoverState.Parent = this.guna2Button9;
             this.guna2Button9.Location = new System.Drawing.Point(14, 144);
-            this.guna2Button9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2Button9.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Button9.Name = "guna2Button9";
             this.guna2Button9.ShadowDecoration.Parent = this.guna2Button9;
             this.guna2Button9.Size = new System.Drawing.Size(103, 24);
@@ -431,7 +431,7 @@
             // guna2RatingStar5
             // 
             this.guna2RatingStar5.Location = new System.Drawing.Point(14, 118);
-            this.guna2RatingStar5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2RatingStar5.Margin = new System.Windows.Forms.Padding(2);
             this.guna2RatingStar5.Name = "guna2RatingStar5";
             this.guna2RatingStar5.RatingColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.guna2RatingStar5.Size = new System.Drawing.Size(98, 18);
@@ -457,7 +457,7 @@
             this.guna2ImageButton5.Image = global::RepairMe.Properties.Resources.Frog;
             this.guna2ImageButton5.ImageSize = new System.Drawing.Size(150, 150);
             this.guna2ImageButton5.Location = new System.Drawing.Point(14, 11);
-            this.guna2ImageButton5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2ImageButton5.Margin = new System.Windows.Forms.Padding(2);
             this.guna2ImageButton5.Name = "guna2ImageButton5";
             this.guna2ImageButton5.PressedState.Parent = this.guna2ImageButton5;
             this.guna2ImageButton5.Size = new System.Drawing.Size(103, 83);
@@ -470,7 +470,7 @@
             this.guna2Panel6.Controls.Add(this.label6);
             this.guna2Panel6.Controls.Add(this.guna2ImageButton4);
             this.guna2Panel6.Location = new System.Drawing.Point(465, 32);
-            this.guna2Panel6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2Panel6.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Panel6.Name = "guna2Panel6";
             this.guna2Panel6.ShadowDecoration.Parent = this.guna2Panel6;
             this.guna2Panel6.Size = new System.Drawing.Size(130, 180);
@@ -485,7 +485,7 @@
             this.guna2Button8.ForeColor = System.Drawing.Color.White;
             this.guna2Button8.HoverState.Parent = this.guna2Button8;
             this.guna2Button8.Location = new System.Drawing.Point(14, 144);
-            this.guna2Button8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2Button8.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Button8.Name = "guna2Button8";
             this.guna2Button8.ShadowDecoration.Parent = this.guna2Button8;
             this.guna2Button8.Size = new System.Drawing.Size(103, 24);
@@ -495,7 +495,7 @@
             // guna2RatingStar4
             // 
             this.guna2RatingStar4.Location = new System.Drawing.Point(14, 118);
-            this.guna2RatingStar4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2RatingStar4.Margin = new System.Windows.Forms.Padding(2);
             this.guna2RatingStar4.Name = "guna2RatingStar4";
             this.guna2RatingStar4.RatingColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.guna2RatingStar4.Size = new System.Drawing.Size(98, 18);
@@ -521,7 +521,7 @@
             this.guna2ImageButton4.Image = global::RepairMe.Properties.Resources.Frog;
             this.guna2ImageButton4.ImageSize = new System.Drawing.Size(150, 150);
             this.guna2ImageButton4.Location = new System.Drawing.Point(14, 11);
-            this.guna2ImageButton4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2ImageButton4.Margin = new System.Windows.Forms.Padding(2);
             this.guna2ImageButton4.Name = "guna2ImageButton4";
             this.guna2ImageButton4.PressedState.Parent = this.guna2ImageButton4;
             this.guna2ImageButton4.Size = new System.Drawing.Size(103, 83);
@@ -534,7 +534,7 @@
             this.guna2Panel5.Controls.Add(this.label5);
             this.guna2Panel5.Controls.Add(this.guna2ImageButton3);
             this.guna2Panel5.Location = new System.Drawing.Point(318, 32);
-            this.guna2Panel5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2Panel5.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Panel5.Name = "guna2Panel5";
             this.guna2Panel5.ShadowDecoration.Parent = this.guna2Panel5;
             this.guna2Panel5.Size = new System.Drawing.Size(130, 180);
@@ -549,7 +549,7 @@
             this.guna2Button7.ForeColor = System.Drawing.Color.White;
             this.guna2Button7.HoverState.Parent = this.guna2Button7;
             this.guna2Button7.Location = new System.Drawing.Point(14, 144);
-            this.guna2Button7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2Button7.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Button7.Name = "guna2Button7";
             this.guna2Button7.ShadowDecoration.Parent = this.guna2Button7;
             this.guna2Button7.Size = new System.Drawing.Size(103, 24);
@@ -559,7 +559,7 @@
             // guna2RatingStar3
             // 
             this.guna2RatingStar3.Location = new System.Drawing.Point(14, 118);
-            this.guna2RatingStar3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2RatingStar3.Margin = new System.Windows.Forms.Padding(2);
             this.guna2RatingStar3.Name = "guna2RatingStar3";
             this.guna2RatingStar3.RatingColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.guna2RatingStar3.Size = new System.Drawing.Size(98, 18);
@@ -585,7 +585,7 @@
             this.guna2ImageButton3.Image = global::RepairMe.Properties.Resources.Frog;
             this.guna2ImageButton3.ImageSize = new System.Drawing.Size(150, 150);
             this.guna2ImageButton3.Location = new System.Drawing.Point(14, 11);
-            this.guna2ImageButton3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2ImageButton3.Margin = new System.Windows.Forms.Padding(2);
             this.guna2ImageButton3.Name = "guna2ImageButton3";
             this.guna2ImageButton3.PressedState.Parent = this.guna2ImageButton3;
             this.guna2ImageButton3.Size = new System.Drawing.Size(103, 83);
@@ -598,7 +598,7 @@
             this.guna2Panel4.Controls.Add(this.label4);
             this.guna2Panel4.Controls.Add(this.guna2ImageButton2);
             this.guna2Panel4.Location = new System.Drawing.Point(171, 32);
-            this.guna2Panel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2Panel4.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Panel4.Name = "guna2Panel4";
             this.guna2Panel4.ShadowDecoration.Parent = this.guna2Panel4;
             this.guna2Panel4.Size = new System.Drawing.Size(130, 180);
@@ -613,7 +613,7 @@
             this.guna2Button6.ForeColor = System.Drawing.Color.White;
             this.guna2Button6.HoverState.Parent = this.guna2Button6;
             this.guna2Button6.Location = new System.Drawing.Point(14, 144);
-            this.guna2Button6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2Button6.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Button6.Name = "guna2Button6";
             this.guna2Button6.ShadowDecoration.Parent = this.guna2Button6;
             this.guna2Button6.Size = new System.Drawing.Size(103, 24);
@@ -623,7 +623,7 @@
             // guna2RatingStar2
             // 
             this.guna2RatingStar2.Location = new System.Drawing.Point(14, 118);
-            this.guna2RatingStar2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2RatingStar2.Margin = new System.Windows.Forms.Padding(2);
             this.guna2RatingStar2.Name = "guna2RatingStar2";
             this.guna2RatingStar2.RatingColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.guna2RatingStar2.Size = new System.Drawing.Size(98, 18);
@@ -649,7 +649,7 @@
             this.guna2ImageButton2.Image = global::RepairMe.Properties.Resources.Frog;
             this.guna2ImageButton2.ImageSize = new System.Drawing.Size(150, 150);
             this.guna2ImageButton2.Location = new System.Drawing.Point(14, 11);
-            this.guna2ImageButton2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2ImageButton2.Margin = new System.Windows.Forms.Padding(2);
             this.guna2ImageButton2.Name = "guna2ImageButton2";
             this.guna2ImageButton2.PressedState.Parent = this.guna2ImageButton2;
             this.guna2ImageButton2.Size = new System.Drawing.Size(103, 83);
@@ -662,7 +662,7 @@
             this.guna2Panel3.Controls.Add(this.label3);
             this.guna2Panel3.Controls.Add(this.guna2ImageButton1);
             this.guna2Panel3.Location = new System.Drawing.Point(24, 32);
-            this.guna2Panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2Panel3.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Panel3.Name = "guna2Panel3";
             this.guna2Panel3.ShadowDecoration.Parent = this.guna2Panel3;
             this.guna2Panel3.Size = new System.Drawing.Size(130, 180);
@@ -677,7 +677,7 @@
             this.guna2Button5.ForeColor = System.Drawing.Color.White;
             this.guna2Button5.HoverState.Parent = this.guna2Button5;
             this.guna2Button5.Location = new System.Drawing.Point(14, 144);
-            this.guna2Button5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2Button5.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Button5.Name = "guna2Button5";
             this.guna2Button5.ShadowDecoration.Parent = this.guna2Button5;
             this.guna2Button5.Size = new System.Drawing.Size(103, 24);
@@ -687,7 +687,7 @@
             // guna2RatingStar1
             // 
             this.guna2RatingStar1.Location = new System.Drawing.Point(14, 118);
-            this.guna2RatingStar1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2RatingStar1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2RatingStar1.Name = "guna2RatingStar1";
             this.guna2RatingStar1.RatingColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.guna2RatingStar1.Size = new System.Drawing.Size(98, 18);
@@ -713,7 +713,7 @@
             this.guna2ImageButton1.Image = global::RepairMe.Properties.Resources.Frog;
             this.guna2ImageButton1.ImageSize = new System.Drawing.Size(150, 150);
             this.guna2ImageButton1.Location = new System.Drawing.Point(14, 11);
-            this.guna2ImageButton1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2ImageButton1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2ImageButton1.Name = "guna2ImageButton1";
             this.guna2ImageButton1.PressedState.Parent = this.guna2ImageButton1;
             this.guna2ImageButton1.Size = new System.Drawing.Size(103, 83);
@@ -725,7 +725,7 @@
             this.guna2PictureBox1.Image = global::RepairMe.Properties.Resources.Porsche_911_992_GT3_RS;
             this.guna2PictureBox1.InitialImage = null;
             this.guna2PictureBox1.Location = new System.Drawing.Point(16, 21);
-            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
             this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
             this.guna2PictureBox1.Size = new System.Drawing.Size(914, 236);
@@ -741,7 +741,8 @@
             this.Controls.Add(this.guna2Panel2);
             this.Controls.Add(this.guna2Panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Dashboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dashboard";

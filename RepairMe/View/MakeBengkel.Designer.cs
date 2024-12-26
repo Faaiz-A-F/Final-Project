@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MakeBengkel));
             this.panel1 = new System.Windows.Forms.Panel();
             this.tbAddressUp = new Guna.UI2.WinForms.Guna2TextBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -37,6 +38,8 @@
             this.tbEmailUp = new Guna.UI2.WinForms.Guna2TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.btnSignUp = new Guna.UI2.WinForms.Guna2Button();
+            this.tbAgeUp = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.tbPassUp = new Guna.UI2.WinForms.Guna2TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.tbUserBengkel = new Guna.UI2.WinForms.Guna2TextBox();
@@ -45,8 +48,6 @@
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.btnback = new Guna.UI2.WinForms.Guna2Button();
             this.btnExit = new Guna.UI2.WinForms.Guna2CircleButton();
-            this.label4 = new System.Windows.Forms.Label();
-            this.tbAgeUp = new Guna.UI2.WinForms.Guna2TextBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -205,6 +206,43 @@
             this.btnSignUp.Text = "Sign Up Now";
             this.btnSignUp.Click += new System.EventHandler(this.btnSignUp_Click);
             // 
+            // tbAgeUp
+            // 
+            this.tbAgeUp.BorderRadius = 10;
+            this.tbAgeUp.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tbAgeUp.DefaultText = "";
+            this.tbAgeUp.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.tbAgeUp.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.tbAgeUp.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbAgeUp.DisabledState.Parent = this.tbAgeUp;
+            this.tbAgeUp.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbAgeUp.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tbAgeUp.FocusedState.Parent = this.tbAgeUp;
+            this.tbAgeUp.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbAgeUp.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.tbAgeUp.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tbAgeUp.HoverState.Parent = this.tbAgeUp;
+            this.tbAgeUp.Location = new System.Drawing.Point(22, 310);
+            this.tbAgeUp.Margin = new System.Windows.Forms.Padding(4);
+            this.tbAgeUp.Name = "tbAgeUp";
+            this.tbAgeUp.PasswordChar = '\0';
+            this.tbAgeUp.PlaceholderText = "";
+            this.tbAgeUp.SelectedText = "";
+            this.tbAgeUp.ShadowDecoration.Parent = this.tbAgeUp;
+            this.tbAgeUp.Size = new System.Drawing.Size(366, 28);
+            this.tbAgeUp.TabIndex = 23;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(24, 287);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(39, 25);
+            this.label4.TabIndex = 22;
+            this.label4.Text = "Age";
+            // 
             // tbPassUp
             // 
             this.tbPassUp.BorderRadius = 10;
@@ -333,43 +371,6 @@
             this.btnExit.Text = "X";
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(24, 287);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(39, 25);
-            this.label4.TabIndex = 22;
-            this.label4.Text = "Age";
-            // 
-            // tbAgeUp
-            // 
-            this.tbAgeUp.BorderRadius = 10;
-            this.tbAgeUp.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.tbAgeUp.DefaultText = "";
-            this.tbAgeUp.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.tbAgeUp.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.tbAgeUp.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.tbAgeUp.DisabledState.Parent = this.tbAgeUp;
-            this.tbAgeUp.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.tbAgeUp.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.tbAgeUp.FocusedState.Parent = this.tbAgeUp;
-            this.tbAgeUp.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbAgeUp.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.tbAgeUp.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.tbAgeUp.HoverState.Parent = this.tbAgeUp;
-            this.tbAgeUp.Location = new System.Drawing.Point(22, 310);
-            this.tbAgeUp.Margin = new System.Windows.Forms.Padding(4);
-            this.tbAgeUp.Name = "tbAgeUp";
-            this.tbAgeUp.PasswordChar = '\0';
-            this.tbAgeUp.PlaceholderText = "";
-            this.tbAgeUp.SelectedText = "";
-            this.tbAgeUp.ShadowDecoration.Parent = this.tbAgeUp;
-            this.tbAgeUp.Size = new System.Drawing.Size(366, 28);
-            this.tbAgeUp.TabIndex = 23;
-            // 
             // MakeBengkel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -381,6 +382,7 @@
             this.Controls.Add(this.btnback);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "MakeBengkel";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
