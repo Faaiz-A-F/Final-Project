@@ -124,6 +124,11 @@
     <Compile Include="Model\Repository\MotorRepository.cs" />
     <Compile Include="Model\Repository\TransactionRepository.cs" />
     <Compile Include="Model\Repository\WorkshopRepository.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="View\DashboardAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -248,14 +253,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="View\UserProfil.resx">
       <DependentUpon>UserProfil.cs</DependentUpon>
     </EmbeddedResource>
@@ -288,6 +288,12 @@
     <None Include="Resources\motor2.jpg" />
     <None Include="Resources\motor1.jpeg" />
     <None Include="Resources\15.png" />
+    <Content Include="Resources\Foto Profil\20231129-DSC_4026.jpg" />
+    <Content Include="Resources\Foto Profil\masAGW.jpg" />
+    <Content Include="Resources\Foto Profil\WhatsApp Image 2024-10-20 at 22.24.10_c2ae1407.jpg" />
+    <None Include="Resources\Foto Profil\WhatsApp Image 2024-12-28 at 22.47.20_f0dc1e6d.jpg" />
+    <None Include="Resources\Foto Profil\WhatsApp Image 2024-12-28 at 22.48.46_6b2f776c.jpg" />
+    <Content Include="Resources\Foto Profil\WhatsApp Image 2024-12-28 at 22.55.12_76e6ae3c.jpg" />
     <Content Include="Resources\logobiasa-transparan.png" />
     <None Include="Resources\logobiasa-transparan1.png" />
     <Content Include="Resources\logobiasa.png" />

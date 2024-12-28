@@ -32,5 +32,10 @@ namespace RepairMe.Controller
         {
             return _workshopRepository.SearchWorkshops(keyword);
         }
+
+        public Workshop GetBestWorkshop()
+        {
+            return _workshopRepository.GetBestWorkshop();
+        }
     }
 }

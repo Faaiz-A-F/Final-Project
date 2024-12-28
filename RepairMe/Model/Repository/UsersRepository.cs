@@ -61,8 +61,8 @@ namespace RepairMe.Model.Repository
             {
                 _dbContext.OpenConnection();
 
-                var query = "INSERT INTO admin (name, password, email, phone, address, role) " +
-                            "VALUES (@name, @password, @email, @phone, @address, @role)";
+                var query = "INSERT INTO admin (name, password, email, phone, address, role, age) " +
+                            "VALUES (@name, @password, @email, @phone, @address, @role, @age)";
 
                 using (var cmd = new MySqlCommand(query, _dbContext.Connection))
                 {
@@ -72,6 +72,7 @@ namespace RepairMe.Model.Repository
                     cmd.Parameters.AddWithValue("@phone", user.Phone);
                     cmd.Parameters.AddWithValue("@address", user.Address);
                     cmd.Parameters.AddWithValue("@role", user.Role);
+                    cmd.Parameters.AddWithValue("@age", user.Age);
 
                     cmd.ExecuteNonQuery();
                 }
@@ -245,6 +246,5 @@ namespace RepairMe.Model.Repository
             }
             return null;
         }
-
     }
 }

@@ -95,5 +95,44 @@ namespace RepairMe.Model.Repository
 
             return workshops;
         }
+
+        public Workshop GetBestWorkshop()
+        {
+            try
+            {
+                _dbContext.OpenConnection();
+
+                // SQL query to calculate average rating per workshop and fetch the workshop with the highest rating
+                var query = @" SELECT a.admin_id, a.name, a.address, a.phone, a.email, AVG(t.rating) AS average_rating
+                               FROM admin a INNER JOIN transaction t ON a.admin_id = t.admin_id
+                               GROUP BY a.admin_id, a.name, a.address, a.phone, a.email ORDER BY average_rating DESC LIMIT 1";
+
+                using (var cmd = new MySqlCommand(query, _dbContext.Connection))
+                {
+                    using (var reader = cmd.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            return new Workshop
+                            {
+                                Id = reader.GetInt32("admin_id"),
+                                Name = reader.GetString("name"),
+                                Address = reader.GetString("address"),
+                                Phone = reader.GetString("phone"),
+                                Email = reader.GetString("email"),
+                                Rating = reader.GetDouble("average_rating") // Changed to double for averaging
+                            };
+                        }
+                    }
+                }
+            }
+            finally
+            {
+                _dbContext.CloseConnection();
+            }
+
+            return null;
+        }
+
     }
 }

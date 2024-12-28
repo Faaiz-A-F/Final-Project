@@ -118,11 +118,14 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="masAGW" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Foto Profil\masAGW.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Porsche 911 992 GT3 RS" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Porsche 911 992 GT3 RS.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="download3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\download1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="20231129-DSC_4026" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Foto Profil\20231129-DSC_4026.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="img20210303165125jpg-20210505031513" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\img20210303165125jpg-20210505031513.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -130,11 +133,17 @@
   <data name="PAMERAN." type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\PAMERAN..jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="WhatsApp Image 2024-10-20 at 22.24.10_c2ae1407" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Foto Profil\WhatsApp Image 2024-10-20 at 22.24.10_c2ae1407.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="download1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\download.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="profile-default" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\profile-default.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="motor3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\motor3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -151,17 +160,20 @@
   <data name="motor2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\motor2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="WhatsApp Image 2024-12-28 at 22.48.46_6b2f776c" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Foto Profil\WhatsApp Image 2024-12-28 at 22.48.46_6b2f776c.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="04" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\04.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="download (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\download (1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="WhatsApp Image 2024-12-28 at 22.47.20_f0dc1e6d" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Foto Profil\WhatsApp Image 2024-12-28 at 22.47.20_f0dc1e6d.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="motor1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\motor1.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Frog" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Frog.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="logobiasa-transparan" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\logobiasa-transparan1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -169,16 +181,22 @@
   <data name="download (1)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\download (1)1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Frog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Frog.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="15" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\15.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Section Content" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Section Content.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="download3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\download1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="download" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\download.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="motor3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\motor3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="WhatsApp Image 2024-12-28 at 22.55.12_76e6ae3c" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Foto Profil\WhatsApp Image 2024-12-28 at 22.55.12_76e6ae3c.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

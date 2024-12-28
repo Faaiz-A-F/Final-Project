@@ -237,5 +237,13 @@ namespace RepairMe
             aboutUs.Show();
             aboutUs.FormClosed += (s, args) => this.Show();
         }
+
+        private void pbProfile_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            ProfilAdmin profilAdmin = new ProfilAdmin();
+            profilAdmin.Show();
+            profilAdmin.FormClosed += (s, args) => this.Show();
+        }
     }
 }

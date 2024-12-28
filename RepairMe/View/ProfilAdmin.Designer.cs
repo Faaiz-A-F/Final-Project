@@ -31,12 +31,12 @@
             this.components = new System.ComponentModel.Container();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.pbProfile = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.label9 = new System.Windows.Forms.Label();
             this.btnAboutUs = new Guna.UI2.WinForms.Guna2Button();
             this.btnexit = new Guna.UI2.WinForms.Guna2CircleButton();
             this.btnJasa = new Guna.UI2.WinForms.Guna2Button();
             this.btnPesanan = new Guna.UI2.WinForms.Guna2Button();
-            this.pbProfile = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.btnSave = new Guna.UI2.WinForms.Guna2Button();
@@ -79,20 +79,34 @@
             this.guna2Panel1.Controls.Add(this.guna2CirclePictureBox1);
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
-            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
-            this.guna2Panel1.Size = new System.Drawing.Size(1290, 76);
+            this.guna2Panel1.Size = new System.Drawing.Size(968, 62);
             this.guna2Panel1.TabIndex = 5;
+            // 
+            // pbProfile
+            // 
+            this.pbProfile.Image = global::RepairMe.Properties.Resources.profile_default;
+            this.pbProfile.Location = new System.Drawing.Point(875, 4);
+            this.pbProfile.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pbProfile.Name = "pbProfile";
+            this.pbProfile.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.pbProfile.ShadowDecoration.Parent = this.pbProfile;
+            this.pbProfile.Size = new System.Drawing.Size(50, 54);
+            this.pbProfile.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbProfile.TabIndex = 25;
+            this.pbProfile.TabStop = false;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Poppins", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(108, 21);
+            this.label9.Location = new System.Drawing.Point(81, 17);
+            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(117, 36);
+            this.label9.Size = new System.Drawing.Size(94, 28);
             this.label9.TabIndex = 23;
             this.label9.Text = "Repair Me";
             // 
@@ -106,14 +120,15 @@
             this.btnAboutUs.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAboutUs.ForeColor = System.Drawing.Color.White;
             this.btnAboutUs.HoverState.Parent = this.btnAboutUs;
-            this.btnAboutUs.Location = new System.Drawing.Point(1043, 21);
-            this.btnAboutUs.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnAboutUs.Location = new System.Drawing.Point(782, 17);
+            this.btnAboutUs.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnAboutUs.Name = "btnAboutUs";
             this.btnAboutUs.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(238)))), ((int)(((byte)(221)))));
             this.btnAboutUs.ShadowDecoration.Parent = this.btnAboutUs;
-            this.btnAboutUs.Size = new System.Drawing.Size(107, 34);
+            this.btnAboutUs.Size = new System.Drawing.Size(80, 28);
             this.btnAboutUs.TabIndex = 22;
             this.btnAboutUs.Text = "About Us";
+            this.btnAboutUs.Click += new System.EventHandler(this.btnAboutUs_Click);
             // 
             // btnexit
             // 
@@ -124,14 +139,15 @@
             this.btnexit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnexit.ForeColor = System.Drawing.Color.Red;
             this.btnexit.HoverState.Parent = this.btnexit;
-            this.btnexit.Location = new System.Drawing.Point(1251, -4);
-            this.btnexit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnexit.Location = new System.Drawing.Point(938, -3);
+            this.btnexit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnexit.Name = "btnexit";
             this.btnexit.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.btnexit.ShadowDecoration.Parent = this.btnexit;
-            this.btnexit.Size = new System.Drawing.Size(33, 34);
+            this.btnexit.Size = new System.Drawing.Size(25, 28);
             this.btnexit.TabIndex = 21;
             this.btnexit.Text = "X";
+            this.btnexit.Click += new System.EventHandler(this.btnexit_Click);
             // 
             // btnJasa
             // 
@@ -143,14 +159,15 @@
             this.btnJasa.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnJasa.ForeColor = System.Drawing.Color.White;
             this.btnJasa.HoverState.Parent = this.btnJasa;
-            this.btnJasa.Location = new System.Drawing.Point(835, 21);
-            this.btnJasa.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnJasa.Location = new System.Drawing.Point(626, 17);
+            this.btnJasa.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnJasa.Name = "btnJasa";
             this.btnJasa.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(238)))), ((int)(((byte)(221)))));
             this.btnJasa.ShadowDecoration.Parent = this.btnJasa;
-            this.btnJasa.Size = new System.Drawing.Size(203, 34);
+            this.btnJasa.Size = new System.Drawing.Size(152, 28);
             this.btnJasa.TabIndex = 5;
             this.btnJasa.Text = "Penambahan Jasa";
+            this.btnJasa.Click += new System.EventHandler(this.btnJasa_Click);
             // 
             // btnPesanan
             // 
@@ -162,37 +179,25 @@
             this.btnPesanan.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPesanan.ForeColor = System.Drawing.Color.White;
             this.btnPesanan.HoverState.Parent = this.btnPesanan;
-            this.btnPesanan.Location = new System.Drawing.Point(703, 21);
-            this.btnPesanan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnPesanan.Location = new System.Drawing.Point(527, 17);
+            this.btnPesanan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnPesanan.Name = "btnPesanan";
             this.btnPesanan.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(238)))), ((int)(((byte)(221)))));
             this.btnPesanan.ShadowDecoration.Parent = this.btnPesanan;
-            this.btnPesanan.Size = new System.Drawing.Size(136, 34);
+            this.btnPesanan.Size = new System.Drawing.Size(102, 28);
             this.btnPesanan.TabIndex = 3;
             this.btnPesanan.Text = "Pesanan";
-            // 
-            // pbProfile
-            // 
-            this.pbProfile.Image = global::RepairMe.Properties.Resources.profile_default;
-            this.pbProfile.Location = new System.Drawing.Point(1167, 5);
-            this.pbProfile.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pbProfile.Name = "pbProfile";
-            this.pbProfile.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.pbProfile.ShadowDecoration.Parent = this.pbProfile;
-            this.pbProfile.Size = new System.Drawing.Size(67, 66);
-            this.pbProfile.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbProfile.TabIndex = 25;
-            this.pbProfile.TabStop = false;
+            this.btnPesanan.Click += new System.EventHandler(this.btnPesanan_Click);
             // 
             // guna2CirclePictureBox1
             // 
             this.guna2CirclePictureBox1.Image = global::RepairMe.Properties.Resources._15;
-            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(11, 10);
-            this.guna2CirclePictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(8, 8);
+            this.guna2CirclePictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
             this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.guna2CirclePictureBox1.ShadowDecoration.Parent = this.guna2CirclePictureBox1;
-            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(77, 59);
+            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(58, 48);
             this.guna2CirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.guna2CirclePictureBox1.TabIndex = 0;
             this.guna2CirclePictureBox1.TabStop = false;
@@ -205,11 +210,11 @@
             this.guna2Panel2.Controls.Add(this.guna2ShadowPanel1);
             this.guna2Panel2.Controls.Add(this.guna2CirclePictureBox2);
             this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.guna2Panel2.Location = new System.Drawing.Point(0, 76);
-            this.guna2Panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2Panel2.Location = new System.Drawing.Point(0, 62);
+            this.guna2Panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.ShadowDecoration.Parent = this.guna2Panel2;
-            this.guna2Panel2.Size = new System.Drawing.Size(1290, 644);
+            this.guna2Panel2.Size = new System.Drawing.Size(968, 523);
             this.guna2Panel2.TabIndex = 6;
             // 
             // btnSave
@@ -221,11 +226,11 @@
             this.btnSave.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.ForeColor = System.Drawing.Color.White;
             this.btnSave.HoverState.Parent = this.btnSave;
-            this.btnSave.Location = new System.Drawing.Point(53, 326);
-            this.btnSave.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnSave.Location = new System.Drawing.Point(40, 265);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSave.Name = "btnSave";
             this.btnSave.ShadowDecoration.Parent = this.btnSave;
-            this.btnSave.Size = new System.Drawing.Size(284, 46);
+            this.btnSave.Size = new System.Drawing.Size(213, 37);
             this.btnSave.TabIndex = 29;
             this.btnSave.Text = "Save Changes";
             // 
@@ -236,13 +241,13 @@
             this.guna2ShadowPanel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2ShadowPanel1.Controls.Add(this.guna2GroupBox2);
             this.guna2ShadowPanel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(226)))), ((int)(((byte)(225)))));
-            this.guna2ShadowPanel1.Location = new System.Drawing.Point(357, 21);
-            this.guna2ShadowPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2ShadowPanel1.Location = new System.Drawing.Point(268, 17);
+            this.guna2ShadowPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2ShadowPanel1.Name = "guna2ShadowPanel1";
             this.guna2ShadowPanel1.Radius = 10;
             this.guna2ShadowPanel1.ShadowColor = System.Drawing.Color.Black;
             this.guna2ShadowPanel1.ShadowStyle = Guna.UI2.WinForms.Guna2ShadowPanel.ShadowMode.ForwardDiagonal;
-            this.guna2ShadowPanel1.Size = new System.Drawing.Size(896, 601);
+            this.guna2ShadowPanel1.Size = new System.Drawing.Size(672, 488);
             this.guna2ShadowPanel1.TabIndex = 28;
             // 
             // guna2GroupBox2
@@ -263,11 +268,11 @@
             this.guna2GroupBox2.FillColor = System.Drawing.Color.Transparent;
             this.guna2GroupBox2.Font = new System.Drawing.Font("Poppins SemiBold", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2GroupBox2.ForeColor = System.Drawing.Color.Black;
-            this.guna2GroupBox2.Location = new System.Drawing.Point(17, 20);
-            this.guna2GroupBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2GroupBox2.Location = new System.Drawing.Point(13, 16);
+            this.guna2GroupBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2GroupBox2.Name = "guna2GroupBox2";
             this.guna2GroupBox2.ShadowDecoration.Parent = this.guna2GroupBox2;
-            this.guna2GroupBox2.Size = new System.Drawing.Size(840, 287);
+            this.guna2GroupBox2.Size = new System.Drawing.Size(630, 233);
             this.guna2GroupBox2.TabIndex = 35;
             this.guna2GroupBox2.Text = "Data Pengguna";
             // 
@@ -287,23 +292,24 @@
             this.tbAddress.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbAddress.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbAddress.HoverState.Parent = this.tbAddress;
-            this.tbAddress.Location = new System.Drawing.Point(124, 230);
-            this.tbAddress.Margin = new System.Windows.Forms.Padding(5, 7, 5, 7);
+            this.tbAddress.Location = new System.Drawing.Point(93, 187);
+            this.tbAddress.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.tbAddress.Name = "tbAddress";
             this.tbAddress.PasswordChar = '\0';
             this.tbAddress.PlaceholderText = "";
             this.tbAddress.SelectedText = "";
             this.tbAddress.ShadowDecoration.Parent = this.tbAddress;
-            this.tbAddress.Size = new System.Drawing.Size(355, 30);
+            this.tbAddress.Size = new System.Drawing.Size(266, 24);
             this.tbAddress.TabIndex = 36;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(13, 230);
+            this.label5.Location = new System.Drawing.Point(10, 187);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(109, 30);
+            this.label5.Size = new System.Drawing.Size(88, 25);
             this.label5.TabIndex = 35;
             this.label5.Text = "Address      :";
             // 
@@ -323,23 +329,24 @@
             this.tbPhone.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbPhone.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbPhone.HoverState.Parent = this.tbPhone;
-            this.tbPhone.Location = new System.Drawing.Point(124, 185);
-            this.tbPhone.Margin = new System.Windows.Forms.Padding(5, 7, 5, 7);
+            this.tbPhone.Location = new System.Drawing.Point(93, 150);
+            this.tbPhone.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.tbPhone.Name = "tbPhone";
             this.tbPhone.PasswordChar = '\0';
             this.tbPhone.PlaceholderText = "";
             this.tbPhone.SelectedText = "";
             this.tbPhone.ShadowDecoration.Parent = this.tbPhone;
-            this.tbPhone.Size = new System.Drawing.Size(355, 30);
+            this.tbPhone.Size = new System.Drawing.Size(266, 24);
             this.tbPhone.TabIndex = 34;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(13, 185);
+            this.label4.Location = new System.Drawing.Point(10, 150);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(110, 30);
+            this.label4.Size = new System.Drawing.Size(89, 25);
             this.label4.TabIndex = 33;
             this.label4.Text = "Phone          :";
             // 
@@ -359,23 +366,24 @@
             this.tbAge.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbAge.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbAge.HoverState.Parent = this.tbAge;
-            this.tbAge.Location = new System.Drawing.Point(124, 138);
-            this.tbAge.Margin = new System.Windows.Forms.Padding(5, 7, 5, 7);
+            this.tbAge.Location = new System.Drawing.Point(93, 112);
+            this.tbAge.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.tbAge.Name = "tbAge";
             this.tbAge.PasswordChar = '\0';
             this.tbAge.PlaceholderText = "";
             this.tbAge.SelectedText = "";
             this.tbAge.ShadowDecoration.Parent = this.tbAge;
-            this.tbAge.Size = new System.Drawing.Size(355, 30);
+            this.tbAge.Size = new System.Drawing.Size(266, 24);
             this.tbAge.TabIndex = 32;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(13, 138);
+            this.label3.Location = new System.Drawing.Point(10, 112);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(109, 30);
+            this.label3.Size = new System.Drawing.Size(87, 25);
             this.label3.TabIndex = 31;
             this.label3.Text = "Age               :";
             // 
@@ -395,23 +403,24 @@
             this.tbEmail.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbEmail.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbEmail.HoverState.Parent = this.tbEmail;
-            this.tbEmail.Location = new System.Drawing.Point(124, 92);
-            this.tbEmail.Margin = new System.Windows.Forms.Padding(5, 7, 5, 7);
+            this.tbEmail.Location = new System.Drawing.Point(93, 75);
+            this.tbEmail.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.tbEmail.Name = "tbEmail";
             this.tbEmail.PasswordChar = '\0';
             this.tbEmail.PlaceholderText = "";
             this.tbEmail.SelectedText = "";
             this.tbEmail.ShadowDecoration.Parent = this.tbEmail;
-            this.tbEmail.Size = new System.Drawing.Size(355, 30);
+            this.tbEmail.Size = new System.Drawing.Size(266, 24);
             this.tbEmail.TabIndex = 30;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(13, 92);
+            this.label2.Location = new System.Drawing.Point(10, 75);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(109, 30);
+            this.label2.Size = new System.Drawing.Size(87, 25);
             this.label2.TabIndex = 29;
             this.label2.Text = "Email            :";
             // 
@@ -431,14 +440,14 @@
             this.tbUsername.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbUsername.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbUsername.HoverState.Parent = this.tbUsername;
-            this.tbUsername.Location = new System.Drawing.Point(124, 46);
-            this.tbUsername.Margin = new System.Windows.Forms.Padding(5, 7, 5, 7);
+            this.tbUsername.Location = new System.Drawing.Point(93, 37);
+            this.tbUsername.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.tbUsername.Name = "tbUsername";
             this.tbUsername.PasswordChar = '\0';
             this.tbUsername.PlaceholderText = "";
             this.tbUsername.SelectedText = "";
             this.tbUsername.ShadowDecoration.Parent = this.tbUsername;
-            this.tbUsername.Size = new System.Drawing.Size(355, 30);
+            this.tbUsername.Size = new System.Drawing.Size(266, 24);
             this.tbUsername.TabIndex = 28;
             // 
             // btnPilih
@@ -450,11 +459,11 @@
             this.btnPilih.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPilih.ForeColor = System.Drawing.Color.White;
             this.btnPilih.HoverState.Parent = this.btnPilih;
-            this.btnPilih.Location = new System.Drawing.Point(1072, 478);
-            this.btnPilih.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnPilih.Location = new System.Drawing.Point(804, 388);
+            this.btnPilih.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnPilih.Name = "btnPilih";
             this.btnPilih.ShadowDecoration.Parent = this.btnPilih;
-            this.btnPilih.Size = new System.Drawing.Size(149, 46);
+            this.btnPilih.Size = new System.Drawing.Size(112, 37);
             this.btnPilih.TabIndex = 13;
             this.btnPilih.Text = "Pilih";
             // 
@@ -462,33 +471,35 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(13, 46);
+            this.label1.Location = new System.Drawing.Point(10, 37);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(108, 30);
+            this.label1.Size = new System.Drawing.Size(89, 25);
             this.label1.TabIndex = 27;
             this.label1.Text = "Username :";
             // 
             // guna2CirclePictureBox2
             // 
             this.guna2CirclePictureBox2.Image = global::RepairMe.Properties.Resources.profile_default;
-            this.guna2CirclePictureBox2.Location = new System.Drawing.Point(53, 21);
-            this.guna2CirclePictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2CirclePictureBox2.Location = new System.Drawing.Point(40, 17);
+            this.guna2CirclePictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2CirclePictureBox2.Name = "guna2CirclePictureBox2";
             this.guna2CirclePictureBox2.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.guna2CirclePictureBox2.ShadowDecoration.Parent = this.guna2CirclePictureBox2;
-            this.guna2CirclePictureBox2.Size = new System.Drawing.Size(284, 288);
+            this.guna2CirclePictureBox2.Size = new System.Drawing.Size(213, 234);
             this.guna2CirclePictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.guna2CirclePictureBox2.TabIndex = 26;
             this.guna2CirclePictureBox2.TabStop = false;
             // 
             // ProfilAdmin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1290, 720);
+            this.ClientSize = new System.Drawing.Size(968, 585);
             this.Controls.Add(this.guna2Panel2);
             this.Controls.Add(this.guna2Panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "ProfilAdmin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ProfilAdmin";

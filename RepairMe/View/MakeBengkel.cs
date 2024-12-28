@@ -43,11 +43,12 @@ namespace RepairMe.View
                     // Collect input data
                     var username = tbUserBengkel.Text.Trim();
                     var password = tbPassUp.Text.Trim();
+                    var age = int.Parse(tbAgeUp.Text.Trim());
                     var email = tbEmailUp.Text.Trim();
                     var phone = tbPhoneUp.Text.Trim();
                     var address = tbAddressUp.Text.Trim();
                     var role = "admin";
-                    usersController.AddAdmin(username, password, email, phone, address, role);
+                    usersController.AddAdmin(username, password, email, phone, address, role, age);
                 }
                 catch (Exception ex)
                 {

@@ -15,5 +15,6 @@ namespace RepairMe.Model.Entity
         public string Email { get; set; }
         public string Username { get; set; }
         public string Role { get; set; }
+        public double Rating { get; set; }
     }
 }
