@@ -42,5 +42,13 @@ namespace RepairMe.View
             userProfil.Show();
             userProfil.FormClosed += (s, args) => this.Show();
         }
+
+        private void btnHistory_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            HistoryPemesanan historyPemesanan = new HistoryPemesanan();
+            historyPemesanan.Show();
+            historyPemesanan.FormClosed += (s, args) => this.Show();
+        }
     }
 }

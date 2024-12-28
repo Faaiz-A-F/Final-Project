@@ -133,6 +133,7 @@
             this.btnHistory.Size = new System.Drawing.Size(129, 28);
             this.btnHistory.TabIndex = 27;
             this.btnHistory.Text = "History Pemesanan";
+            this.btnHistory.Click += new System.EventHandler(this.btnHistory_Click);
             // 
             // pbProfile
             // 

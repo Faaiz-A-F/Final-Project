@@ -50,13 +50,13 @@
             this.rsUlasan = new Guna.UI2.WinForms.Guna2RatingStar();
             this.label1 = new System.Windows.Forms.Label();
             this.rtbUlasan = new System.Windows.Forms.RichTextBox();
-            this.dtgJasa = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.dtgHistory = new Guna.UI2.WinForms.Guna2DataGridView();
             this.guna2Panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbProfile)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
             this.guna2Panel1.SuspendLayout();
             this.guna2GroupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgJasa)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgHistory)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2Elipse1
@@ -77,7 +77,7 @@
             this.guna2Panel3.Controls.Add(this.guna2CirclePictureBox1);
             this.guna2Panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel3.Location = new System.Drawing.Point(0, 0);
-            this.guna2Panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2Panel3.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Panel3.Name = "guna2Panel3";
             this.guna2Panel3.ShadowDecoration.Parent = this.guna2Panel3;
             this.guna2Panel3.Size = new System.Drawing.Size(960, 62);
@@ -94,7 +94,7 @@
             this.btnHistory.ForeColor = System.Drawing.Color.White;
             this.btnHistory.HoverState.Parent = this.btnHistory;
             this.btnHistory.Location = new System.Drawing.Point(640, 15);
-            this.btnHistory.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnHistory.Margin = new System.Windows.Forms.Padding(2);
             this.btnHistory.Name = "btnHistory";
             this.btnHistory.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(238)))), ((int)(((byte)(221)))));
             this.btnHistory.ShadowDecoration.Parent = this.btnHistory;
@@ -106,7 +106,7 @@
             // 
             this.pbProfile.Image = global::RepairMe.Properties.Resources.profile_default;
             this.pbProfile.Location = new System.Drawing.Point(874, 4);
-            this.pbProfile.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pbProfile.Margin = new System.Windows.Forms.Padding(2);
             this.pbProfile.Name = "pbProfile";
             this.pbProfile.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.pbProfile.ShadowDecoration.Parent = this.pbProfile;
@@ -138,7 +138,7 @@
             this.btnAboutUs.ForeColor = System.Drawing.Color.White;
             this.btnAboutUs.HoverState.Parent = this.btnAboutUs;
             this.btnAboutUs.Location = new System.Drawing.Point(775, 15);
-            this.btnAboutUs.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAboutUs.Margin = new System.Windows.Forms.Padding(2);
             this.btnAboutUs.Name = "btnAboutUs";
             this.btnAboutUs.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(238)))), ((int)(((byte)(221)))));
             this.btnAboutUs.ShadowDecoration.Parent = this.btnAboutUs;
@@ -156,7 +156,7 @@
             this.btnexit.ForeColor = System.Drawing.Color.Red;
             this.btnexit.HoverState.Parent = this.btnexit;
             this.btnexit.Location = new System.Drawing.Point(938, -3);
-            this.btnexit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnexit.Margin = new System.Windows.Forms.Padding(2);
             this.btnexit.Name = "btnexit";
             this.btnexit.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.btnexit.ShadowDecoration.Parent = this.btnexit;
@@ -176,7 +176,7 @@
             this.btnPemesanan.ForeColor = System.Drawing.Color.White;
             this.btnPemesanan.HoverState.Parent = this.btnPemesanan;
             this.btnPemesanan.Location = new System.Drawing.Point(527, 15);
-            this.btnPemesanan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnPemesanan.Margin = new System.Windows.Forms.Padding(2);
             this.btnPemesanan.Name = "btnPemesanan";
             this.btnPemesanan.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(238)))), ((int)(((byte)(221)))));
             this.btnPemesanan.ShadowDecoration.Parent = this.btnPemesanan;
@@ -195,7 +195,7 @@
             this.btnWorkshopList.ForeColor = System.Drawing.Color.White;
             this.btnWorkshopList.HoverState.Parent = this.btnWorkshopList;
             this.btnWorkshopList.Location = new System.Drawing.Point(410, 15);
-            this.btnWorkshopList.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnWorkshopList.Margin = new System.Windows.Forms.Padding(2);
             this.btnWorkshopList.Name = "btnWorkshopList";
             this.btnWorkshopList.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(238)))), ((int)(((byte)(221)))));
             this.btnWorkshopList.ShadowDecoration.Parent = this.btnWorkshopList;
@@ -214,7 +214,7 @@
             this.btnHome.ForeColor = System.Drawing.Color.White;
             this.btnHome.HoverState.Parent = this.btnHome;
             this.btnHome.Location = new System.Drawing.Point(324, 15);
-            this.btnHome.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnHome.Margin = new System.Windows.Forms.Padding(2);
             this.btnHome.Name = "btnHome";
             this.btnHome.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(238)))), ((int)(((byte)(221)))));
             this.btnHome.ShadowDecoration.Parent = this.btnHome;
@@ -226,7 +226,7 @@
             // 
             this.guna2CirclePictureBox1.Image = global::RepairMe.Properties.Resources._15;
             this.guna2CirclePictureBox1.Location = new System.Drawing.Point(8, 8);
-            this.guna2CirclePictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2CirclePictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
             this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.guna2CirclePictureBox1.ShadowDecoration.Parent = this.guna2CirclePictureBox1;
@@ -243,7 +243,7 @@
             this.guna2Panel1.Controls.Add(this.guna2GroupBox2);
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2Panel1.Location = new System.Drawing.Point(0, 62);
-            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
             this.guna2Panel1.Size = new System.Drawing.Size(960, 523);
@@ -256,13 +256,13 @@
             this.guna2GroupBox2.Controls.Add(this.rsUlasan);
             this.guna2GroupBox2.Controls.Add(this.label1);
             this.guna2GroupBox2.Controls.Add(this.rtbUlasan);
-            this.guna2GroupBox2.Controls.Add(this.dtgJasa);
+            this.guna2GroupBox2.Controls.Add(this.dtgHistory);
             this.guna2GroupBox2.CustomBorderColor = System.Drawing.Color.Transparent;
             this.guna2GroupBox2.FillColor = System.Drawing.Color.Transparent;
             this.guna2GroupBox2.Font = new System.Drawing.Font("Poppins SemiBold", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2GroupBox2.ForeColor = System.Drawing.Color.Black;
             this.guna2GroupBox2.Location = new System.Drawing.Point(9, 10);
-            this.guna2GroupBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2GroupBox2.Margin = new System.Windows.Forms.Padding(2);
             this.guna2GroupBox2.Name = "guna2GroupBox2";
             this.guna2GroupBox2.ShadowDecoration.Parent = this.guna2GroupBox2;
             this.guna2GroupBox2.Size = new System.Drawing.Size(922, 578);
@@ -279,17 +279,18 @@
             this.btnKirimUlasan.ForeColor = System.Drawing.Color.White;
             this.btnKirimUlasan.HoverState.Parent = this.btnKirimUlasan;
             this.btnKirimUlasan.Location = new System.Drawing.Point(270, 524);
-            this.btnKirimUlasan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnKirimUlasan.Margin = new System.Windows.Forms.Padding(2);
             this.btnKirimUlasan.Name = "btnKirimUlasan";
             this.btnKirimUlasan.ShadowDecoration.Parent = this.btnKirimUlasan;
             this.btnKirimUlasan.Size = new System.Drawing.Size(112, 37);
             this.btnKirimUlasan.TabIndex = 18;
             this.btnKirimUlasan.Text = "Kirim";
+            this.btnKirimUlasan.Click += new System.EventHandler(this.btnKirimUlasan_Click);
             // 
             // rsUlasan
             // 
             this.rsUlasan.Location = new System.Drawing.Point(116, 528);
-            this.rsUlasan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rsUlasan.Margin = new System.Windows.Forms.Padding(2);
             this.rsUlasan.Name = "rsUlasan";
             this.rsUlasan.Size = new System.Drawing.Size(150, 32);
             this.rsUlasan.TabIndex = 17;
@@ -308,21 +309,21 @@
             // 
             this.rtbUlasan.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rtbUlasan.Location = new System.Drawing.Point(14, 416);
-            this.rtbUlasan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rtbUlasan.Margin = new System.Windows.Forms.Padding(2);
             this.rtbUlasan.Name = "rtbUlasan";
             this.rtbUlasan.Size = new System.Drawing.Size(369, 105);
             this.rtbUlasan.TabIndex = 1;
             this.rtbUlasan.Text = "";
             // 
-            // dtgJasa
+            // dtgHistory
             // 
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.dtgJasa.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dtgJasa.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dtgJasa.BackgroundColor = System.Drawing.Color.White;
-            this.dtgJasa.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dtgJasa.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.dtgJasa.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dtgHistory.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dtgHistory.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dtgHistory.BackgroundColor = System.Drawing.Color.White;
+            this.dtgHistory.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dtgHistory.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dtgHistory.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Poppins SemiBold", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -330,8 +331,8 @@
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgJasa.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dtgJasa.ColumnHeadersHeight = 4;
+            this.dtgHistory.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dtgHistory.ColumnHeadersHeight = 4;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Poppins SemiBold", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -339,40 +340,40 @@
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtgJasa.DefaultCellStyle = dataGridViewCellStyle3;
-            this.dtgJasa.EnableHeadersVisualStyles = false;
-            this.dtgJasa.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dtgJasa.Location = new System.Drawing.Point(14, 38);
-            this.dtgJasa.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.dtgJasa.Name = "dtgJasa";
-            this.dtgJasa.RowHeadersVisible = false;
-            this.dtgJasa.RowHeadersWidth = 51;
-            this.dtgJasa.RowTemplate.Height = 24;
-            this.dtgJasa.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dtgJasa.Size = new System.Drawing.Size(900, 341);
-            this.dtgJasa.TabIndex = 0;
-            this.dtgJasa.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
-            this.dtgJasa.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-            this.dtgJasa.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.dtgJasa.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.dtgJasa.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.dtgJasa.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.dtgJasa.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.dtgJasa.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dtgJasa.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.dtgJasa.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.dtgJasa.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Poppins SemiBold", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtgJasa.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.dtgJasa.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.dtgJasa.ThemeStyle.HeaderStyle.Height = 4;
-            this.dtgJasa.ThemeStyle.ReadOnly = false;
-            this.dtgJasa.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.dtgJasa.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.dtgJasa.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Poppins SemiBold", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtgJasa.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.Black;
-            this.dtgJasa.ThemeStyle.RowsStyle.Height = 24;
-            this.dtgJasa.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dtgJasa.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dtgHistory.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dtgHistory.EnableHeadersVisualStyles = false;
+            this.dtgHistory.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dtgHistory.Location = new System.Drawing.Point(14, 38);
+            this.dtgHistory.Margin = new System.Windows.Forms.Padding(2);
+            this.dtgHistory.Name = "dtgHistory";
+            this.dtgHistory.RowHeadersVisible = false;
+            this.dtgHistory.RowHeadersWidth = 51;
+            this.dtgHistory.RowTemplate.Height = 24;
+            this.dtgHistory.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dtgHistory.Size = new System.Drawing.Size(900, 341);
+            this.dtgHistory.TabIndex = 0;
+            this.dtgHistory.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
+            this.dtgHistory.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.dtgHistory.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.dtgHistory.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.dtgHistory.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.dtgHistory.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.dtgHistory.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.dtgHistory.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dtgHistory.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.dtgHistory.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dtgHistory.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Poppins SemiBold", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtgHistory.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.dtgHistory.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.dtgHistory.ThemeStyle.HeaderStyle.Height = 4;
+            this.dtgHistory.ThemeStyle.ReadOnly = false;
+            this.dtgHistory.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.dtgHistory.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dtgHistory.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Poppins SemiBold", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtgHistory.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.Black;
+            this.dtgHistory.ThemeStyle.RowsStyle.Height = 24;
+            this.dtgHistory.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dtgHistory.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
             // HistoryPemesanan
             // 
@@ -383,7 +384,7 @@
             this.Controls.Add(this.guna2Panel3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "HistoryPemesanan";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "WorkshopListDetail";
@@ -394,7 +395,7 @@
             this.guna2Panel1.ResumeLayout(false);
             this.guna2GroupBox2.ResumeLayout(false);
             this.guna2GroupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgJasa)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgHistory)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -411,7 +412,7 @@
         private Guna.UI2.WinForms.Guna2Button btnHome;
         private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox1;
         private Guna.UI2.WinForms.Guna2GroupBox guna2GroupBox2;
-        private Guna.UI2.WinForms.Guna2DataGridView dtgJasa;
+        private Guna.UI2.WinForms.Guna2DataGridView dtgHistory;
         private Guna.UI2.WinForms.Guna2CirclePictureBox pbProfile;
         private System.Windows.Forms.RichTextBox rtbUlasan;
         private System.Windows.Forms.Label label1;

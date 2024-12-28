@@ -100,5 +100,93 @@ namespace RepairMe.Controller
                 return null;
             }
         }
+
+        public List<Transaction> GetDoneTransactionAdmin(int adminId)
+        {
+            try
+            {
+                // Get transaction by admin ID
+                return _transactionRepository.GetDoneTransactionAdmin(adminId);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return null;
+            }
+        }
+
+        public List<Transaction> GetTransactionUser(int userId)
+        {
+            try
+            {
+                // Get transaction by admin ID
+                return _transactionRepository.GetTransactionUser(userId);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return null;
+            }
+        }
+
+        public void UpdateTransaction(int id)
+        {
+            try
+            {
+                // Validate input
+                if (id <= 0)
+                {
+                    MessageBox.Show("Transaction ID cannot be empty.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                // Update transaction status
+                _transactionRepository.UpdateTransaction(id);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        public void AddReview(int transactionId, string review, int rating)
+        {
+            try
+            {
+                // Validate inputs
+                if (transactionId <= 0)
+                {
+                    MessageBox.Show("Transaction ID cannot be empty.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                if (string.IsNullOrWhiteSpace(review))
+                {
+                    MessageBox.Show("Review cannot be empty.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                if (rating <= 0)
+                {
+                    MessageBox.Show("Rating cannot be empty.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                // Create new review object
+                Transaction transaction = new Transaction
+                {
+                    Id = transactionId,
+                    Review = review,
+                    Rating = rating
+                };
+
+                // Add review to database
+                _transactionRepository.AddReview(transactionId, review, rating);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
 }
