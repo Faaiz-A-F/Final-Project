@@ -22,11 +22,6 @@ namespace RepairMe.View
             this.Close();
         }
 
-        private void btnPemesanan_Click(object sender, EventArgs e)
-        {
-            
-        }
-
         private void btnWorkshopList_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -49,6 +44,14 @@ namespace RepairMe.View
             HistoryPemesanan historyPemesanan = new HistoryPemesanan();
             historyPemesanan.Show();
             historyPemesanan.FormClosed += (s, args) => this.Show();
+        }
+
+        private void btnAboutUs_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            AboutUs aboutUs = new AboutUs();
+            aboutUs.Show();
+            aboutUs.FormClosed += (s, args) => this.Show();
         }
     }
 }

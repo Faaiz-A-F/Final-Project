@@ -76,7 +76,7 @@
             this.guna2Panel1.Controls.Add(this.guna2CirclePictureBox1);
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
-            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
             this.guna2Panel1.Size = new System.Drawing.Size(960, 62);
@@ -93,7 +93,7 @@
             this.btnHistory.ForeColor = System.Drawing.Color.White;
             this.btnHistory.HoverState.Parent = this.btnHistory;
             this.btnHistory.Location = new System.Drawing.Point(641, 15);
-            this.btnHistory.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnHistory.Margin = new System.Windows.Forms.Padding(2);
             this.btnHistory.Name = "btnHistory";
             this.btnHistory.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(238)))), ((int)(((byte)(221)))));
             this.btnHistory.ShadowDecoration.Parent = this.btnHistory;
@@ -105,7 +105,7 @@
             // 
             this.pbProfile.Image = global::RepairMe.Properties.Resources.profile_default;
             this.pbProfile.Location = new System.Drawing.Point(875, 5);
-            this.pbProfile.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pbProfile.Margin = new System.Windows.Forms.Padding(2);
             this.pbProfile.Name = "pbProfile";
             this.pbProfile.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.pbProfile.ShadowDecoration.Parent = this.pbProfile;
@@ -137,13 +137,14 @@
             this.btnAboutUs.ForeColor = System.Drawing.Color.White;
             this.btnAboutUs.HoverState.Parent = this.btnAboutUs;
             this.btnAboutUs.Location = new System.Drawing.Point(775, 15);
-            this.btnAboutUs.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAboutUs.Margin = new System.Windows.Forms.Padding(2);
             this.btnAboutUs.Name = "btnAboutUs";
             this.btnAboutUs.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(238)))), ((int)(((byte)(221)))));
             this.btnAboutUs.ShadowDecoration.Parent = this.btnAboutUs;
             this.btnAboutUs.Size = new System.Drawing.Size(80, 28);
             this.btnAboutUs.TabIndex = 22;
             this.btnAboutUs.Text = "About Us";
+            this.btnAboutUs.Click += new System.EventHandler(this.btnAboutUs_Click);
             // 
             // btnexit
             // 
@@ -155,7 +156,7 @@
             this.btnexit.ForeColor = System.Drawing.Color.Red;
             this.btnexit.HoverState.Parent = this.btnexit;
             this.btnexit.Location = new System.Drawing.Point(938, -3);
-            this.btnexit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnexit.Margin = new System.Windows.Forms.Padding(2);
             this.btnexit.Name = "btnexit";
             this.btnexit.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.btnexit.ShadowDecoration.Parent = this.btnexit;
@@ -175,7 +176,7 @@
             this.btnPemesanan.ForeColor = System.Drawing.Color.White;
             this.btnPemesanan.HoverState.Parent = this.btnPemesanan;
             this.btnPemesanan.Location = new System.Drawing.Point(529, 16);
-            this.btnPemesanan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnPemesanan.Margin = new System.Windows.Forms.Padding(2);
             this.btnPemesanan.Name = "btnPemesanan";
             this.btnPemesanan.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(238)))), ((int)(((byte)(221)))));
             this.btnPemesanan.ShadowDecoration.Parent = this.btnPemesanan;
@@ -194,7 +195,7 @@
             this.btnWorkshopList.ForeColor = System.Drawing.Color.White;
             this.btnWorkshopList.HoverState.Parent = this.btnWorkshopList;
             this.btnWorkshopList.Location = new System.Drawing.Point(410, 16);
-            this.btnWorkshopList.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnWorkshopList.Margin = new System.Windows.Forms.Padding(2);
             this.btnWorkshopList.Name = "btnWorkshopList";
             this.btnWorkshopList.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(238)))), ((int)(((byte)(221)))));
             this.btnWorkshopList.ShadowDecoration.Parent = this.btnWorkshopList;
@@ -213,7 +214,7 @@
             this.btnHome.ForeColor = System.Drawing.Color.White;
             this.btnHome.HoverState.Parent = this.btnHome;
             this.btnHome.Location = new System.Drawing.Point(326, 15);
-            this.btnHome.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnHome.Margin = new System.Windows.Forms.Padding(2);
             this.btnHome.Name = "btnHome";
             this.btnHome.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(238)))), ((int)(((byte)(221)))));
             this.btnHome.ShadowDecoration.Parent = this.btnHome;
@@ -225,7 +226,7 @@
             // 
             this.guna2CirclePictureBox1.Image = global::RepairMe.Properties.Resources._15;
             this.guna2CirclePictureBox1.Location = new System.Drawing.Point(8, 8);
-            this.guna2CirclePictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2CirclePictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
             this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.guna2CirclePictureBox1.ShadowDecoration.Parent = this.guna2CirclePictureBox1;
@@ -244,7 +245,7 @@
             this.guna2Panel2.Controls.Add(this.guna2GroupBox2);
             this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2Panel2.Location = new System.Drawing.Point(0, 62);
-            this.guna2Panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2Panel2.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.ShadowDecoration.Parent = this.guna2Panel2;
             this.guna2Panel2.Size = new System.Drawing.Size(960, 523);
@@ -260,7 +261,7 @@
             this.btnCariBengkel.ForeColor = System.Drawing.Color.White;
             this.btnCariBengkel.HoverState.Parent = this.btnCariBengkel;
             this.btnCariBengkel.Location = new System.Drawing.Point(829, 23);
-            this.btnCariBengkel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCariBengkel.Margin = new System.Windows.Forms.Padding(2);
             this.btnCariBengkel.Name = "btnCariBengkel";
             this.btnCariBengkel.ShadowDecoration.Parent = this.btnCariBengkel;
             this.btnCariBengkel.Size = new System.Drawing.Size(112, 37);
@@ -306,7 +307,7 @@
             this.guna2GroupBox2.Font = new System.Drawing.Font("Poppins", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2GroupBox2.ForeColor = System.Drawing.Color.Black;
             this.guna2GroupBox2.Location = new System.Drawing.Point(11, 81);
-            this.guna2GroupBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2GroupBox2.Margin = new System.Windows.Forms.Padding(2);
             this.guna2GroupBox2.Name = "guna2GroupBox2";
             this.guna2GroupBox2.ShadowDecoration.Parent = this.guna2GroupBox2;
             this.guna2GroupBox2.Size = new System.Drawing.Size(922, 421);
@@ -323,7 +324,7 @@
             this.btnPilih.ForeColor = System.Drawing.Color.White;
             this.btnPilih.HoverState.Parent = this.btnPilih;
             this.btnPilih.Location = new System.Drawing.Point(802, 384);
-            this.btnPilih.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnPilih.Margin = new System.Windows.Forms.Padding(2);
             this.btnPilih.Name = "btnPilih";
             this.btnPilih.ShadowDecoration.Parent = this.btnPilih;
             this.btnPilih.Size = new System.Drawing.Size(112, 37);
@@ -360,7 +361,7 @@
             this.dtgBengkel.EnableHeadersVisualStyles = false;
             this.dtgBengkel.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dtgBengkel.Location = new System.Drawing.Point(14, 38);
-            this.dtgBengkel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dtgBengkel.Margin = new System.Windows.Forms.Padding(2);
             this.dtgBengkel.Name = "dtgBengkel";
             this.dtgBengkel.RowHeadersVisible = false;
             this.dtgBengkel.RowHeadersWidth = 51;
@@ -400,7 +401,7 @@
             this.Controls.Add(this.guna2Panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "WorkshopList";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "WorkshopList";

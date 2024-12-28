@@ -324,6 +324,7 @@
             this.btnAboutUs.Size = new System.Drawing.Size(80, 28);
             this.btnAboutUs.TabIndex = 22;
             this.btnAboutUs.Text = "About Us";
+            this.btnAboutUs.Click += new System.EventHandler(this.btnAboutUs_Click);
             // 
             // btnexit
             // 

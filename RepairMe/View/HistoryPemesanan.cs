@@ -160,5 +160,13 @@ namespace RepairMe.View
                 MessageBox.Show($"Failed to submit review.\n\nError: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void btnAboutUs_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            AboutUs aboutUs = new AboutUs();
+            aboutUs.Show();
+            aboutUs.FormClosed += (s, args) => this.Show();
+        }
     }
 }

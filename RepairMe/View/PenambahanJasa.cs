@@ -194,6 +194,14 @@ namespace RepairMe.View
         {
             this.Close();
         }
+
+        private void btnAboutUs_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            AboutUs aboutUs = new AboutUs();
+            aboutUs.Show();
+            aboutUs.FormClosed += (s, args) => this.Show();
+        }
     }
 }
 

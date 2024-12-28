@@ -171,5 +171,13 @@ namespace RepairMe.View
                 MessageBox.Show("Please select a row to delete.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
+
+        private void btnAboutUs_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            AboutUs aboutUs = new AboutUs();
+            aboutUs.Show();
+            aboutUs.FormClosed += (s, args) => this.Show();
+        }
     }
 }
