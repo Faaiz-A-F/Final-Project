@@ -160,6 +160,12 @@
     <Compile Include="View\PenambahanJasa.Designer.cs">
       <DependentUpon>PenambahanJasa.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\ProfilAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ProfilAdmin.Designer.cs">
+      <DependentUpon>ProfilAdmin.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\SignIn.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -225,6 +231,9 @@
     <EmbeddedResource Include="View\PenambahanJasa.resx">
       <DependentUpon>PenambahanJasa.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\ProfilAdmin.resx">
+      <DependentUpon>ProfilAdmin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\SignIn.resx">
       <DependentUpon>SignIn.cs</DependentUpon>
     </EmbeddedResource>
@@ -275,6 +284,9 @@
     <Content Include="15.ico" />
     <Content Include="Database\repairme.sql" />
     <Content Include="Guna UI\Guna.UI2.dll" />
+    <None Include="Resources\motor3.jpg" />
+    <None Include="Resources\motor2.jpg" />
+    <None Include="Resources\motor1.jpeg" />
     <None Include="Resources\15.png" />
     <Content Include="Resources\logobiasa-transparan.png" />
     <None Include="Resources\logobiasa-transparan1.png" />

@@ -1,6 +1,6 @@
 ﻿namespace RepairMe.View
 {
-    partial class UserProfil
+    partial class ProfilAdmin
     {
         /// <summary>
         /// Required designer variable.
@@ -29,28 +29,18 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserProfil));
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.btnHistory = new Guna.UI2.WinForms.Guna2Button();
-            this.pbProfile = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.label9 = new System.Windows.Forms.Label();
             this.btnAboutUs = new Guna.UI2.WinForms.Guna2Button();
             this.btnexit = new Guna.UI2.WinForms.Guna2CircleButton();
-            this.btnWorkshopList = new Guna.UI2.WinForms.Guna2Button();
-            this.btnHome = new Guna.UI2.WinForms.Guna2Button();
+            this.btnJasa = new Guna.UI2.WinForms.Guna2Button();
+            this.btnPesanan = new Guna.UI2.WinForms.Guna2Button();
+            this.pbProfile = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.btnSave = new Guna.UI2.WinForms.Guna2Button();
             this.guna2ShadowPanel1 = new Guna.UI2.WinForms.Guna2ShadowPanel();
-            this.guna2GroupBox1 = new Guna.UI2.WinForms.Guna2GroupBox();
-            this.dtgMotor = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.btnTambahData = new Guna.UI2.WinForms.Guna2Button();
-            this.btnHapusData = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2GroupBox2 = new Guna.UI2.WinForms.Guna2GroupBox();
             this.tbAddress = new Guna.UI2.WinForms.Guna2TextBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -69,8 +59,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
             this.guna2Panel2.SuspendLayout();
             this.guna2ShadowPanel1.SuspendLayout();
-            this.guna2GroupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgMotor)).BeginInit();
             this.guna2GroupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -82,60 +70,27 @@
             // guna2Panel1
             // 
             this.guna2Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(141)))), ((int)(((byte)(218)))));
-            this.guna2Panel1.Controls.Add(this.btnHistory);
             this.guna2Panel1.Controls.Add(this.pbProfile);
             this.guna2Panel1.Controls.Add(this.label9);
             this.guna2Panel1.Controls.Add(this.btnAboutUs);
             this.guna2Panel1.Controls.Add(this.btnexit);
-            this.guna2Panel1.Controls.Add(this.btnWorkshopList);
-            this.guna2Panel1.Controls.Add(this.btnHome);
+            this.guna2Panel1.Controls.Add(this.btnJasa);
+            this.guna2Panel1.Controls.Add(this.btnPesanan);
             this.guna2Panel1.Controls.Add(this.guna2CirclePictureBox1);
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
-            this.guna2Panel1.Size = new System.Drawing.Size(1280, 76);
-            this.guna2Panel1.TabIndex = 2;
-            // 
-            // btnHistory
-            // 
-            this.btnHistory.Animated = true;
-            this.btnHistory.BorderRadius = 15;
-            this.btnHistory.CheckedState.Parent = this.btnHistory;
-            this.btnHistory.CustomImages.Parent = this.btnHistory;
-            this.btnHistory.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(141)))), ((int)(((byte)(218)))));
-            this.btnHistory.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHistory.ForeColor = System.Drawing.Color.White;
-            this.btnHistory.HoverState.Parent = this.btnHistory;
-            this.btnHistory.Location = new System.Drawing.Point(855, 18);
-            this.btnHistory.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnHistory.Name = "btnHistory";
-            this.btnHistory.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(238)))), ((int)(((byte)(221)))));
-            this.btnHistory.ShadowDecoration.Parent = this.btnHistory;
-            this.btnHistory.Size = new System.Drawing.Size(172, 34);
-            this.btnHistory.TabIndex = 27;
-            this.btnHistory.Text = "History Pemesanan";
-            // 
-            // pbProfile
-            // 
-            this.pbProfile.Image = global::RepairMe.Properties.Resources.profile_default;
-            this.pbProfile.Location = new System.Drawing.Point(1167, 6);
-            this.pbProfile.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pbProfile.Name = "pbProfile";
-            this.pbProfile.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.pbProfile.ShadowDecoration.Parent = this.pbProfile;
-            this.pbProfile.Size = new System.Drawing.Size(67, 66);
-            this.pbProfile.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbProfile.TabIndex = 25;
-            this.pbProfile.TabStop = false;
+            this.guna2Panel1.Size = new System.Drawing.Size(1290, 76);
+            this.guna2Panel1.TabIndex = 5;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Poppins", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(109, 20);
+            this.label9.Location = new System.Drawing.Point(108, 21);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(117, 36);
             this.label9.TabIndex = 23;
@@ -148,10 +103,10 @@
             this.btnAboutUs.CheckedState.Parent = this.btnAboutUs;
             this.btnAboutUs.CustomImages.Parent = this.btnAboutUs;
             this.btnAboutUs.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(141)))), ((int)(((byte)(218)))));
-            this.btnAboutUs.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAboutUs.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAboutUs.ForeColor = System.Drawing.Color.White;
             this.btnAboutUs.HoverState.Parent = this.btnAboutUs;
-            this.btnAboutUs.Location = new System.Drawing.Point(1033, 18);
+            this.btnAboutUs.Location = new System.Drawing.Point(1043, 21);
             this.btnAboutUs.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAboutUs.Name = "btnAboutUs";
             this.btnAboutUs.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(238)))), ((int)(((byte)(221)))));
@@ -159,7 +114,6 @@
             this.btnAboutUs.Size = new System.Drawing.Size(107, 34);
             this.btnAboutUs.TabIndex = 22;
             this.btnAboutUs.Text = "About Us";
-            this.btnAboutUs.Click += new System.EventHandler(this.btnAboutUs_Click);
             // 
             // btnexit
             // 
@@ -178,45 +132,57 @@
             this.btnexit.Size = new System.Drawing.Size(33, 34);
             this.btnexit.TabIndex = 21;
             this.btnexit.Text = "X";
-            this.btnexit.Click += new System.EventHandler(this.btnexit_Click);
             // 
-            // btnWorkshopList
+            // btnJasa
             // 
-            this.btnWorkshopList.Animated = true;
-            this.btnWorkshopList.BorderRadius = 15;
-            this.btnWorkshopList.CheckedState.Parent = this.btnWorkshopList;
-            this.btnWorkshopList.CustomImages.Parent = this.btnWorkshopList;
-            this.btnWorkshopList.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(141)))), ((int)(((byte)(218)))));
-            this.btnWorkshopList.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnWorkshopList.ForeColor = System.Drawing.Color.White;
-            this.btnWorkshopList.HoverState.Parent = this.btnWorkshopList;
-            this.btnWorkshopList.Location = new System.Drawing.Point(697, 18);
-            this.btnWorkshopList.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnWorkshopList.Name = "btnWorkshopList";
-            this.btnWorkshopList.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(238)))), ((int)(((byte)(221)))));
-            this.btnWorkshopList.ShadowDecoration.Parent = this.btnWorkshopList;
-            this.btnWorkshopList.Size = new System.Drawing.Size(151, 34);
-            this.btnWorkshopList.TabIndex = 3;
-            this.btnWorkshopList.Text = "Workshop list";
+            this.btnJasa.Animated = true;
+            this.btnJasa.BorderRadius = 15;
+            this.btnJasa.CheckedState.Parent = this.btnJasa;
+            this.btnJasa.CustomImages.Parent = this.btnJasa;
+            this.btnJasa.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(141)))), ((int)(((byte)(218)))));
+            this.btnJasa.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnJasa.ForeColor = System.Drawing.Color.White;
+            this.btnJasa.HoverState.Parent = this.btnJasa;
+            this.btnJasa.Location = new System.Drawing.Point(835, 21);
+            this.btnJasa.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnJasa.Name = "btnJasa";
+            this.btnJasa.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(238)))), ((int)(((byte)(221)))));
+            this.btnJasa.ShadowDecoration.Parent = this.btnJasa;
+            this.btnJasa.Size = new System.Drawing.Size(203, 34);
+            this.btnJasa.TabIndex = 5;
+            this.btnJasa.Text = "Penambahan Jasa";
             // 
-            // btnHome
+            // btnPesanan
             // 
-            this.btnHome.Animated = true;
-            this.btnHome.BorderRadius = 15;
-            this.btnHome.CheckedState.Parent = this.btnHome;
-            this.btnHome.CustomImages.Parent = this.btnHome;
-            this.btnHome.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(141)))), ((int)(((byte)(218)))));
-            this.btnHome.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHome.ForeColor = System.Drawing.Color.White;
-            this.btnHome.HoverState.Parent = this.btnHome;
-            this.btnHome.Location = new System.Drawing.Point(584, 18);
-            this.btnHome.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnHome.Name = "btnHome";
-            this.btnHome.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(238)))), ((int)(((byte)(221)))));
-            this.btnHome.ShadowDecoration.Parent = this.btnHome;
-            this.btnHome.Size = new System.Drawing.Size(101, 34);
-            this.btnHome.TabIndex = 2;
-            this.btnHome.Text = "Home";
+            this.btnPesanan.Animated = true;
+            this.btnPesanan.BorderRadius = 15;
+            this.btnPesanan.CheckedState.Parent = this.btnPesanan;
+            this.btnPesanan.CustomImages.Parent = this.btnPesanan;
+            this.btnPesanan.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(141)))), ((int)(((byte)(218)))));
+            this.btnPesanan.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPesanan.ForeColor = System.Drawing.Color.White;
+            this.btnPesanan.HoverState.Parent = this.btnPesanan;
+            this.btnPesanan.Location = new System.Drawing.Point(703, 21);
+            this.btnPesanan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnPesanan.Name = "btnPesanan";
+            this.btnPesanan.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(238)))), ((int)(((byte)(221)))));
+            this.btnPesanan.ShadowDecoration.Parent = this.btnPesanan;
+            this.btnPesanan.Size = new System.Drawing.Size(136, 34);
+            this.btnPesanan.TabIndex = 3;
+            this.btnPesanan.Text = "Pesanan";
+            // 
+            // pbProfile
+            // 
+            this.pbProfile.Image = global::RepairMe.Properties.Resources.profile_default;
+            this.pbProfile.Location = new System.Drawing.Point(1167, 5);
+            this.pbProfile.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pbProfile.Name = "pbProfile";
+            this.pbProfile.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.pbProfile.ShadowDecoration.Parent = this.pbProfile;
+            this.pbProfile.Size = new System.Drawing.Size(67, 66);
+            this.pbProfile.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbProfile.TabIndex = 25;
+            this.pbProfile.TabStop = false;
             // 
             // guna2CirclePictureBox1
             // 
@@ -243,8 +209,8 @@
             this.guna2Panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.ShadowDecoration.Parent = this.guna2Panel2;
-            this.guna2Panel2.Size = new System.Drawing.Size(1280, 644);
-            this.guna2Panel2.TabIndex = 3;
+            this.guna2Panel2.Size = new System.Drawing.Size(1290, 644);
+            this.guna2Panel2.TabIndex = 6;
             // 
             // btnSave
             // 
@@ -268,7 +234,6 @@
             this.guna2ShadowPanel1.AutoScroll = true;
             this.guna2ShadowPanel1.AutoScrollMargin = new System.Drawing.Size(0, 20);
             this.guna2ShadowPanel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ShadowPanel1.Controls.Add(this.guna2GroupBox1);
             this.guna2ShadowPanel1.Controls.Add(this.guna2GroupBox2);
             this.guna2ShadowPanel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(226)))), ((int)(((byte)(225)))));
             this.guna2ShadowPanel1.Location = new System.Drawing.Point(357, 21);
@@ -279,137 +244,6 @@
             this.guna2ShadowPanel1.ShadowStyle = Guna.UI2.WinForms.Guna2ShadowPanel.ShadowMode.ForwardDiagonal;
             this.guna2ShadowPanel1.Size = new System.Drawing.Size(896, 601);
             this.guna2ShadowPanel1.TabIndex = 28;
-            // 
-            // guna2GroupBox1
-            // 
-            this.guna2GroupBox1.BorderColor = System.Drawing.Color.Transparent;
-            this.guna2GroupBox1.Controls.Add(this.dtgMotor);
-            this.guna2GroupBox1.Controls.Add(this.btnTambahData);
-            this.guna2GroupBox1.Controls.Add(this.btnHapusData);
-            this.guna2GroupBox1.Controls.Add(this.guna2Button1);
-            this.guna2GroupBox1.CustomBorderColor = System.Drawing.Color.Transparent;
-            this.guna2GroupBox1.FillColor = System.Drawing.Color.Transparent;
-            this.guna2GroupBox1.Font = new System.Drawing.Font("Poppins SemiBold", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2GroupBox1.ForeColor = System.Drawing.Color.Black;
-            this.guna2GroupBox1.Location = new System.Drawing.Point(17, 327);
-            this.guna2GroupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.guna2GroupBox1.Name = "guna2GroupBox1";
-            this.guna2GroupBox1.ShadowDecoration.Parent = this.guna2GroupBox1;
-            this.guna2GroupBox1.Size = new System.Drawing.Size(840, 396);
-            this.guna2GroupBox1.TabIndex = 37;
-            this.guna2GroupBox1.Text = "Daftar Motor Anda";
-            // 
-            // dtgMotor
-            // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.dtgMotor.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dtgMotor.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dtgMotor.BackgroundColor = System.Drawing.Color.White;
-            this.dtgMotor.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dtgMotor.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.dtgMotor.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Poppins SemiBold", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgMotor.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dtgMotor.ColumnHeadersHeight = 4;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Poppins SemiBold", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtgMotor.DefaultCellStyle = dataGridViewCellStyle3;
-            this.dtgMotor.EnableHeadersVisualStyles = false;
-            this.dtgMotor.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dtgMotor.Location = new System.Drawing.Point(20, 38);
-            this.dtgMotor.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.dtgMotor.Name = "dtgMotor";
-            this.dtgMotor.RowHeadersVisible = false;
-            this.dtgMotor.RowHeadersWidth = 51;
-            this.dtgMotor.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dtgMotor.Size = new System.Drawing.Size(801, 265);
-            this.dtgMotor.TabIndex = 32;
-            this.dtgMotor.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
-            this.dtgMotor.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-            this.dtgMotor.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.dtgMotor.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.dtgMotor.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.dtgMotor.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.dtgMotor.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.dtgMotor.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dtgMotor.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.dtgMotor.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.dtgMotor.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Poppins SemiBold", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtgMotor.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.dtgMotor.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.dtgMotor.ThemeStyle.HeaderStyle.Height = 4;
-            this.dtgMotor.ThemeStyle.ReadOnly = false;
-            this.dtgMotor.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.dtgMotor.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.dtgMotor.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Poppins SemiBold", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtgMotor.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.Black;
-            this.dtgMotor.ThemeStyle.RowsStyle.Height = 22;
-            this.dtgMotor.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dtgMotor.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            // 
-            // btnTambahData
-            // 
-            this.btnTambahData.Animated = true;
-            this.btnTambahData.BorderRadius = 10;
-            this.btnTambahData.CheckedState.Parent = this.btnTambahData;
-            this.btnTambahData.CustomImages.Parent = this.btnTambahData;
-            this.btnTambahData.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTambahData.ForeColor = System.Drawing.Color.White;
-            this.btnTambahData.HoverState.Parent = this.btnTambahData;
-            this.btnTambahData.Location = new System.Drawing.Point(575, 309);
-            this.btnTambahData.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnTambahData.Name = "btnTambahData";
-            this.btnTambahData.ShadowDecoration.Parent = this.btnTambahData;
-            this.btnTambahData.Size = new System.Drawing.Size(120, 39);
-            this.btnTambahData.TabIndex = 31;
-            this.btnTambahData.Text = "Tambah";
-            this.btnTambahData.Click += new System.EventHandler(this.btnTambahData_Click);
-            // 
-            // btnHapusData
-            // 
-            this.btnHapusData.Animated = true;
-            this.btnHapusData.BorderRadius = 10;
-            this.btnHapusData.CheckedState.Parent = this.btnHapusData;
-            this.btnHapusData.CustomImages.Parent = this.btnHapusData;
-            this.btnHapusData.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHapusData.ForeColor = System.Drawing.Color.White;
-            this.btnHapusData.HoverState.Parent = this.btnHapusData;
-            this.btnHapusData.Location = new System.Drawing.Point(701, 309);
-            this.btnHapusData.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnHapusData.Name = "btnHapusData";
-            this.btnHapusData.ShadowDecoration.Parent = this.btnHapusData;
-            this.btnHapusData.Size = new System.Drawing.Size(120, 39);
-            this.btnHapusData.TabIndex = 30;
-            this.btnHapusData.Text = "Hapus";
-            this.btnHapusData.Click += new System.EventHandler(this.btnHapusData_Click);
-            // 
-            // guna2Button1
-            // 
-            this.guna2Button1.Animated = true;
-            this.guna2Button1.BorderRadius = 15;
-            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
-            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
-            this.guna2Button1.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.HoverState.Parent = this.guna2Button1;
-            this.guna2Button1.Location = new System.Drawing.Point(1072, 478);
-            this.guna2Button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
-            this.guna2Button1.Size = new System.Drawing.Size(149, 46);
-            this.guna2Button1.TabIndex = 13;
-            this.guna2Button1.Text = "Pilih";
             // 
             // guna2GroupBox2
             // 
@@ -647,27 +481,23 @@
             this.guna2CirclePictureBox2.TabIndex = 26;
             this.guna2CirclePictureBox2.TabStop = false;
             // 
-            // UserProfil
+            // ProfilAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1280, 720);
+            this.ClientSize = new System.Drawing.Size(1290, 720);
             this.Controls.Add(this.guna2Panel2);
             this.Controls.Add(this.guna2Panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Name = "UserProfil";
+            this.Name = "ProfilAdmin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "UserProfil";
+            this.Text = "ProfilAdmin";
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbProfile)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
             this.guna2Panel2.ResumeLayout(false);
             this.guna2ShadowPanel1.ResumeLayout(false);
-            this.guna2GroupBox1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dtgMotor)).EndInit();
             this.guna2GroupBox2.ResumeLayout(false);
             this.guna2GroupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox2)).EndInit();
@@ -678,35 +508,29 @@
         #endregion
 
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Guna.UI2.WinForms.Guna2CirclePictureBox pbProfile;
         private System.Windows.Forms.Label label9;
         private Guna.UI2.WinForms.Guna2Button btnAboutUs;
         private Guna.UI2.WinForms.Guna2CircleButton btnexit;
-        private Guna.UI2.WinForms.Guna2Button btnWorkshopList;
-        private Guna.UI2.WinForms.Guna2Button btnHome;
+        private Guna.UI2.WinForms.Guna2Button btnJasa;
+        private Guna.UI2.WinForms.Guna2Button btnPesanan;
         private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox1;
-        private System.Windows.Forms.Label label1;
-        private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox2;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
+        private Guna.UI2.WinForms.Guna2Button btnSave;
         private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel1;
         private Guna.UI2.WinForms.Guna2GroupBox guna2GroupBox2;
-        private Guna.UI2.WinForms.Guna2Button btnPilih;
+        private Guna.UI2.WinForms.Guna2TextBox tbAddress;
+        private System.Windows.Forms.Label label5;
+        private Guna.UI2.WinForms.Guna2TextBox tbPhone;
+        private System.Windows.Forms.Label label4;
+        private Guna.UI2.WinForms.Guna2TextBox tbAge;
+        private System.Windows.Forms.Label label3;
         private Guna.UI2.WinForms.Guna2TextBox tbEmail;
         private System.Windows.Forms.Label label2;
         private Guna.UI2.WinForms.Guna2TextBox tbUsername;
-        private Guna.UI2.WinForms.Guna2TextBox tbAge;
-        private System.Windows.Forms.Label label3;
-        private Guna.UI2.WinForms.Guna2TextBox tbPhone;
-        private System.Windows.Forms.Label label4;
-        private Guna.UI2.WinForms.Guna2GroupBox guna2GroupBox1;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
-        private Guna.UI2.WinForms.Guna2TextBox tbAddress;
-        private System.Windows.Forms.Label label5;
-        private Guna.UI2.WinForms.Guna2Button btnSave;
-        private Guna.UI2.WinForms.Guna2Button btnHapusData;
-        private Guna.UI2.WinForms.Guna2Button btnTambahData;
-        private Guna.UI2.WinForms.Guna2Button btnHistory;
-        private Guna.UI2.WinForms.Guna2DataGridView dtgMotor;
+        private Guna.UI2.WinForms.Guna2Button btnPilih;
+        private System.Windows.Forms.Label label1;
+        private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox2;
     }
 }

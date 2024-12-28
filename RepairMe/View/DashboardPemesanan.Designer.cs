@@ -43,7 +43,6 @@
             this.label9 = new System.Windows.Forms.Label();
             this.btnAboutUs = new Guna.UI2.WinForms.Guna2Button();
             this.btnexit = new Guna.UI2.WinForms.Guna2CircleButton();
-            this.btnPemesanan = new Guna.UI2.WinForms.Guna2Button();
             this.btnWorkshopList = new Guna.UI2.WinForms.Guna2Button();
             this.btnHome = new Guna.UI2.WinForms.Guna2Button();
             this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
@@ -80,16 +79,15 @@
             this.guna2Panel1.Controls.Add(this.label9);
             this.guna2Panel1.Controls.Add(this.btnAboutUs);
             this.guna2Panel1.Controls.Add(this.btnexit);
-            this.guna2Panel1.Controls.Add(this.btnPemesanan);
             this.guna2Panel1.Controls.Add(this.btnWorkshopList);
             this.guna2Panel1.Controls.Add(this.btnHome);
             this.guna2Panel1.Controls.Add(this.guna2CirclePictureBox1);
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
-            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(2);
+            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
-            this.guna2Panel1.Size = new System.Drawing.Size(960, 62);
+            this.guna2Panel1.Size = new System.Drawing.Size(1280, 76);
             this.guna2Panel1.TabIndex = 1;
             // 
             // btnHistory
@@ -102,24 +100,24 @@
             this.btnHistory.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHistory.ForeColor = System.Drawing.Color.White;
             this.btnHistory.HoverState.Parent = this.btnHistory;
-            this.btnHistory.Location = new System.Drawing.Point(641, 15);
-            this.btnHistory.Margin = new System.Windows.Forms.Padding(2);
+            this.btnHistory.Location = new System.Drawing.Point(855, 18);
+            this.btnHistory.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnHistory.Name = "btnHistory";
             this.btnHistory.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(238)))), ((int)(((byte)(221)))));
             this.btnHistory.ShadowDecoration.Parent = this.btnHistory;
-            this.btnHistory.Size = new System.Drawing.Size(129, 28);
+            this.btnHistory.Size = new System.Drawing.Size(172, 34);
             this.btnHistory.TabIndex = 27;
             this.btnHistory.Text = "History Pemesanan";
             // 
             // pbProfile
             // 
             this.pbProfile.Image = global::RepairMe.Properties.Resources.profile_default;
-            this.pbProfile.Location = new System.Drawing.Point(875, 5);
-            this.pbProfile.Margin = new System.Windows.Forms.Padding(2);
+            this.pbProfile.Location = new System.Drawing.Point(1167, 6);
+            this.pbProfile.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pbProfile.Name = "pbProfile";
             this.pbProfile.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.pbProfile.ShadowDecoration.Parent = this.pbProfile;
-            this.pbProfile.Size = new System.Drawing.Size(50, 54);
+            this.pbProfile.Size = new System.Drawing.Size(67, 66);
             this.pbProfile.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbProfile.TabIndex = 25;
             this.pbProfile.TabStop = false;
@@ -129,10 +127,9 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Poppins", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(82, 16);
-            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label9.Location = new System.Drawing.Point(109, 20);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(94, 28);
+            this.label9.Size = new System.Drawing.Size(117, 36);
             this.label9.TabIndex = 23;
             this.label9.Text = "Repair Me";
             // 
@@ -146,12 +143,12 @@
             this.btnAboutUs.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAboutUs.ForeColor = System.Drawing.Color.White;
             this.btnAboutUs.HoverState.Parent = this.btnAboutUs;
-            this.btnAboutUs.Location = new System.Drawing.Point(775, 15);
-            this.btnAboutUs.Margin = new System.Windows.Forms.Padding(2);
+            this.btnAboutUs.Location = new System.Drawing.Point(1033, 18);
+            this.btnAboutUs.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAboutUs.Name = "btnAboutUs";
             this.btnAboutUs.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(238)))), ((int)(((byte)(221)))));
             this.btnAboutUs.ShadowDecoration.Parent = this.btnAboutUs;
-            this.btnAboutUs.Size = new System.Drawing.Size(80, 28);
+            this.btnAboutUs.Size = new System.Drawing.Size(107, 34);
             this.btnAboutUs.TabIndex = 22;
             this.btnAboutUs.Text = "About Us";
             this.btnAboutUs.Click += new System.EventHandler(this.btnAboutUs_Click);
@@ -165,34 +162,15 @@
             this.btnexit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnexit.ForeColor = System.Drawing.Color.Red;
             this.btnexit.HoverState.Parent = this.btnexit;
-            this.btnexit.Location = new System.Drawing.Point(938, -3);
-            this.btnexit.Margin = new System.Windows.Forms.Padding(2);
+            this.btnexit.Location = new System.Drawing.Point(1251, -4);
+            this.btnexit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnexit.Name = "btnexit";
             this.btnexit.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.btnexit.ShadowDecoration.Parent = this.btnexit;
-            this.btnexit.Size = new System.Drawing.Size(25, 28);
+            this.btnexit.Size = new System.Drawing.Size(33, 34);
             this.btnexit.TabIndex = 21;
             this.btnexit.Text = "X";
             this.btnexit.Click += new System.EventHandler(this.btnexit_Click);
-            // 
-            // btnPemesanan
-            // 
-            this.btnPemesanan.Animated = true;
-            this.btnPemesanan.BorderRadius = 15;
-            this.btnPemesanan.CheckedState.Parent = this.btnPemesanan;
-            this.btnPemesanan.CustomImages.Parent = this.btnPemesanan;
-            this.btnPemesanan.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(141)))), ((int)(((byte)(218)))));
-            this.btnPemesanan.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPemesanan.ForeColor = System.Drawing.Color.White;
-            this.btnPemesanan.HoverState.Parent = this.btnPemesanan;
-            this.btnPemesanan.Location = new System.Drawing.Point(527, 15);
-            this.btnPemesanan.Margin = new System.Windows.Forms.Padding(2);
-            this.btnPemesanan.Name = "btnPemesanan";
-            this.btnPemesanan.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(238)))), ((int)(((byte)(221)))));
-            this.btnPemesanan.ShadowDecoration.Parent = this.btnPemesanan;
-            this.btnPemesanan.Size = new System.Drawing.Size(108, 28);
-            this.btnPemesanan.TabIndex = 5;
-            this.btnPemesanan.Text = "Pemesanan";
             // 
             // btnWorkshopList
             // 
@@ -204,12 +182,12 @@
             this.btnWorkshopList.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnWorkshopList.ForeColor = System.Drawing.Color.White;
             this.btnWorkshopList.HoverState.Parent = this.btnWorkshopList;
-            this.btnWorkshopList.Location = new System.Drawing.Point(409, 15);
-            this.btnWorkshopList.Margin = new System.Windows.Forms.Padding(2);
+            this.btnWorkshopList.Location = new System.Drawing.Point(697, 18);
+            this.btnWorkshopList.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnWorkshopList.Name = "btnWorkshopList";
             this.btnWorkshopList.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(238)))), ((int)(((byte)(221)))));
             this.btnWorkshopList.ShadowDecoration.Parent = this.btnWorkshopList;
-            this.btnWorkshopList.Size = new System.Drawing.Size(113, 28);
+            this.btnWorkshopList.Size = new System.Drawing.Size(151, 34);
             this.btnWorkshopList.TabIndex = 3;
             this.btnWorkshopList.Text = "Workshop list";
             // 
@@ -223,24 +201,24 @@
             this.btnHome.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHome.ForeColor = System.Drawing.Color.White;
             this.btnHome.HoverState.Parent = this.btnHome;
-            this.btnHome.Location = new System.Drawing.Point(324, 14);
-            this.btnHome.Margin = new System.Windows.Forms.Padding(2);
+            this.btnHome.Location = new System.Drawing.Point(584, 17);
+            this.btnHome.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnHome.Name = "btnHome";
             this.btnHome.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(238)))), ((int)(((byte)(221)))));
             this.btnHome.ShadowDecoration.Parent = this.btnHome;
-            this.btnHome.Size = new System.Drawing.Size(76, 28);
+            this.btnHome.Size = new System.Drawing.Size(101, 34);
             this.btnHome.TabIndex = 2;
             this.btnHome.Text = "Home";
             // 
             // guna2CirclePictureBox1
             // 
             this.guna2CirclePictureBox1.Image = global::RepairMe.Properties.Resources._15;
-            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(8, 8);
-            this.guna2CirclePictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(11, 10);
+            this.guna2CirclePictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
             this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.guna2CirclePictureBox1.ShadowDecoration.Parent = this.guna2CirclePictureBox1;
-            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(58, 48);
+            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(77, 59);
             this.guna2CirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.guna2CirclePictureBox1.TabIndex = 0;
             this.guna2CirclePictureBox1.TabStop = false;
@@ -253,11 +231,11 @@
             this.guna2Panel2.Controls.Add(this.guna2GroupBox1);
             this.guna2Panel2.Controls.Add(this.guna2GroupBox2);
             this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.guna2Panel2.Location = new System.Drawing.Point(0, 62);
-            this.guna2Panel2.Margin = new System.Windows.Forms.Padding(2);
+            this.guna2Panel2.Location = new System.Drawing.Point(0, 76);
+            this.guna2Panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.ShadowDecoration.Parent = this.guna2Panel2;
-            this.guna2Panel2.Size = new System.Drawing.Size(960, 523);
+            this.guna2Panel2.Size = new System.Drawing.Size(1280, 644);
             this.guna2Panel2.TabIndex = 2;
             // 
             // guna2GroupBox1
@@ -273,11 +251,11 @@
             this.guna2GroupBox1.FillColor = System.Drawing.Color.Transparent;
             this.guna2GroupBox1.Font = new System.Drawing.Font("Poppins SemiBold", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2GroupBox1.ForeColor = System.Drawing.Color.Black;
-            this.guna2GroupBox1.Location = new System.Drawing.Point(9, 460);
-            this.guna2GroupBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.guna2GroupBox1.Location = new System.Drawing.Point(12, 566);
+            this.guna2GroupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2GroupBox1.Name = "guna2GroupBox1";
             this.guna2GroupBox1.ShadowDecoration.Parent = this.guna2GroupBox1;
-            this.guna2GroupBox1.Size = new System.Drawing.Size(926, 444);
+            this.guna2GroupBox1.Size = new System.Drawing.Size(1235, 546);
             this.guna2GroupBox1.TabIndex = 37;
             this.guna2GroupBox1.Text = "Jasa Yang Sudah Dipilih";
             // 
@@ -294,20 +272,19 @@
             this.cbPilihMotor.HoverState.Parent = this.cbPilihMotor;
             this.cbPilihMotor.ItemHeight = 30;
             this.cbPilihMotor.ItemsAppearance.Parent = this.cbPilihMotor;
-            this.cbPilihMotor.Location = new System.Drawing.Point(449, 386);
-            this.cbPilihMotor.Margin = new System.Windows.Forms.Padding(2);
+            this.cbPilihMotor.Location = new System.Drawing.Point(599, 475);
+            this.cbPilihMotor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbPilihMotor.Name = "cbPilihMotor";
             this.cbPilihMotor.ShadowDecoration.Parent = this.cbPilihMotor;
-            this.cbPilihMotor.Size = new System.Drawing.Size(236, 36);
+            this.cbPilihMotor.Size = new System.Drawing.Size(313, 36);
             this.cbPilihMotor.TabIndex = 19;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(362, 392);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(483, 482);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(92, 25);
+            this.label2.Size = new System.Drawing.Size(112, 30);
             this.label2.TabIndex = 18;
             this.label2.Text = "Pilih Motor :";
             // 
@@ -339,12 +316,13 @@
             this.dtgSelectedJasa.DefaultCellStyle = dataGridViewCellStyle3;
             this.dtgSelectedJasa.EnableHeadersVisualStyles = false;
             this.dtgSelectedJasa.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dtgSelectedJasa.Location = new System.Drawing.Point(9, 33);
+            this.dtgSelectedJasa.Location = new System.Drawing.Point(12, 41);
+            this.dtgSelectedJasa.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dtgSelectedJasa.Name = "dtgSelectedJasa";
             this.dtgSelectedJasa.RowHeadersVisible = false;
             this.dtgSelectedJasa.RowHeadersWidth = 51;
             this.dtgSelectedJasa.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dtgSelectedJasa.Size = new System.Drawing.Size(907, 348);
+            this.dtgSelectedJasa.Size = new System.Drawing.Size(1209, 428);
             this.dtgSelectedJasa.TabIndex = 17;
             this.dtgSelectedJasa.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
             this.dtgSelectedJasa.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -386,24 +364,23 @@
             this.tbTotalHarga.ForeColor = System.Drawing.Color.Black;
             this.tbTotalHarga.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbTotalHarga.HoverState.Parent = this.tbTotalHarga;
-            this.tbTotalHarga.Location = new System.Drawing.Point(106, 388);
-            this.tbTotalHarga.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.tbTotalHarga.Location = new System.Drawing.Point(141, 478);
+            this.tbTotalHarga.Margin = new System.Windows.Forms.Padding(5, 7, 5, 7);
             this.tbTotalHarga.Name = "tbTotalHarga";
             this.tbTotalHarga.PasswordChar = '\0';
             this.tbTotalHarga.PlaceholderText = "";
             this.tbTotalHarga.ReadOnly = true;
             this.tbTotalHarga.SelectedText = "";
             this.tbTotalHarga.ShadowDecoration.Parent = this.tbTotalHarga;
-            this.tbTotalHarga.Size = new System.Drawing.Size(200, 25);
+            this.tbTotalHarga.Size = new System.Drawing.Size(267, 31);
             this.tbTotalHarga.TabIndex = 16;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(10, 389);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(13, 479);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(100, 25);
+            this.label1.Size = new System.Drawing.Size(123, 30);
             this.label1.TabIndex = 15;
             this.label1.Text = "Total Harga :";
             // 
@@ -416,11 +393,11 @@
             this.btnCo.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCo.ForeColor = System.Drawing.Color.White;
             this.btnCo.HoverState.Parent = this.btnCo;
-            this.btnCo.Location = new System.Drawing.Point(804, 388);
-            this.btnCo.Margin = new System.Windows.Forms.Padding(2);
+            this.btnCo.Location = new System.Drawing.Point(1072, 478);
+            this.btnCo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCo.Name = "btnCo";
             this.btnCo.ShadowDecoration.Parent = this.btnCo;
-            this.btnCo.Size = new System.Drawing.Size(112, 37);
+            this.btnCo.Size = new System.Drawing.Size(149, 46);
             this.btnCo.TabIndex = 13;
             this.btnCo.Text = "CheckOut";
             this.btnCo.Click += new System.EventHandler(this.btnCo_Click);
@@ -434,11 +411,11 @@
             this.guna2GroupBox2.FillColor = System.Drawing.Color.Transparent;
             this.guna2GroupBox2.Font = new System.Drawing.Font("Poppins SemiBold", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2GroupBox2.ForeColor = System.Drawing.Color.Black;
-            this.guna2GroupBox2.Location = new System.Drawing.Point(9, 19);
-            this.guna2GroupBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.guna2GroupBox2.Location = new System.Drawing.Point(12, 23);
+            this.guna2GroupBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2GroupBox2.Name = "guna2GroupBox2";
             this.guna2GroupBox2.ShadowDecoration.Parent = this.guna2GroupBox2;
-            this.guna2GroupBox2.Size = new System.Drawing.Size(926, 436);
+            this.guna2GroupBox2.Size = new System.Drawing.Size(1235, 537);
             this.guna2GroupBox2.TabIndex = 36;
             this.guna2GroupBox2.Text = "Pilih Jasa Yang Ingin Digunakan";
             // 
@@ -470,14 +447,14 @@
             this.dtgJasaPilih.DefaultCellStyle = dataGridViewCellStyle6;
             this.dtgJasaPilih.EnableHeadersVisualStyles = false;
             this.dtgJasaPilih.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dtgJasaPilih.Location = new System.Drawing.Point(9, 34);
-            this.dtgJasaPilih.Margin = new System.Windows.Forms.Padding(2);
+            this.dtgJasaPilih.Location = new System.Drawing.Point(12, 42);
+            this.dtgJasaPilih.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dtgJasaPilih.Name = "dtgJasaPilih";
             this.dtgJasaPilih.RowHeadersVisible = false;
             this.dtgJasaPilih.RowHeadersWidth = 51;
             this.dtgJasaPilih.RowTemplate.Height = 24;
             this.dtgJasaPilih.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dtgJasaPilih.Size = new System.Drawing.Size(907, 345);
+            this.dtgJasaPilih.Size = new System.Drawing.Size(1209, 425);
             this.dtgJasaPilih.TabIndex = 14;
             this.dtgJasaPilih.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
             this.dtgJasaPilih.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -511,25 +488,25 @@
             this.btnPilih.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPilih.ForeColor = System.Drawing.Color.White;
             this.btnPilih.HoverState.Parent = this.btnPilih;
-            this.btnPilih.Location = new System.Drawing.Point(804, 388);
-            this.btnPilih.Margin = new System.Windows.Forms.Padding(2);
+            this.btnPilih.Location = new System.Drawing.Point(1072, 478);
+            this.btnPilih.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnPilih.Name = "btnPilih";
             this.btnPilih.ShadowDecoration.Parent = this.btnPilih;
-            this.btnPilih.Size = new System.Drawing.Size(112, 37);
+            this.btnPilih.Size = new System.Drawing.Size(149, 46);
             this.btnPilih.TabIndex = 13;
             this.btnPilih.Text = "Pilih";
             this.btnPilih.Click += new System.EventHandler(this.btnPilih_Click);
             // 
             // DashboardPemesanan
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(960, 585);
+            this.ClientSize = new System.Drawing.Size(1280, 720);
             this.Controls.Add(this.guna2Panel2);
             this.Controls.Add(this.guna2Panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "DashboardPemesanan";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DashboardPemesanan";
@@ -554,7 +531,6 @@
         private System.Windows.Forms.Label label9;
         private Guna.UI2.WinForms.Guna2Button btnAboutUs;
         private Guna.UI2.WinForms.Guna2CircleButton btnexit;
-        private Guna.UI2.WinForms.Guna2Button btnPemesanan;
         private Guna.UI2.WinForms.Guna2Button btnWorkshopList;
         private Guna.UI2.WinForms.Guna2Button btnHome;
         private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox1;
