@@ -80,7 +80,7 @@ namespace RepairMe.Controller
             }
         }
 
-        public void AddAdmin(string username, string password, string email, string phone, string address, string role)
+        public void AddAdmin(string username, string password, string email, string phone, string address, string role, int age)
         {
             try
             {
@@ -100,6 +100,30 @@ namespace RepairMe.Controller
                 if (string.IsNullOrWhiteSpace(email))
                 {
                     MessageBox.Show("Email cannot be empty.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                if (string.IsNullOrWhiteSpace(phone))
+                {
+                    MessageBox.Show("Phone number cannot be empty.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                if (string.IsNullOrWhiteSpace(address))
+                {
+                    MessageBox.Show("Address cannot be empty.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                if (string.IsNullOrWhiteSpace(role))
+                {
+                    MessageBox.Show("Role cannot be empty.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                if (age <= 0)
+                {
+                    MessageBox.Show("Age must be a positive number.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
 
@@ -135,6 +159,26 @@ namespace RepairMe.Controller
             catch (Exception ex)
             {
                 MessageBox.Show($"Error getting user: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return null;
+            }
+        }
+
+        public Users GetCurrentUserOrAdmin()
+        {
+            try
+            {
+                var currentUser = _usersRepository.GetCurrentUserOrAdmin();
+
+                if (currentUser != null)
+                {
+                    Users.CurrentAdminId = currentUser.Id;
+                    Users.CurrentUserId = currentUser.Id;
+                }
+                return currentUser;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error getting current user: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return null;
             }
         }
