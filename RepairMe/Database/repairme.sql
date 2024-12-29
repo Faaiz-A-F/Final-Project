@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 28, 2024 at 04:56 PM
+-- Generation Time: Dec 29, 2024 at 03:18 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -164,8 +164,7 @@ ALTER TABLE `jasa_bengkel`
 --
 ALTER TABLE `motor`
   ADD PRIMARY KEY (`motor_id`),
-  ADD KEY `user_id` (`user_id`),
-  ADD KEY `name` (`name`);
+  ADD KEY `user_id` (`user_id`);
 
 --
 -- Indexes for table `transaction`
