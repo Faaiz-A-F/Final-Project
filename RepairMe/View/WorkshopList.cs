@@ -20,41 +20,45 @@ namespace RepairMe.View
     {
         private void CustomizeGunaDataGridView()
         {
-            // Clear existing columns
-            dtgBengkel.Columns.Clear();
-
-            // Add 'Nama Bengkel' column
-            dtgBengkel.Columns.Add(new DataGridViewTextBoxColumn
-            {
-                Name = "nama",
-                DataPropertyName = "Name", // Matches the Workshop property
-                HeaderText = "Nama Bengkel"
-            });
-
-            // Add 'Alamat' column
-            dtgBengkel.Columns.Add(new DataGridViewTextBoxColumn
-            {
-                Name = "alamat",
-                DataPropertyName = "Address", // Matches the Workshop property
-                HeaderText = "Alamat"
-            });
-
-            // Add 'Nomor Telepon' column
-            dtgBengkel.Columns.Add(new DataGridViewTextBoxColumn
-            {
-                Name = "nomor_telepon",
-                DataPropertyName = "PhoneNumber", // Matches the Workshop property
-                HeaderText = "Nomor Telepon"
-            });
-
             // Styling
             dtgBengkel.ColumnHeadersDefaultCellStyle.BackColor = Color.Navy;
             dtgBengkel.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
             dtgBengkel.ColumnHeadersDefaultCellStyle.Font = new Font("Segoe UI", 10, FontStyle.Bold);
+
+            // Center the text in the column headers
+            dtgBengkel.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+
             dtgBengkel.DefaultCellStyle.Font = new Font("Segoe UI", 10);
+            dtgBengkel.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter; // Center the text in all cells
             dtgBengkel.AlternatingRowsDefaultCellStyle.BackColor = Color.LightBlue;
 
-            dtgBengkel.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            // Auto-size rows for multi-line text
+            dtgBengkel.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
+
+            // Set columns to auto-fit their content
+            dtgBengkel.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+
+            // Wrap text for cells to prevent clipping
+            dtgBengkel.DefaultCellStyle.WrapMode = DataGridViewTriState.True;
+
+            // Allow scrollbars to appear when needed
+            dtgBengkel.ScrollBars = ScrollBars.Both;
+
+            // Adjust column width dynamically after auto-sizing
+            foreach (DataGridViewColumn column in dtgBengkel.Columns)
+            {
+                // Set minimum width for readability
+                column.MinimumWidth = 80;
+
+                // Distribute extra space proportionally (Fill)
+                column.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            }
+
+            foreach (DataGridViewRow row in dtgBengkel.Rows)
+            {
+                // Set minimum height for readability
+                row.MinimumHeight = 20;
+            }
         }
 
         private void AddCheckboxColumn()

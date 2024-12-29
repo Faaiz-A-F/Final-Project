@@ -86,14 +86,45 @@ namespace RepairMe.View
 
         private void CustomizeGunaDataGridView()
         {
-            // Styling and auto-resize
+            // Styling
             dtgJasaPilih.ColumnHeadersDefaultCellStyle.BackColor = Color.Navy;
             dtgJasaPilih.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
             dtgJasaPilih.ColumnHeadersDefaultCellStyle.Font = new Font("Segoe UI", 10, FontStyle.Bold);
+
+            // Center the text in the column headers
+            dtgJasaPilih.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+
             dtgJasaPilih.DefaultCellStyle.Font = new Font("Segoe UI", 10);
+            dtgJasaPilih.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter; // Center the text in all cells
             dtgJasaPilih.AlternatingRowsDefaultCellStyle.BackColor = Color.LightBlue;
 
-            dtgJasaPilih.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            // Auto-size rows for multi-line text
+            dtgJasaPilih.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
+
+            // Set columns to auto-fit their content
+            dtgJasaPilih.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+
+            // Wrap text for cells to prevent clipping
+            dtgJasaPilih.DefaultCellStyle.WrapMode = DataGridViewTriState.True;
+
+            // Allow scrollbars to appear when needed
+            dtgJasaPilih.ScrollBars = ScrollBars.Both;
+
+            // Adjust column width dynamically after auto-sizing
+            foreach (DataGridViewColumn column in dtgJasaPilih.Columns)
+            {
+                // Set minimum width for readability
+                column.MinimumWidth = 80;
+
+                // Distribute extra space proportionally (Fill)
+                column.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            }
+
+            foreach (DataGridViewRow row in dtgJasaPilih.Rows)
+            {
+                // Set minimum height for readability
+                row.MinimumHeight = 20;
+            }
         }
 
         private List<Jasa> GetSelectedJasa()

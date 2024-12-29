@@ -18,46 +18,50 @@ namespace RepairMe.View
     {
         private void CustomizeGunaDataGridView()
         {
-            // Clear existing columns
-            guna2DataGridView1.Columns.Clear();
-
-            // Add 'Nama Jasa' column
-            guna2DataGridView1.Columns.Add(new DataGridViewTextBoxColumn
-            {
-                Name = "nama",
-                DataPropertyName = "Name", // Matches the Jasa property
-                HeaderText = "Nama Jasa"
-            });
-
-            // Add 'Harga' column
-            guna2DataGridView1.Columns.Add(new DataGridViewTextBoxColumn
-            {
-                Name = "harga",
-                DataPropertyName = "Price", // Matches the Jasa property
-                HeaderText = "Harga (Rp)"
-            });
-
-            // Add 'Deskripsi' column
-            guna2DataGridView1.Columns.Add(new DataGridViewTextBoxColumn
-            {
-                Name = "deskripsi",
-                DataPropertyName = "Description", // Matches the Jasa property
-                HeaderText = "Deskripsi"
-            });
-
             // Styling
-            guna2DataGridView1.ColumnHeadersDefaultCellStyle.BackColor = Color.Navy;
-            guna2DataGridView1.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
-            guna2DataGridView1.ColumnHeadersDefaultCellStyle.Font = new Font("Segoe UI", 10, FontStyle.Bold);
-            guna2DataGridView1.DefaultCellStyle.Font = new Font("Segoe UI", 10);
-            guna2DataGridView1.AlternatingRowsDefaultCellStyle.BackColor = Color.LightBlue;
+            dtgJasa.ColumnHeadersDefaultCellStyle.BackColor = Color.Navy;
+            dtgJasa.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
+            dtgJasa.ColumnHeadersDefaultCellStyle.Font = new Font("Segoe UI", 10, FontStyle.Bold);
 
-            guna2DataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            // Center the text in the column headers
+            dtgJasa.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+
+            dtgJasa.DefaultCellStyle.Font = new Font("Segoe UI", 10);
+            dtgJasa.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter; // Center the text in all cells
+            dtgJasa.AlternatingRowsDefaultCellStyle.BackColor = Color.LightBlue;
+
+            // Auto-size rows for multi-line text
+            dtgJasa.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
+
+            // Set columns to auto-fit their content
+            dtgJasa.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+
+            // Wrap text for cells to prevent clipping
+            dtgJasa.DefaultCellStyle.WrapMode = DataGridViewTriState.True;
+
+            // Allow scrollbars to appear when needed
+            dtgJasa.ScrollBars = ScrollBars.Both;
+
+            // Adjust column width dynamically after auto-sizing
+            foreach (DataGridViewColumn column in dtgJasa.Columns)
+            {
+                // Set minimum width for readability
+                column.MinimumWidth = 80;
+
+                // Distribute extra space proportionally (Fill)
+                column.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            }
+
+            foreach (DataGridViewRow row in dtgJasa.Rows)
+            {
+                // Set minimum height for readability
+                row.MinimumHeight = 20;
+            }
         }
 
         private void AddCheckboxColumn()
         {
-            if (!guna2DataGridView1.Columns.Contains("Select"))
+            if (!dtgJasa.Columns.Contains("Select"))
             {
                 var checkboxColumn = new DataGridViewCheckBoxColumn
                 {
@@ -66,7 +70,7 @@ namespace RepairMe.View
                     Width = 50
                 };
 
-                guna2DataGridView1.Columns.Insert(0, checkboxColumn); // Add checkbox as the first column
+                dtgJasa.Columns.Insert(0, checkboxColumn); // Add checkbox as the first column
             }
         }
 
@@ -91,11 +95,11 @@ namespace RepairMe.View
                     var jasaData = jasaController.GetAllJasa(adminId);
 
                     // Auto-generate columns
-                    guna2DataGridView1.AutoGenerateColumns = true;
+                    dtgJasa.AutoGenerateColumns = true;
 
                     // Bind to Guna2DataGridView
-                    guna2DataGridView1.DataSource = null; // Clear existing binding
-                    guna2DataGridView1.DataSource = jasaData;
+                    dtgJasa.DataSource = null; // Clear existing binding
+                    dtgJasa.DataSource = jasaData;
 
                     // Customize the appearance
                     CustomizeGunaDataGridView();
@@ -157,12 +161,12 @@ namespace RepairMe.View
 
         private void btnHapus_Click(object sender, EventArgs e)
         {
-            if (guna2DataGridView1.SelectedRows.Count > 0)
+            if (dtgJasa.SelectedRows.Count > 0)
             {
                 try
                 {
                     // Get the ID of the selected row
-                    var selectedRow = guna2DataGridView1.SelectedRows[0];
+                    var selectedRow = dtgJasa.SelectedRows[0];
                     int id = Convert.ToInt32(selectedRow.Cells["id"].Value);
 
                     using (var dbContext = new DbContext())

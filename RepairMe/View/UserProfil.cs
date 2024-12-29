@@ -68,29 +68,45 @@ namespace RepairMe.View
 
         private void CustomizeGunaDataGridView()
         {
-            // Ensure column headers are visible
-            dtgMotor.ColumnHeadersVisible = true;
-
-            // Styling for the header
+            // Styling
             dtgMotor.ColumnHeadersDefaultCellStyle.BackColor = Color.Navy;
             dtgMotor.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
             dtgMotor.ColumnHeadersDefaultCellStyle.Font = new Font("Segoe UI", 10, FontStyle.Bold);
+
+            // Center the text in the column headers
             dtgMotor.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
 
-            // Styling for rows
             dtgMotor.DefaultCellStyle.Font = new Font("Segoe UI", 10);
-            dtgMotor.DefaultCellStyle.ForeColor = Color.Black;
-            dtgMotor.DefaultCellStyle.BackColor = Color.White;
+            dtgMotor.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter; // Center the text in all cells
             dtgMotor.AlternatingRowsDefaultCellStyle.BackColor = Color.LightBlue;
 
-            // Grid appearance
-            dtgMotor.EnableHeadersVisualStyles = false; // Disable default theme styles
-            dtgMotor.GridColor = Color.Gray;
-            dtgMotor.RowHeadersVisible = false; // Hides row headers (optional)
-
-            // Auto-resize and fill columns
-            dtgMotor.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            // Auto-size rows for multi-line text
             dtgMotor.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
+
+            // Set columns to auto-fit their content
+            dtgMotor.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+
+            // Wrap text for cells to prevent clipping
+            dtgMotor.DefaultCellStyle.WrapMode = DataGridViewTriState.True;
+
+            // Allow scrollbars to appear when needed
+            dtgMotor.ScrollBars = ScrollBars.Both;
+
+            // Adjust column width dynamically after auto-sizing
+            foreach (DataGridViewColumn column in dtgMotor.Columns)
+            {
+                // Set minimum width for readability
+                column.MinimumWidth = 80;
+
+                // Distribute extra space proportionally (Fill)
+                column.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            }
+
+            foreach (DataGridViewRow row in dtgMotor.Rows)
+            {
+                // Set minimum height for readability
+                row.MinimumHeight = 20;
+            }
         }
 
         private void LoadMotorData()

@@ -124,7 +124,11 @@ namespace RepairMe.Model.Repository
             {
                 _dbContext.OpenConnection();
 
-                var query = "SELECT * FROM transaction WHERE admin_id = @id AND status = 'pending';";
+                var query = "SELECT t.transaction_id, t.user_id, u.name AS username, t.motor_id, m.name AS motorname, t.admin_id, t.status, t.total, t.transaction_date " +
+                            "FROM transaction t " +
+                            "JOIN users u ON t.user_id = u.user_id " +
+                            "JOIN motor m ON t.motor_id = m.motor_id " +
+                            "WHERE t.admin_id = @id AND t.status = 'pending';";
 
                 using (var cmd = new MySqlCommand(query, _dbContext.Connection))
                 {
@@ -142,7 +146,11 @@ namespace RepairMe.Model.Repository
                                 AdminId = reader.GetInt32("admin_id"),
                                 Status = reader.GetString("status"),
                                 Total = reader.GetInt32("total"),
-                                Date = reader.GetDateTime("transaction_date")
+                                Date = reader.GetDateTime("transaction_date"),
+
+                                // Map the additional fields
+                                Username = reader.GetString("username"),
+                                Motorname = reader.GetString("motorname")
                             };
 
                             transactionsList.Add(transaction);
@@ -153,7 +161,7 @@ namespace RepairMe.Model.Repository
             }
             catch (Exception ex)
             {
-                throw new Exception("Failed to get transaction: " + ex.Message);
+                throw new Exception("Failed to get transactions: " + ex.Message);
             }
 
             return transactionsList;
@@ -167,7 +175,11 @@ namespace RepairMe.Model.Repository
             {
                 _dbContext.OpenConnection();
 
-                var query = "SELECT * FROM transaction WHERE admin_id = @id AND status = 'done';";
+                var query = "SELECT t.transaction_id, t.user_id, u.name AS username, t.motor_id, m.name AS motorname, t.admin_id, t.status, t.total, t.transaction_date, t.rating, t.review " +
+                            "FROM transaction t " +
+                            "JOIN users u ON t.user_id = u.user_id " +
+                            "JOIN motor m ON t.motor_id = m.motor_id " +
+                            "WHERE t.admin_id = @id AND t.status = 'done';";
 
                 using (var cmd = new MySqlCommand(query, _dbContext.Connection))
                 {
@@ -187,7 +199,11 @@ namespace RepairMe.Model.Repository
                                 Total = reader.GetInt32("total"),
                                 Rating = reader.GetInt32("rating"),
                                 Review = reader.GetString("review"),
-                                Date = reader.GetDateTime("transaction_date")
+                                Date = reader.GetDateTime("transaction_date"),
+
+                                // Map the additional fields
+                                Username = reader.GetString("username"),
+                                Motorname = reader.GetString("motorname")
                             };
 
                             transactionsListDone.Add(transaction);

@@ -17,5 +17,9 @@ namespace RepairMe.Model.Entity
         public string Review { get; set; }
         public int Rating { get; set; }
         public decimal Total { get; set; }
+
+        // Additional properties
+        public string Username { get; set; } // For the user's name
+        public string Motorname { get; set; } // For the motor's name
     }
 }

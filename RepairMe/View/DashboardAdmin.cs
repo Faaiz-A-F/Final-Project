@@ -53,14 +53,49 @@ namespace RepairMe
                 var transactionController = new TransactionController(dbContext);
                 var transactionListDone = transactionController.GetDoneTransactionAdmin(_adminId);
 
-                guna2DataGridView1.DataSource = null;
-                guna2DataGridView1.DataSource = transactionListDone;
+                dtgPesananSelesai.DataSource = null;
+                dtgPesananSelesai.DataSource = transactionListDone;
 
                 // Add a checkbox column
                 AddCheckboxColumn_2();
 
                 // Customize DataGridView for jasa
                 CustomizeGunaDataGridView_2();
+
+                // Calculate total pemasukan
+                CalculateTotalPemasukan();
+            }
+        }
+
+        private void CalculateTotalPemasukan()
+        {
+            try
+            {
+                // Ensure there is data in the DataGridView
+                if (dtgPesananSelesai.Rows.Count > 0)
+                {
+                    decimal totalPemasukan = 0;
+
+                    foreach (DataGridViewRow row in dtgPesananSelesai.Rows)
+                    {
+                        // Check if the row contains a valid value for "total"
+                        if (row.Cells["total"]?.Value != null && decimal.TryParse(row.Cells["total"].Value.ToString(), out decimal total))
+                        {
+                            totalPemasukan += total;
+                        }
+                    }
+
+                    // Display the total pemasukan in tbPemasukan
+                    tbPemasukan.Text = totalPemasukan.ToString("N2"); // Format as currency or number with 2 decimal places
+                }
+                else
+                {
+                    tbPemasukan.Text = "0.00"; // No rows, so the total pemasukan is 0
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error calculating pemasukan: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -81,7 +116,7 @@ namespace RepairMe
 
         private void AddCheckboxColumn_2()
         {
-            if (!guna2DataGridView1.Columns.Contains("Select"))
+            if (!dtgPesananSelesai.Columns.Contains("Select"))
             {
                 var checkboxColumn = new DataGridViewCheckBoxColumn
                 {
@@ -90,7 +125,7 @@ namespace RepairMe
                     Width = 50
                 };
 
-                guna2DataGridView1.Columns.Insert(0, checkboxColumn); // Add checkbox as the first column
+                dtgPesananSelesai.Columns.Insert(0, checkboxColumn); // Add checkbox as the first column
             }
         }
 
@@ -140,31 +175,31 @@ namespace RepairMe
         private void CustomizeGunaDataGridView_2()
         {
             // Styling
-            guna2DataGridView1.ColumnHeadersDefaultCellStyle.BackColor = Color.Navy;
-            guna2DataGridView1.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
-            guna2DataGridView1.ColumnHeadersDefaultCellStyle.Font = new Font("Segoe UI", 10, FontStyle.Bold);
+            dtgPesananSelesai.ColumnHeadersDefaultCellStyle.BackColor = Color.Navy;
+            dtgPesananSelesai.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
+            dtgPesananSelesai.ColumnHeadersDefaultCellStyle.Font = new Font("Segoe UI", 10, FontStyle.Bold);
 
             // Center the text in the column headers
-            guna2DataGridView1.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dtgPesananSelesai.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
 
-            guna2DataGridView1.DefaultCellStyle.Font = new Font("Segoe UI", 10);
-            guna2DataGridView1.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter; // Center the text in all cells
-            guna2DataGridView1.AlternatingRowsDefaultCellStyle.BackColor = Color.LightBlue;
+            dtgPesananSelesai.DefaultCellStyle.Font = new Font("Segoe UI", 10);
+            dtgPesananSelesai.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter; // Center the text in all cells
+            dtgPesananSelesai.AlternatingRowsDefaultCellStyle.BackColor = Color.LightBlue;
 
             // Auto-size rows for multi-line text
-            guna2DataGridView1.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
+            dtgPesananSelesai.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
 
             // Set columns to auto-fit their content
-            guna2DataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+            dtgPesananSelesai.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
 
             // Wrap text for cells to prevent clipping
-            guna2DataGridView1.DefaultCellStyle.WrapMode = DataGridViewTriState.True;
+            dtgPesananSelesai.DefaultCellStyle.WrapMode = DataGridViewTriState.True;
 
             // Allow scrollbars to appear when needed
-            guna2DataGridView1.ScrollBars = ScrollBars.Both;
+            dtgPesananSelesai.ScrollBars = ScrollBars.Both;
 
             // Adjust column width dynamically after auto-sizing
-            foreach (DataGridViewColumn column in guna2DataGridView1.Columns)
+            foreach (DataGridViewColumn column in dtgPesananSelesai.Columns)
             {
                 // Set minimum width for readability
                 column.MinimumWidth = 80;
@@ -173,7 +208,7 @@ namespace RepairMe
                 column.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
             }
 
-            foreach (DataGridViewRow row in guna2DataGridView1.Rows)
+            foreach (DataGridViewRow row in dtgPesananSelesai.Rows)
             {
                 // Set minimum height for readability
                 row.MinimumHeight = 20;
