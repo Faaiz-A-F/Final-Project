@@ -267,7 +267,7 @@ namespace RepairMe
 
         private void btnAboutUs_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            this.Close();
             AboutUs aboutUs = new AboutUs();
             aboutUs.Show();
             aboutUs.FormClosed += (s, args) => this.Show();
@@ -275,7 +275,7 @@ namespace RepairMe
 
         private void pbProfile_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            this.Close();
             ProfilAdmin profilAdmin = new ProfilAdmin();
             profilAdmin.Show();
             profilAdmin.FormClosed += (s, args) => this.Show();

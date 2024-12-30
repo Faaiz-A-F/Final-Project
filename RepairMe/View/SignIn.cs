@@ -35,7 +35,7 @@ namespace RepairMe
             SignUp signUp = new SignUp();
 
             // Menyembunyikan form saat ini
-            this.Hide();
+            this.Close();
 
             // Menampilkan form SignUp
             signUp.Show();
@@ -47,7 +47,7 @@ namespace RepairMe
         private void signupbengkel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             MakeBengkel makeBengkel = new MakeBengkel();
-            this.Hide();
+            this.Close();
             makeBengkel.Show();
             makeBengkel.FormClosed += (s, args) => this.Show();
         }
@@ -96,7 +96,7 @@ namespace RepairMe
                             DashboardAdmin dashboardAdmin = new DashboardAdmin();
 
                             dashboardAdmin.Show();
-                            this.Hide();
+                            this.Close();
                             dashboardAdmin.FormClosed += (s, args) => this.Show();
                         }
                         else if (user.Role == "user")
@@ -108,7 +108,7 @@ namespace RepairMe
                             Dashboard dashboard = new Dashboard();
 
                             dashboard.Show();
-                            this.Hide();
+                            this.Close();
                             dashboard.FormClosed += (s, args) => this.Show();
                         }
                         else

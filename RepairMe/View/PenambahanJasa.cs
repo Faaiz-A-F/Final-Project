@@ -201,7 +201,7 @@ namespace RepairMe.View
 
         private void btnAboutUs_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            this.Close();
             AboutUs aboutUs = new AboutUs();
             aboutUs.Show();
             aboutUs.FormClosed += (s, args) => this.Show();

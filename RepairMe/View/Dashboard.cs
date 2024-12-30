@@ -69,7 +69,7 @@ namespace RepairMe.View
 
         private void btnWorkshopList_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            this.Close();
             WorkshopList workshopList = new WorkshopList();
             workshopList.Show();
             workshopList.FormClosed += (s, args) => this.Show();
@@ -77,7 +77,7 @@ namespace RepairMe.View
 
         private void pbProfile_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            this.Close();
             UserProfil userProfil = new UserProfil();
             userProfil.Show();
             userProfil.FormClosed += (s, args) => this.Show();
@@ -85,7 +85,7 @@ namespace RepairMe.View
 
         private void btnHistory_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            this.Close();
             HistoryPemesanan historyPemesanan = new HistoryPemesanan();
             historyPemesanan.Show();
             historyPemesanan.FormClosed += (s, args) => this.Show();
@@ -93,7 +93,7 @@ namespace RepairMe.View
 
         private void btnAboutUs_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            this.Close();
             AboutUs aboutUs = new AboutUs();
             aboutUs.Show();
             aboutUs.FormClosed += (s, args) => this.Show();
@@ -110,7 +110,7 @@ namespace RepairMe.View
                 {
                     // Open the DashboardPemesanan form and pass the workshop ID
                     DashboardPemesanan dashboardPemesanan = new DashboardPemesanan(bestWorkshop.Id);
-                    this.Hide();
+                    this.Close();
                     dashboardPemesanan.Show();
                     dashboardPemesanan.FormClosed += (s, args) => this.Show(); // Show this form again when the other form is closed
                 }

@@ -55,7 +55,7 @@ namespace RepairMe.View
 
         private void btnAboutUs_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            this.Close();
             AboutUs aboutUs = new AboutUs();
             aboutUs.Show();
             aboutUs.FormClosed += (s, args) => this.Close();
@@ -63,7 +63,7 @@ namespace RepairMe.View
 
         private void btnJasa_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            this.Close();
             PenambahanJasa penambahanJasa = new PenambahanJasa();
             penambahanJasa.Show();
             penambahanJasa.FormClosed += (s, args) => this.Close();
