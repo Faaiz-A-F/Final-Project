@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RepairMe.Utils;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,7 +18,27 @@ namespace RepairMe.View
             InitializeComponent();
         }
 
-        private void btnexit_Click(object sender, EventArgs e)
+        private void btnHome_Click(object sender, EventArgs e)
+        {
+            FormManager.ShowForm(new Dashboard());
+        }
+
+        private void btnWorkshopList_Click(object sender, EventArgs e)
+        {
+            FormManager.ShowForm(new WorkshopList());
+        }
+
+        private void btnHistory_Click(object sender, EventArgs e)
+        {
+            FormManager.ShowForm(new HistoryPemesanan());
+        }
+
+        private void btnAboutUs_Click(object sender, EventArgs e)
+        {
+            FormManager.ShowForm(new AboutUs());
+        }
+
+        private void btnexit_Click_1(object sender, EventArgs e)
         {
             this.Close();
         }

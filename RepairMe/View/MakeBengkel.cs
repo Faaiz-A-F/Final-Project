@@ -26,8 +26,6 @@ namespace RepairMe.View
 
         private void btnback_Click(object sender, EventArgs e)
         {
-            SignIn signIn = new SignIn();
-            signIn.Show();
             this.Close();
         }
 

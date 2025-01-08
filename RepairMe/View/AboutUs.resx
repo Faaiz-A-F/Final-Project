@@ -124,6 +124,30 @@
     <value>25</value>
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAAAAMQOAADEDgAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADDfFX/yHhV/8Z5VP/IeVT/wH1Q/8R4Wf8AAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAANGwpY7GeVX/x3tN/8d7Sf/IfEb/x31G/8d7Sf/Ge07/wXpU/+zr
+        6xcAAAAAAAAAAAAAAAAAAAAAAAAAAO7s6xnEeVX/yHtJ/8p+Qv/Mfz3/zYA6/8d+Pv/JfkD/zH1E/8h8
+        TP/IelP/AAAAAAAAAAAAAAAAAAAAAAAAAADAe1P/4tTIf819QP/NgDb/zoIw/9KCLf/VhCn/6tzPYOTV
+        x4Dj08iA4cy9icR5Vv8AAAAAAAAAAAAAAADFloi9xntP///////LgDj/0IMt/9GEJv/ShSH/14Ug////
+        ///AkmLTvpFn1cKQaN7JeFH/AAAAAAAAAAAAAAAAxnlY/8h8S///////zoAz/9KFJf/Vhx3/1ogW/9KG
+        F///////1IQl/9CCM//KfkD/xntN/8d4W/8AAAAAAAAAAMF6VP/HfEj//////9CDLf/ThSH/1ogT/9mL
+        Cf/aiwj//////9vHrq7bx7OvxX1D/8l8S//Be1T/AAAAAAAAAADFeFf/yHxI///////Ogi//1IYh////
+        ///ZhQP/1ooM///////OqXqsz6l+rsp9Pv/IfEv/xXlW/wAAAAAAAAAAw3lX/8d7Sv//////x4I3////
+        ///Qk0Lh/////9eHF///////0oQn/8+CM//Lfj//yHxM/8V2V/8AAAAAAAAAALp3YP7JeVD/////////
+        ///QgzH/0YQj/9aGHv///////////9S6ntjQuaDa2LOV1sh5Uf/e1NBEAAAAAAAAAAAAAAAAx3pT/9i+
+        qYDPfz//yH88/8+BMP/IgjP/0IUq/+bSt2HavqWC2r6ngtS1npPCelb/AAAAAAAAAAAAAAAAAAAAAMaU
+        hMbFelL/yHxI/8l+Qf/Mfzv/zYA5/81/Of/Mfzz/yX1B/8l9Sv/HelT/8O3tFwAAAAAAAAAAAAAAAAAA
+        AAAAAAAAwnZa/8d6UP/GfEz/yHxH/8h+RP/IfUX/yHxH/8h8TP/BelT/voh04AAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAADi3dswwnlX/8R5Uv/Ge1D/xnpQ/8Z6U//Eelj/AAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAA//8AAPgfAADwDwAA4AcAANB7AADAOwAAgAEAAIAxAACAMQAAggEAAMA7AADQewAA4AcAAOAP
+        AAD4HwAA//8AAA==
+</value>
+  </data>
   <data name="guna2ImageButton5.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         /9j/4AAQSkZJRgABAQEAAAAAAAD/2wBDAAYGBgYHBgcICAcKCwoLCg8ODAwODxYQERAREBYiFRkVFRkV
@@ -1989,30 +2013,6 @@
     <value>Repair Me hadir sebagai solusi agar Anda bisa menemukan bengkel mobil terpercaya dengan lebih cepat dan akurat. 
 Tidak ada lagi drama mobil mogok di tengah jalan sambil bertanya ke bapak-bapak di pinggir jalan, “Pak, bengkel terdekat di mana?” 
 Disini kami beranggotakan:</value>
-  </data>
-  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAAAAMQOAADEDgAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADDfFX/yHhV/8Z5VP/IeVT/wH1Q/8R4Wf8AAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAANGwpY7GeVX/x3tN/8d7Sf/IfEb/x31G/8d7Sf/Ge07/wXpU/+zr
-        6xcAAAAAAAAAAAAAAAAAAAAAAAAAAO7s6xnEeVX/yHtJ/8p+Qv/Mfz3/zYA6/8d+Pv/JfkD/zH1E/8h8
-        TP/IelP/AAAAAAAAAAAAAAAAAAAAAAAAAADAe1P/4tTIf819QP/NgDb/zoIw/9KCLf/VhCn/6tzPYOTV
-        x4Dj08iA4cy9icR5Vv8AAAAAAAAAAAAAAADFloi9xntP///////LgDj/0IMt/9GEJv/ShSH/14Ug////
-        ///AkmLTvpFn1cKQaN7JeFH/AAAAAAAAAAAAAAAAxnlY/8h8S///////zoAz/9KFJf/Vhx3/1ogW/9KG
-        F///////1IQl/9CCM//KfkD/xntN/8d4W/8AAAAAAAAAAMF6VP/HfEj//////9CDLf/ThSH/1ogT/9mL
-        Cf/aiwj//////9vHrq7bx7OvxX1D/8l8S//Be1T/AAAAAAAAAADFeFf/yHxI///////Ogi//1IYh////
-        ///ZhQP/1ooM///////OqXqsz6l+rsp9Pv/IfEv/xXlW/wAAAAAAAAAAw3lX/8d7Sv//////x4I3////
-        ///Qk0Lh/////9eHF///////0oQn/8+CM//Lfj//yHxM/8V2V/8AAAAAAAAAALp3YP7JeVD/////////
-        ///QgzH/0YQj/9aGHv///////////9S6ntjQuaDa2LOV1sh5Uf/e1NBEAAAAAAAAAAAAAAAAx3pT/9i+
-        qYDPfz//yH88/8+BMP/IgjP/0IUq/+bSt2HavqWC2r6ngtS1npPCelb/AAAAAAAAAAAAAAAAAAAAAMaU
-        hMbFelL/yHxI/8l+Qf/Mfzv/zYA5/81/Of/Mfzz/yX1B/8l9Sv/HelT/8O3tFwAAAAAAAAAAAAAAAAAA
-        AAAAAAAAwnZa/8d6UP/GfEz/yHxH/8h+RP/IfUX/yHxH/8h8TP/BelT/voh04AAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAADi3dswwnlX/8R5Uv/Ge1D/xnpQ/8Z6U//Eelj/AAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAA//8AAPgfAADwDwAA4AcAANB7AADAOwAAgAEAAIAxAACAMQAAggEAAMA7AADQewAA4AcAAOAP
-        AAD4HwAA//8AAA==
-</value>
   </data>
   <metadata name="backgroundWorker1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>161, 17</value>

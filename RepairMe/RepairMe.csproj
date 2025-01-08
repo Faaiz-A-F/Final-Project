@@ -129,6 +129,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="Utils\FormManager.cs" />
     <Compile Include="View\DashboardAdmin.cs">
       <SubType>Form</SubType>
     </Compile>

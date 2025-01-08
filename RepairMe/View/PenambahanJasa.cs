@@ -11,6 +11,7 @@ using System.Windows.Forms;
 using RepairMe.Controller;
 using RepairMe.Model.Context;
 using RepairMe.Model.Entity;
+using RepairMe.Utils;
 
 namespace RepairMe.View
 {
@@ -201,10 +202,17 @@ namespace RepairMe.View
 
         private void btnAboutUs_Click(object sender, EventArgs e)
         {
-            this.Close();
-            AboutUs aboutUs = new AboutUs();
-            aboutUs.Show();
-            aboutUs.FormClosed += (s, args) => this.Show();
+            FormManager.ShowForm(new AboutUs());
+        }
+
+        private void btnPesanan_Click(object sender, EventArgs e)
+        {
+            FormManager.ShowForm(new DashboardAdmin());
+        }
+
+        private void btnJasa_Click(object sender, EventArgs e)
+        {
+            LoadData();
         }
     }
 }

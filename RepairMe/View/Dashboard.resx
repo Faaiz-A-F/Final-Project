@@ -123,6 +123,28 @@
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>46</value>
   </metadata>
+  <data name="label15.Text" xml:space="preserve">
+    <value>1. Asal Nama Mobil "Mercedes"
+Nama "Mercedes" berasal dari nama putri seorang pengusaha Austria, Emil Jellinek, yang sangat menyukai mobil Daimler dan meminta namanya 
+digunakan untuk model baru pada awal 1900-an.
+2. Jumlah Komponen dalam Mobil
+Sebuah mobil rata-rata memiliki sekitar 30.000 komponen, mulai dari mur dan baut kecil hingga mesin kompleks!
+3. Oli Motor Pertama
+Oli motor pertama kali digunakan secara komersial pada tahun 1866 oleh John Ellis, yang memodifikasi minyak mentah untuk digunakan pada mesin uap.
+4. Mesin 16 Silinder di Mobil Klasik
+Mesin dengan 16 silinder pernah populer di tahun 1930-an, seperti di mobil Cadillac dan Marmon. Mesin ini menawarkan kekuatan luar biasa meski 
+dengan konsumsi bahan bakar yang tinggi.
+5. Ban Tidak Selalu Berwarna Hitam
+Awalnya, ban mobil berwarna putih karena kandungan karet alami. Warna hitam baru digunakan setelah ditambahkan karbon hitam untuk memperkuat 
+dan meningkatkan daya tahan ban.
+6. Mobil Listrik Bukan Hal Baru
+Mobil listrik sudah ada sejak akhir 1800-an dan bahkan lebih populer dibandingkan mobil berbahan bakar bensin pada awal perkembangannya!
+7. Kecepatan Mobil Pertama
+Mobil pertama di dunia, Benz Patent-Motorwagen yang diciptakan oleh Karl Benz pada tahun 1886, memiliki kecepatan maksimal sekitar 16 km/jam.
+8. Asal Kata "Bengkel"
+Kata "bengkel" berasal dari bahasa Belanda "bankwerker", yang berarti tukang kerja besi.
+</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -146,28 +168,6 @@
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
         AAAAAAAA//8AAPgfAADwDwAA4AcAANB7AADAOwAAgAEAAIAxAACAMQAAggEAAMA7AADQewAA4AcAAOAP
         AAD4HwAA//8AAA==
-</value>
-  </data>
-  <data name="label15.Text" xml:space="preserve">
-    <value>1. Asal Nama Mobil "Mercedes"
-Nama "Mercedes" berasal dari nama putri seorang pengusaha Austria, Emil Jellinek, yang sangat menyukai mobil Daimler dan meminta namanya 
-digunakan untuk model baru pada awal 1900-an.
-2. Jumlah Komponen dalam Mobil
-Sebuah mobil rata-rata memiliki sekitar 30.000 komponen, mulai dari mur dan baut kecil hingga mesin kompleks!
-3. Oli Motor Pertama
-Oli motor pertama kali digunakan secara komersial pada tahun 1866 oleh John Ellis, yang memodifikasi minyak mentah untuk digunakan pada mesin uap.
-4. Mesin 16 Silinder di Mobil Klasik
-Mesin dengan 16 silinder pernah populer di tahun 1930-an, seperti di mobil Cadillac dan Marmon. Mesin ini menawarkan kekuatan luar biasa meski 
-dengan konsumsi bahan bakar yang tinggi.
-5. Ban Tidak Selalu Berwarna Hitam
-Awalnya, ban mobil berwarna putih karena kandungan karet alami. Warna hitam baru digunakan setelah ditambahkan karbon hitam untuk memperkuat 
-dan meningkatkan daya tahan ban.
-6. Mobil Listrik Bukan Hal Baru
-Mobil listrik sudah ada sejak akhir 1800-an dan bahkan lebih populer dibandingkan mobil berbahan bakar bensin pada awal perkembangannya!
-7. Kecepatan Mobil Pertama
-Mobil pertama di dunia, Benz Patent-Motorwagen yang diciptakan oleh Karl Benz pada tahun 1886, memiliki kecepatan maksimal sekitar 16 km/jam.
-8. Asal Kata "Bengkel"
-Kata "bengkel" berasal dari bahasa Belanda "bankwerker", yang berarti tukang kerja besi.
 </value>
   </data>
 </root>

@@ -212,6 +212,7 @@
             this.btnHome.Size = new System.Drawing.Size(76, 28);
             this.btnHome.TabIndex = 2;
             this.btnHome.Text = "Home";
+            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
             // guna2CirclePictureBox1
             // 

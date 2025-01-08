@@ -14,6 +14,7 @@ using RepairMe.Controller;
 using RepairMe.Model.Context;
 using RepairMe.View;
 using Guna.UI2.WinForms;
+using RepairMe.Utils;
 
 namespace RepairMe.View
 {
@@ -69,34 +70,26 @@ namespace RepairMe.View
 
         private void btnWorkshopList_Click(object sender, EventArgs e)
         {
+            FormManager.ShowForm(new WorkshopList());
             this.Close();
-            WorkshopList workshopList = new WorkshopList();
-            workshopList.Show();
-            workshopList.FormClosed += (s, args) => this.Show();
         }
 
         private void pbProfile_Click(object sender, EventArgs e)
         {
+            FormManager.ShowForm(new UserProfil());
             this.Close();
-            UserProfil userProfil = new UserProfil();
-            userProfil.Show();
-            userProfil.FormClosed += (s, args) => this.Show();
         }
 
         private void btnHistory_Click(object sender, EventArgs e)
         {
+            FormManager.ShowForm(new HistoryPemesanan());
             this.Close();
-            HistoryPemesanan historyPemesanan = new HistoryPemesanan();
-            historyPemesanan.Show();
-            historyPemesanan.FormClosed += (s, args) => this.Show();
         }
 
         private void btnAboutUs_Click(object sender, EventArgs e)
         {
+            FormManager.ShowForm(new AboutUs());
             this.Close();
-            AboutUs aboutUs = new AboutUs();
-            aboutUs.Show();
-            aboutUs.FormClosed += (s, args) => this.Show();
         }
 
         private void btnPesan_Click(object sender, EventArgs e)
@@ -109,10 +102,7 @@ namespace RepairMe.View
                 if (bestWorkshop != null)
                 {
                     // Open the DashboardPemesanan form and pass the workshop ID
-                    DashboardPemesanan dashboardPemesanan = new DashboardPemesanan(bestWorkshop.Id);
-                    this.Close();
-                    dashboardPemesanan.Show();
-                    dashboardPemesanan.FormClosed += (s, args) => this.Show(); // Show this form again when the other form is closed
+                    FormManager.ShowForm(new DashboardPemesanan(bestWorkshop.Id));
                 }
                 else
                 {
@@ -125,5 +115,10 @@ namespace RepairMe.View
             }
         }
 
+        private void btnHome_Click(object sender, EventArgs e)
+        {
+            FormManager.ShowForm(new Dashboard());
+            this.Close();
+        }
     }
 }

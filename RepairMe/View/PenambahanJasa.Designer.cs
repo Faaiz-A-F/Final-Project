@@ -163,6 +163,7 @@
             this.btnJasa.Size = new System.Drawing.Size(152, 28);
             this.btnJasa.TabIndex = 5;
             this.btnJasa.Text = "Penambahan Jasa";
+            this.btnJasa.Click += new System.EventHandler(this.btnJasa_Click);
             // 
             // btnPesanan
             // 
@@ -182,6 +183,7 @@
             this.btnPesanan.Size = new System.Drawing.Size(102, 28);
             this.btnPesanan.TabIndex = 3;
             this.btnPesanan.Text = "Pesanan";
+            this.btnPesanan.Click += new System.EventHandler(this.btnPesanan_Click);
             // 
             // guna2CirclePictureBox1
             // 

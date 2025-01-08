@@ -13,6 +13,7 @@ using RepairMe.Model.Entity;
 using RepairMe.Model.Context;
 using RepairMe.View;
 using Guna.UI2.WinForms;
+using RepairMe.Utils;
 
 namespace RepairMe.View
 {
@@ -209,10 +210,22 @@ namespace RepairMe.View
 
         private void btnAboutUs_Click(object sender, EventArgs e)
         {
-            this.Close();
-            AboutUs aboutUs = new AboutUs();
-            aboutUs.Show();
-            aboutUs.FormClosed += (s, args) => this.Show();
+            FormManager.ShowForm(new AboutUs());
+        }
+
+        private void btnHome_Click(object sender, EventArgs e)
+        {
+            FormManager.ShowForm(new Dashboard());
+        }
+
+        private void btnWorkshopList_Click(object sender, EventArgs e)
+        {
+            LoadData();
+        }
+
+        private void btnHistory_Click(object sender, EventArgs e)
+        {
+            FormManager.ShowForm(new HistoryPemesanan());
         }
     }
 }

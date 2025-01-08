@@ -246,5 +246,71 @@ namespace RepairMe.Model.Repository
             }
             return null;
         }
+
+        public void UpdateUser(Users user)
+        {
+            try
+            {
+                _dbContext.OpenConnection();
+
+                var query = "UPDATE users SET name = @name, password = @password, age = @age, email = @email, phone = @phone, address = @address " +
+                            "WHERE user_id = @id";
+
+                using (var cmd = new MySqlCommand(query, _dbContext.Connection))
+                {
+                    cmd.Parameters.AddWithValue("@name", user.Username);
+                    cmd.Parameters.AddWithValue("@password", user.Password);
+                    cmd.Parameters.AddWithValue("@age", user.Age);
+                    cmd.Parameters.AddWithValue("@email", user.Email);
+                    cmd.Parameters.AddWithValue("@phone", user.Phone);
+                    cmd.Parameters.AddWithValue("@address", user.Address);
+                    cmd.Parameters.AddWithValue("@id", user.Id);
+
+                    cmd.ExecuteNonQuery();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Failed to connect to the database.\n\nError: {ex.Message}", "Connection Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                throw;
+            }
+            finally
+            {
+                _dbContext.CloseConnection();
+            }
+        }
+
+        public void UpdateAdmin(Users user)
+        {
+            try
+            {
+                _dbContext.OpenConnection();
+
+                var query = "UPDATE admin SET name = @name, password = @password, email = @email, phone = @phone, address = @address, age = @age " +
+                            "WHERE admin_id = @id";
+
+                using (var cmd = new MySqlCommand(query, _dbContext.Connection))
+                {
+                    cmd.Parameters.AddWithValue("@name", user.Username);
+                    cmd.Parameters.AddWithValue("@password", user.Password);
+                    cmd.Parameters.AddWithValue("@email", user.Email);
+                    cmd.Parameters.AddWithValue("@phone", user.Phone);
+                    cmd.Parameters.AddWithValue("@address", user.Address);
+                    cmd.Parameters.AddWithValue("@age", user.Age);
+                    cmd.Parameters.AddWithValue("@id", user.Id);
+
+                    cmd.ExecuteNonQuery();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Failed to connect to the database.\n\nError: {ex.Message}", "Connection Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                throw;
+            }
+            finally
+            {
+                _dbContext.CloseConnection();
+            }
+        }
     }
 }
